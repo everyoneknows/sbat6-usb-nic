@@ -1,0 +1,31 @@
+[PASS] candidate artifact exists
+[PASS] candidate f_ncm.c exists
+[PASS] candidate exact u_ether.c exists
+[PASS] compat instance sizeof = 0xb8
+[PASS] fd = +0x98
+[PASS] f = +0xa0
+[PASS] set_inst_name = +0xa8
+[PASS] free_func_inst = +0xb0
+[PASS] f_ncm_opts sizeof = 0x1c0
+[PASS] net = +0xb8
+[PASS] ncm_interf_group = +0xc8
+[PASS] mutex = +0x198
+[PASS] ct_attrs = +0x18 source ABI retained
+[PASS] NCM attribute: dev_addr
+[PASS] NCM attribute: host_addr
+[PASS] NCM attribute: qmult
+[PASS] NCM attribute: ifname
+[PASS] usb_function_driver allocation ABI retained
+[PASS] free callback source assignment
+[PASS] generic boundary casts centralized
+[FAIL] actual undefined symbols have __versions (UND=81, versions=72)
+[INFO] old import-set equality is informational (old UND=73, old __versions=74)
+[FAIL] actual kernel import CRCs match vendor map (64/74)
+[PASS] telemetry CRCs exact (7/7)
+[PASS] module_layout exact = 0x3a3eb6e9
+[PASS] ELF +0xb0 points to ncm_free_inst
+[PASS] ELF +0xa8 is NULL / no ncm_free_inst assignment
+[PASS] vermagic exact
+[PASS] telemetry dependency exact
+[PASS] no performance/datapath source changes
+RESULT=FAIL

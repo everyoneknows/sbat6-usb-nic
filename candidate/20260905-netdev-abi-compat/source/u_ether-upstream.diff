@@ -1,0 +1,122 @@
+--- /home/masataka/projects/sbair6-rce/work/build/linux-5.4.238-air6-upstream/drivers/usb/gadget/function/u_ether.c	2026-08-25 01:22:05.784019435 +0900
++++ /home/masataka/projects/sbat6-usbnet/source/u_ether.c	2026-09-04 21:02:48.350785014 +0900
+@@ -17,8 +17,85 @@
+ #include <linux/etherdevice.h>
+ #include <linux/ethtool.h>
+ #include <linux/if_vlan.h>
++#include <linux/ktime.h>
+ 
+ #include "u_ether.h"
++#include "sbat6_ncm_telemetry.h"
++
++#define SBAT6_TX_REQ_SLOTS 64
++
++struct sbat6_tx_req_stamp {
++	atomic_long_t key;
++	u64 queued_ns;
++	u64 completed_ns;
++};
++
++static struct sbat6_tx_req_stamp sbat6_tx_req_stamps[SBAT6_TX_REQ_SLOTS];
++
++static unsigned int sbat6_tx_req_hash(const struct usb_request *req)
++{
++	return ((unsigned long)req >> 4) & (SBAT6_TX_REQ_SLOTS - 1);
++}
++
++static struct sbat6_tx_req_stamp *sbat6_tx_req_slot(struct usb_request *req,
++							bool claim)
++{
++	unsigned int i, first = sbat6_tx_req_hash(req);
++
++	for (i = 0; i < SBAT6_TX_REQ_SLOTS; i++) {
++		struct sbat6_tx_req_stamp *slot =
++			&sbat6_tx_req_stamps[(first + i) & (SBAT6_TX_REQ_SLOTS - 1)];
++		unsigned long key = atomic_long_read(&slot->key);
++
++		if (key == (unsigned long)req)
++			return slot;
++		if (!key && claim &&
++		    atomic_long_cmpxchg(&slot->key, 0,
++					(unsigned long)req) == 0)
++			return slot;
++	}
++	return NULL;
++}
++
++static void sbat6_tx_req_queued(struct usb_request *req, u64 queued_ns)
++{
++	struct sbat6_tx_req_stamp *slot = sbat6_tx_req_slot(req, true);
++
++	if (slot)
++		WRITE_ONCE(slot->queued_ns, queued_ns);
++}
++
++static void sbat6_tx_req_unqueued(struct usb_request *req)
++{
++	struct sbat6_tx_req_stamp *slot = sbat6_tx_req_slot(req, false);
++
++	if (slot)
++		WRITE_ONCE(slot->queued_ns, 0);
++}
++
++static void sbat6_tx_req_completed(struct usb_request *req)
++{
++	struct sbat6_tx_req_stamp *slot = sbat6_tx_req_slot(req, false);
++	u64 now, queued, previous;
++	unsigned int latency_us = 0, gap_us = 0;
++
++	if (!slot) {
++		sbat6_ncm_tx_complete(0, 0, false);
++		return;
++	}
++
++	now = ktime_get_ns();
++	queued = READ_ONCE(slot->queued_ns);
++	previous = READ_ONCE(slot->completed_ns);
++	if (queued && now >= queued)
++		latency_us = min_t(u64, (now - queued) / NSEC_PER_USEC,
++				   (u64)UINT_MAX);
++	if (previous && now >= previous)
++		gap_us = min_t(u64, (now - previous) / NSEC_PER_USEC,
++				(u64)UINT_MAX);
++	WRITE_ONCE(slot->completed_ns, now);
++	sbat6_ncm_tx_complete(latency_us, gap_us, queued && now >= queued);
++}
+ 
+ 
+ /*
+@@ -257,6 +334,10 @@
+ 	struct eth_dev	*dev = ep->driver_data;
+ 	int		status = req->status;
+ 
++	/* Keep this at the completion entry point: no skb/request state is
++	 * retained by telemetry, and the call is only per completed request. */
++	sbat6_ncm_rx_complete(0);
++
+ 	switch (status) {
+ 
+ 	/* normal completion */
+@@ -441,6 +522,8 @@
+ 	struct sk_buff	*skb = req->context;
+ 	struct eth_dev	*dev = ep->driver_data;
+ 
++	sbat6_tx_req_completed(req);
++
+ 	switch (req->status) {
+ 	default:
+ 		dev->net->stats.tx_errors++;
+@@ -583,7 +666,12 @@
+ 
+ 	req->length = length;
+ 
++	sbat6_tx_req_queued(req, ktime_get_ns());
+ 	retval = usb_ep_queue(in, req, GFP_ATOMIC);
++	if (retval)
++		sbat6_tx_req_unqueued(req);
++	sbat6_ncm_tx_queue(retval == 0, false,
++			   (unsigned int)atomic_read(&dev->tx_qlen));
+ 	switch (retval) {
+ 	default:
+ 		DBG(dev, "tx queue err %d\n", retval);
+
