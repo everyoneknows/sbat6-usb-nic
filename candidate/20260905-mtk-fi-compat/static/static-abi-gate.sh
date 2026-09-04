@@ -33,9 +33,61 @@ has "$SRC/f_ncm.c" 'DECLARE_USB_FUNCTION_INIT(ncm, ncm_alloc_inst, ncm_alloc)' '
 has "$SRC/f_ncm.c" 'free_func_inst = ncm_free_inst' 'free callback source assignment'
 has "$SRC/f_ncm.c" 'to_sbat6_fi' 'generic boundary casts centralized'
 
+# Import validation is based on the final ELF, not on a retained modpost
+# input.  A layout/codegen change may legitimately change the import set.
+UND=$(mktemp)
+VERS=$(mktemp)
+MODCRC=$(mktemp)
+trap 'rm -f "$UND" "$VERS" "$MODCRC" ${DISASM:-}' EXIT
+aarch64-linux-gnu-nm -u "$KO" | sed -n 's/^ *U //p' | sort -u >"$UND"
+awk -F'"' '/\{ 0x[0-9a-fA-F]+, "/ { line=$1; sub(/^.*\{[[:space:]]*/,"",line); sub(/,[[:space:]]*$/, "", line); print tolower(line), $2 }' "$ROOT/source/usb_f_ncm.mod.c" | sort -u >"$MODCRC"
+awk '{ print $2 }' "$MODCRC" | sort -u >"$VERS"
+
+if [ "$(wc -l <"$UND")" -eq "$(wc -l <"$VERS")" ]; then
+  pass "actual undefined symbols have __versions ($(wc -l <"$UND")/$(wc -l <"$VERS"))"
+else
+  fail "actual undefined symbols have __versions (UND=$(wc -l <"$UND"), versions=$(wc -l <"$VERS"))"
+fi
+
+# Import-set equality with the old candidate is informational only.  The
+# mandatory condition is coverage of the imports actually present in this ELF.
+OLD_KO=${OLD_KO:-$ROOT/../../../sbat6-usbnet/source/usb_f_ncm.ko}
+old_und_count=$(aarch64-linux-gnu-nm -u "$OLD_KO" 2>/dev/null | sed -n 's/^ *U //p' | sort -u | wc -l)
+old_version_count=$(grep -c '".*" }' "$ROOT/../../../sbat6-usbnet/source/usb_f_ncm.mod.c" 2>/dev/null || true)
+printf '[INFO] old import-set equality is informational (old UND=%s, old __versions=%s)\n' "$old_und_count" "$old_version_count"
+
+if [ -f "$VENDOR_MAP" ] && [ -f "$TELEMETRY_MAP" ]; then
+  vendor_crc() { awk -v n="$1" '$2 == n { c=tolower($1); sub(/^0x0+/,"0x",c); print c; exit }' "$VENDOR_MAP"; }
+  telemetry_crc() { awk -v n="$1" '$2 == n { c=tolower($1); sub(/^0x0+/,"0x",c); print c; exit }' "$TELEMETRY_MAP"; }
+  kernel_total=0; kernel_match=0; telemetry_total=0; telemetry_match=0; missing=0
+  while IFS= read -r sym; do
+    case "$sym" in
+      sbat6_ncm_*)
+        telemetry_total=$((telemetry_total + 1))
+        crc=$(awk -v n="$sym" '$2 == n { c=$1; sub(/^0x0+/,"0x",c); print c; exit }' "$MODCRC" 2>/dev/null || true)
+        expected=$(telemetry_crc "$sym")
+        [ -n "$crc" ] && [ "$crc" = "$expected" ] && telemetry_match=$((telemetry_match + 1)) || missing=1
+        ;;
+      *)
+        kernel_total=$((kernel_total + 1))
+        crc=$(awk -v n="$sym" '$2 == n { c=$1; sub(/^0x0+/,"0x",c); print c; exit }' "$MODCRC" 2>/dev/null || true)
+        expected=$(vendor_crc "$sym")
+        [ -n "$crc" ] && [ "$crc" = "$expected" ] && kernel_match=$((kernel_match + 1)) || missing=1
+        ;;
+    esac
+  done <"$UND"
+  [ "$missing" -eq 0 ] && pass "actual kernel import CRCs match vendor map ($kernel_match/$kernel_total)" || fail "actual kernel import CRCs match vendor map ($kernel_match/$kernel_total)"
+  [ "$telemetry_match" -eq "$telemetry_total" ] && pass "telemetry CRCs exact ($telemetry_match/$telemetry_total)" || fail "telemetry CRCs exact ($telemetry_match/$telemetry_total)"
+else
+  fail 'vendor and telemetry CRC inputs present'
+fi
+
+grep -q '"module_layout"' "$ROOT/source/usb_f_ncm.mod.c" &&
+  awk '$2 == "module_layout" { exit (tolower($1) == "0x3a3eb6e9" ? 0 : 1) } END { if (NR == 0) exit 1 }' "$VENDOR_MAP" &&
+  pass 'module_layout exact = 0x3a3eb6e9' || fail 'module_layout exact = 0x3a3eb6e9'
+
 if command -v aarch64-linux-gnu-objdump >/dev/null 2>&1; then
   DISASM=$(mktemp)
-  trap 'rm -f "$DISASM"' EXIT
   aarch64-linux-gnu-objdump -dr "$KO" >"$DISASM"
   grep -A110 '<ncm_alloc_inst>:' "$DISASM" | grep -q 'str.*\[x19, #176\]' && pass 'ELF +0xb0 points to ncm_free_inst' || fail 'ELF +0xb0 points to ncm_free_inst'
   if grep -A110 '<ncm_alloc_inst>:' "$DISASM" | grep -q 'str.*\[x19, #168\]'; then
@@ -49,21 +101,6 @@ fi
 
 readelf -p .modinfo "$KO" | grep -q 'vermagic=5.4.238 SMP mod_unload modversions aarch64' && pass 'vermagic exact' || fail 'vermagic exact'
 readelf -p .modinfo "$KO" | grep -q 'depends=sbat6_ncm_telemetry' && pass 'telemetry dependency exact' || fail 'telemetry dependency exact'
-MODVERSIONS=${MODVERSIONS:-$ROOT/static/modversions.c.txt}
-if [ -f "$VENDOR_MAP" ] && [ -f "$TELEMETRY_MAP" ] && [ -f "$MODVERSIONS" ]; then
-  awk -v vendor="$VENDOR_MAP" -v telemetry="$TELEMETRY_MAP" '
-    function load(map,  l,n,a,c) {
-      while ((getline l < map) > 0) { n=split(l,a,/[[:space:]]+/); if (n >= 2) { c=tolower(a[1]); sub(/^0x0+/,"0x",c); v[a[2]]=c } }
-      close(map)
-    }
-    BEGIN { load(vendor); load(telemetry) }
-    /\{ 0x[0-9a-f]+, "/ { line=$0; sub(/^.*\{ /,"",line); split(line,a,/[, ]+/); c=tolower(a[1]); sub(/^0x0+/,"0x",c); split($0,q,/"/); if (!(q[2] in v) || c != v[q[2]]) bad=1 }
-    END { exit bad ? 1 : 0 }
-  ' "$MODVERSIONS" && pass 'required symbol CRCs exact' || fail 'required symbol CRCs exact'
-else
-  fail 'required symbol CRC inputs present'
-fi
-
 if diff -q "$SRC/u_ether.c" "$ROOT/../20260904/source/u_ether.c" >/dev/null 2>&1 &&
    diff -q "$SRC/sbat6_ncm_telemetry.h" "$ROOT/../20260904/source/sbat6_ncm_telemetry.h" >/dev/null 2>&1; then
   pass 'no performance/datapath source changes'

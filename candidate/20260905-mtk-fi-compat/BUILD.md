@@ -28,5 +28,11 @@ missing old imports are `__stack_chk_fail` and `kmem_cache_alloc_trace`.
 All 72 common CRCs are identical. The complete comparison is in
 `static/crc-74-compare.tsv`.
 
-RESULT remains FAIL. No deployable artifact was saved under `artifacts/`, and
-no T6A operation was performed.
+Direct final-ELF audit reports old `UND=73`, old `__versions=74`, new `UND=81`,
+and new `__versions=72`. `__stack_chk_fail` and `kmem_cache_alloc_trace` are
+absent from both new sets, but ten other actual kernel imports are absent from
+the new `__versions` set. Kernel CRC matching is 64/74 and telemetry matching
+is 7/7; `module_layout` is `0x3a3eb6e9`. The revised gate therefore remains
+`RESULT=FAIL`. The diagnostic ELF is retained under `artifacts/` with SHA256
+`c6f4b2d6fe0cff060be35aa9830c0479509b769b22ba94c23eae71151ed73bf5` for
+audit only. No T6A operation was performed.
