@@ -1,0 +1,11 @@
+
+String dump of section '.modinfo':
+  [     0]  author=Yauheni Kaliuta
+  [    17]  license=GPL
+  [    23]  alias=usbfunc:ncm
+  [    35]  author=David Brownell
+  [    4b]  license=GPL
+  [    57]  depends=sbat6_ncm_telemetry
+  [    73]  name=usb_f_ncm
+  [    82]  vermagic=5.4.238 SMP mod_unload modversions aarch64
+

@@ -1,0 +1,11 @@
+netdev_align 33
+off_addr_assign_type 639
+off_dev 1297
+off_dev_addr 793
+off_ethtool_ops 545
+off_features 209
+off_flags 569
+off_mtu 585
+off_netdev_ops 537
+off_netdev_priv 2241
+sz_net_device 2241

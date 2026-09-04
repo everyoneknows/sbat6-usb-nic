@@ -1,0 +1,69 @@
+--- /home/user/projects/sbair6-rce/work/build/linux-5.4.238-air6-upstream/drivers/usb/gadget/function/f_ncm.c	2026-08-25 01:22:05.780019443 +0900
++++ /home/user/projects/sbat6-usbnet/source/f_ncm.c	2026-09-04 18:31:26.077696697 +0900
+@@ -24,6 +24,7 @@
+ #include "u_ether_configfs.h"
+ #include "u_ncm.h"
+ #include "configfs.h"
++#include "sbat6_ncm_telemetry.h"
+ 
+ /*
+  * This function is a "CDC Network Control Model" (CDC NCM) Ethernet link.
+@@ -964,6 +965,7 @@
+ 	unsigned	ndp_pad;
+ 	unsigned	ndp_index;
+ 	unsigned	new_len;
++	unsigned	frames;
+ 
+ 	const struct ndp_parser_opts *opts = ncm->parser_opts;
+ 	const int ndp_align = le16_to_cpu(ntb_parameters.wNdpInAlignment);
+@@ -985,6 +987,7 @@
+ 	put_ncm(&ntb_iter, opts->ndp_index, ndp_index);
+ 
+ 	/* Set the final NDP wLength */
++	frames = ncm->ndp_dgram_count;
+ 	new_len = opts->ndp_size +
+ 			(ncm->ndp_dgram_count * dgram_idx_len);
+ 	ncm->ndp_dgram_count = 0;
+@@ -1010,6 +1013,8 @@
+ 
+ 	/* Insert zero'd datagram. */
+ 	skb_put_zero(skb2, dgram_idx_len);
++	sbat6_ncm_tx_ntb(skb2->len, ncm->port.fixed_in_len, frames,
++			 ncm->timer_force_tx, frames >= TX_MAX_NUM_DPE);
+ 
+ 	return skb2;
+ }
+@@ -1193,6 +1198,8 @@
+ 	const struct ndp_parser_opts *opts = ncm->parser_opts;
+ 	unsigned	crc_len = ncm->is_crc ? sizeof(uint32_t) : 0;
+ 	int		dgram_counter;
++	unsigned	total_datagrams = 0;
++	ktime_t	unwrap_start = ktime_get();
+ 
+ 	/* dwSignature */
+ 	if (get_unaligned_le32(tmp) != opts->nth_sign) {
+@@ -1335,17 +1342,23 @@
+ 			ndp_len -= 2 * (opts->dgram_item_len * 2);
+ 
+ 			dgram_counter++;
++			total_datagrams++;
+ 			if (index2 == 0 || dg_len2 == 0)
+ 				break;
+ 		} while (ndp_len > 2 * (opts->dgram_item_len * 2));
+ 	} while (ndp_index);
+ 
+ 	dev_consume_skb_any(skb);
++	sbat6_ncm_rx_ntb(block_len, total_datagrams);
++	sbat6_ncm_rx_unwrap(total_datagrams, total_datagrams,
++			    (unsigned int)(ktime_to_ns(ktime_sub(ktime_get(),
++									 unwrap_start)) / 1000));
+ 
+ 	VDBG(port->func.config->cdev,
+ 	     "Parsed NTB with %d frames\n", dgram_counter);
+ 	return 0;
+ err:
++	sbat6_ncm_rx_error(true, true, true);
+ 	skb_queue_purge(list);
+ 	dev_kfree_skb_any(skb);
+ 	return ret;
+
