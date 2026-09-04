@@ -1,0 +1,21 @@
+[PASS] rebuilt final ELF exists
+[PASS] rebuilt generated mod.c exists
+[PASS] extended vendor map exists
+[PASS] extended vendor map SHA256 exact
+[PASS] nm -u and readelf -Ws UND sets agree
+[PASS] module_layout version record present
+[PASS] actual UND == versioned imports excluding module_layout (UND=81, versions=82)
+[PASS] all actual kernel imports CRC exact (74/74)
+[PASS] all actual telemetry imports CRC exact (7/7)
+[PASS] module_layout exact = 0x3a3eb6e9
+[PASS] vermagic exact
+[PASS] net_device sizeof target 0x8c0 (probe raw 2241)
+[PASS] netdev_priv target 0x8c0 (probe raw 2241)
+[PASS] dev_addr target 0x318 (probe raw 793)
+[PASS] struct device base target 0x510 (probe raw 1297)
+[FAIL] gether_register_netdev dev_addr uses vendor offset 0x318
+[PASS] gether_register_netdev uses struct device base 0x510
+[PASS] usb_function_instance f +0xa0 source gate
+[PASS] usb_function_instance set_inst_name +0xa8 source gate
+[PASS] usb_function_instance free_func_inst +0xb0 source gate
+RESULT=FAIL
