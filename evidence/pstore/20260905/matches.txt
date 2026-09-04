@@ -1,0 +1,4 @@
+2731:[20691.587639]  (2)[26931:cat]Unable to handle kernel NULL pointer dereference at virtual address 0000000000000208
+2743:[20691.606353] -(2)[26931:cat]Internal error: Oops: 96000006 [#1] SMP
+2755:[20691.656492] -(2)[26931:cat]pc : __configfs_open_file.isra.0+0xb4/0x1b0
+2756:[20691.656495] -(2)[26931:cat]lr : __configfs_open_file.isra.0+0xa0/0x1b0
