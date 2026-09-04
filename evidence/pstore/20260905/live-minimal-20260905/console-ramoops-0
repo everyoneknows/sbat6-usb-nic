@@ -1,0 +1,1768 @@
+[    0.309674]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip conn_on pwr_on 
+[    0.329765]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip disp pwr_on 
+[    1.350781]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Failed to power on domain eth
+[    1.359989]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip medsys pwr_on 
+[    1.388013]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip hsm_top pwr_on 
+[    1.427474]  (1)[1:swapper/0]spmi spmi-0: node /spmi@12804000/md1_sim1_hot_plug_eint err (-22) does not have 'reg' property
+[    1.438656]  (1)[1:swapper/0]spmi spmi-0: node /spmi@12804000/md1_sim2_hot_plug_eint err (-22) does not have 'reg' property
+[    1.449801]  (1)[1:swapper/0]spmi spmi-0: node /spmi@12804000/md1_pmic1_eint err (-22) does not have 'reg' property
+[    1.578708]  (2)[1:swapper/0]SSPM: sspm_boot ok
+[    2.273802]  (1)[1:swapper/0]mtk-pcie 11290000.pcie: PCIe link down, ltssm reg val: 0x1
+[    2.456217]  (2)[1:swapper/0]mtk_eth_soc_overlay 15100000.ethernet_phy_adapt: eth_overlay_probe in
+[    2.913476]  (3)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@0/compatible
+[    2.927540]  (3)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@0/reg
+[    2.940864]  (3)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@0/phy-mode
+[    3.397932]  (1)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@1/compatible
+[    3.411878]  (1)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@1/reg
+[    3.425203]  (1)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@1/phy-mode
+[    3.542903]  (1)[1:swapper/0]mtk_soc_eth 15100000.ethernet: mtk_probe in
+[    3.551392]  (1)[1:swapper/0]mtk_soc_eth 15100000.ethernet: [PHY_CNT_GPIO] ql_phy_power_on Failed to request mac:0 phy_power gpio 17
+[    5.119922]  (1)[1:swapper/0]Kernel RAWDATA EMMC: can't open /dev/block/qraw
+[    5.127135]  (1)[1:swapper/0]mtk_soc_eth 15100000.ethernet: Rawdata Pop MAC1 address is invalid
+[    5.137144]  (1)[1:swapper/0]Kernel RAWDATA EMMC: can't open /dev/block/qraw
+[    5.144348]  (1)[1:swapper/0]mtk_soc_eth 15100000.ethernet: Rawdata Pop MAC0 address is invalid
+[    5.154231]  (1)[1:swapper/0](unnamed net_device) (dummy): netif_napi_add() called with weight 256
+[    5.163373]  (1)[1:swapper/0] ql_2p5g_phydev1: mac_id:0 addr:0  register attrs for adummy
+[    5.171601]  (1)[1:swapper/0]mtk_soc_eth 15100000.ethernet: mtk_probe: mtk_probe done
+[    5.182621]  (1)[1:swapper/0]mcupm c540000.mcupm: invalid resource
+[    5.188864]  (1)[1:swapper/0]MBOX 0 can't find init reg
+[    5.277924]  (1)[1:swapper/0]vsim1: invalid voltage constraints
+[    5.283898]  (1)[1:swapper/0]mt6361-regulator 12804000.spmi:mt6361@4:regulator: failed to register LDO25 regulator(-22)
+[    5.294854]  (1)[1:swapper/0]vsim2: invalid voltage constraints
+[    5.300781]  (1)[1:swapper/0]mt6361-regulator 12804000.spmi:mt6361@4:regulator: failed to register LDO26 regulator(-22)
+[    5.998479]  (3)[1:swapper/0]mtu3 11201000.usb: clks of sts1 are not stable!
+[    6.011856]  (3)[1:swapper/0]no file given for LUN0
+[    6.016817]  (3)[1:swapper/0]udc 11201000.usb: failed to start g_mass_storage: -22
+[    6.048547]  (3)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.057072]  (3)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.063068]  (3)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.071577]  (3)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.077593]  (3)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.086102]  (3)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.092096]  (3)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.100606]  (3)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.106619]  (3)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.115128]  (3)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.120872]  (3)[1:swapper/0]bmp380 chip id mismatch,exit probe!
+[    6.126899]  (3)[1:swapper/0]bmp380_probe fail!
+[    6.134878]  (3)[1:swapper/0]i2c i2c-3: Failed to register i2c client slave_charger at 0x5b (-16)
+[    6.143798]  (3)[1:swapper/0]i2c i2c-3: of_i2c: Failure registering /i2c@11ed1000/slave_charger@5b
+[    6.152757]  (3)[1:swapper/0]i2c i2c-3: Failed to create I2C device for /i2c@11ed1000/slave_charger@5b
+[    6.162355]  (3)[1:swapper/0]i2c i2c-3: Failed to register i2c client mhl_switch at 0x28 (-16)
+[    6.170997]  (3)[1:swapper/0]i2c i2c-3: of_i2c: Failure registering /i2c@11ed1000/mhl_switch@28
+[    6.179714]  (3)[1:swapper/0]i2c i2c-3: Failed to create I2C device for /i2c@11ed1000/mhl_switch@28
+[    8.274026]  (3)[1:swapper/0]mtk-msdc 11230000.mmc: Unsupported signal voltage!
+[    8.293817]  (3)[1:swapper/0]mtk-msdc 11230000.mmc: host->mclk:0, ios->clock:400000, host->timing:0,ios->timing:0
+[    8.653904]  (3)[1:swapper/0]mtk-msdc 11240000.mmc: host->mclk:0, ios->clock:400000, host->timing:0,ios->timing:0
+[    8.682920]  (3)[41:kworker/3:1]mtk-msdc 11240000.mmc: host->mclk:400000, ios->clock:0, host->timing:0,ios->timing:0
+[    8.693468]  (3)[41:kworker/3:1]mtk-msdc 11240000.mmc: set mclk to 0
+[    8.711629]  (1)[1:swapper/0]proslic_spi spi3.0: mtk_ext_spi_probe()
+[    8.718496]  (2)[1:swapper/0]proslic_spi2 spi0.0: mtk_ext_spi_probe()
+[    8.731881]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_enable_clock()
+[    8.734007]  (3)[1652:kworker/3:2]mtk-msdc 11230000.mmc: host->mclk:400000, ios->clock:400000, host->timing:0,ios->timing:9
+[    8.740413]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_runtime_resume()
+[    8.751784]  (3)[1652:kworker/3:2]mtk-msdc 11230000.mmc: host->mclk:400000, ios->clock:200000000, host->timing:9,ios->timing:9
+[    8.772667]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_runtime_suspend()
+[    8.784919]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_pcm_dev_probe()line 4184
+[    8.795953]  (2)[1:swapper/0]debugfs: Directory '11210000.mt6990-afe-pcm' with parent 'mt6990-slic' already present!
+[    8.807552]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: Control not supported for path ETDM_PCM0_MUX -> [PCM] -> ETDM Capture
+[    8.819824]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: Failed to add route ETDM_PCM0_MUX -> PCM -> ETDM Capture
+[    8.831474]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: Control not supported for path ETDM_PCM1_MUX -> [PCM] -> ETDM Capture
+[    8.843744]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: Failed to add route ETDM_PCM1_MUX -> PCM -> ETDM Capture
+[    8.855570]  (3)[1652:kworker/3:2]mtk-msdc 11230000.mmc: host->mclk:200000000, ios->clock:200000000, host->timing:9,ios->timing:1
+[    8.856230]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: no source widget found for AP_DMIC_CH34_EN
+[    8.868305]  (3)[1652:kworker/3:2]mtk-msdc 11230000.mmc: host->mclk:200000000, ios->clock:52000000, host->timing:1,ios->timing:1
+[    8.877656]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: Failed to add route AP_DMIC_CH34_EN -> direct -> AP DMIC CH34 Capture
+[    8.889480]  (3)[1652:kworker/3:2]mtk-msdc 11230000.mmc: host->mclk:52000000, ios->clock:52000000, host->timing:1,ios->timing:10
+[    8.905963]  (2)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_add_misc_control()
+[    8.913585]  (3)[1652:kworker/3:2]mtk-msdc 11230000.mmc: host->mclk:52000000, ios->clock:200000000, host->timing:10,ios->timing:10
+[    8.943198]  (3)[1652:kworker/3:2]mtk-msdc 11230000.mmc: host->mclk:200000000, ios->clock:160000000, host->timing:10,ios->timing:10
+[    8.956819]  (2)[1:swapper/0][MEDMCU] core_0 enable
+[    8.997356]  (1)[37:kworker/1:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=0, o_vts = 0x602
+[    9.006344]  (1)[37:kworker/1:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=1, o_vts = 0x602
+[    9.015448]  (1)[37:kworker/1:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=2, o_vts = 0x602
+[    9.024405]  (1)[37:kworker/1:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=3, o_vts = 0x602
+[    9.049205]  (1)[1:swapper/0]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.057560]  (1)[1:swapper/0]gpio-keys gpio-keys: Button without wakeup-event-action
+[    9.065337]  (1)[1:swapper/0]gpio-keys gpio-keys: Button without wakeup-event-action
+[    9.073086]  (1)[1:swapper/0]gpio-keys gpio-keys: Button without wakeup-event-action
+[    9.149381]  (1)[1861:kworker/1:2]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.158457]  (2)[73:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.166627]  (2)[73:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.174748]  (2)[73:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.182888]  (2)[73:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.191023]  (2)[73:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.200451]  (0)[67:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.214932]  (1)[37:kworker/1:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.833325]  (2)[1912:kmodloader]conninfra@(platform_request_firmware:530) failed to open or read!(conninfra.cfg)
+[    9.843635]  (2)[1912:kmodloader]conninfra@(conninfra_conf_init:584) read conninfra.cfg file fails (only check file existence, this is ok)
+[    9.861870]  (2)[1912:kmodloader][clkbuf] [consys_hw_tcxo_parser]:645: Fail to get conninfra pinctrl
+[    9.872623]  (2)[73:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.888172]  (0)[67:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   13.039271]  (1)[2621:ccci_fsd]ccci_fsd: fsd_dump_init: create fsd_dump[0x168d6020/0xfff] with ret=0
+[   13.039511]  (1)[2621:ccci_fsd]ccci_fsd: ccci_fsd/md_fsd Ver:v2.1, CCCI Ver:6, ppid=1, pid=2621
+[   13.057854]  (1)[2621:ccci_fsd]ccci_fsd: dev_node=/dev/ccci_fs stream_support=1 DBG_LV=0[E/W/I/D/V] PF=1
+[   13.124876]  (3)[2672:ccci_mdinit]ccci_mdinit: md_init ver:2.12
+[   13.134426]  (1)[2672:ccci_mdinit]ccci_mdinit: Open ipc port 2 fail
+[   13.143486]  (1)[2672:ccci_mdinit]ccci_mdinit: Open md_log_config file failed, errno=2!
+[   13.153386]  (1)[2672:ccci_mdinit]ccci_mdinit: get_aee_off_fast_reboot_enable: aee_off_fast_reboot_enable not exist, using default value
+[   13.167417]  (1)[2672:ccci_mdinit]ccci_mdinit: modem state 0
+[   13.205176]  (1)[2747:ccci_rpcd_com]ccci_rpcd_com: ccci_rpcd Ver:v2.00, CCCI Ver:6 
+[   13.213048]  (1)[2747:ccci_rpcd_com]ccci_rpcd_com: main:dev_node=/dev/ccci_rpc,devicefd= 3
+[   13.566248]  (1)[2621:ccci_fsd]ccci_fsd: can't catch SIGKILL
+[   13.657673]  (2)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open X:/nv_config /mnt/vendor/protect_f/md/nv_config :2 (0x0)
+[   13.669223]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.687205]  (2)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open Z:/FATDC4230CE.log /mnt/vendor/nvdata/md/FATDC4230CE.log :2 (0x0)
+[   13.699083]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.723758]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open Z:/NVRA56C1012.log /mnt/vendor/nvdata/md/NVRA56C1012.log :2 (0x0)
+[   13.735984]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.741234]  (3)[2621:ccci_fsd]ccci_fsd: cmpt_Read, open fail
+[   13.758083]  (1)[2621:ccci_fsd]ccci_fsd: CreateDir: [error]fail create Dir /mnt/vendor/mdota: 17 
+[   13.767397]  (1)[2621:ccci_fsd]ccci_fsd: Error_code=17
+[   13.807546]  (1)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/MTK_RAWOTA_DEFAULT.mcfrawota, error=2
+[   13.819739]  (1)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.825958]  (1)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/MTK_RAWOTA_DEFAULT.mcfrawota, error=2
+[   13.838700]  (1)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.845428]  (1)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/MTK_RAWOTA_DEFAULT.mcfrawota, error=2
+[   13.858670]  (1)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.864073]  (2)[2747:ccci_rpcd_com]ccci_rpcd_com: Main: IPC_RPC_SAR_TABLE_IDX_QUERY_OP:mtk_sar_table_id_get fail
+[   13.876035]  (1)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_GSM.mcfrawota, error=2
+[   13.888985]  (1)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.894529]  (1)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_GSM.mcfrawota, error=2
+[   13.908112]  (1)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.913478]  (1)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_GSM.mcfrawota, error=2
+[   13.927549]  (1)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.932986]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_WCDMA.mcfrawota, error=2
+[   13.946131]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.951555]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_WCDMA.mcfrawota, error=2
+[   13.965379]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.970874]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_WCDMA.mcfrawota, error=2
+[   13.985104]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   13.990523]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set1_LTE.mcfrawota, error=2
+[   14.003587]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.009081]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set1_LTE.mcfrawota, error=2
+[   14.022660]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.028119]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set1_LTE.mcfrawota, error=2
+[   14.042195]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.047705]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_C2K.mcfrawota, error=2
+[   14.060580]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.066060]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_C2K.mcfrawota, error=2
+[   14.079626]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.085030]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_C2K.mcfrawota, error=2
+[   14.099047]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.104443]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set1_NR_FR1.mcfrawota, error=2
+[   14.117640]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.123003]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set1_NR_FR1.mcfrawota, error=2
+[   14.136847]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.142302]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set1_NR_FR1.mcfrawota, error=2
+[   14.156568]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.162007]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_NR_FR2.mcfrawota, error=2
+[   14.175158]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.180516]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_NR_FR2.mcfrawota, error=2
+[   14.194346]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.199796]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_NR_FR2.mcfrawota, error=2
+[   14.214072]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.219465]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_MMRF.mcfrawota, error=2
+[   14.232486]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.237945]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_MMRF.mcfrawota, error=2
+[   14.251639]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.257079]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_MMRF.mcfrawota, error=2
+[   14.271196]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.276604]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_NR_FR2_ULBM_Beambook_Set0.mcfrawota, error=2
+[   14.290113]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.295523]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_NR_FR2_ULBM_Beambook_Set0.mcfrawota, error=2
+[   14.309737]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.315132]  (2)[2621:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_NR_FR2_ULBM_Beambook_Set0.mcfrawota, error=2
+[   14.329742]  (2)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.339755]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OTA.mcfota /mnt/vendor/mdota/MTK_OTA.mcfota :2 (0x0)
+[   14.351572]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.377581]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open T:/mtk_default/MTK_OPOTA_SBPID_0.mcfopota /mnt/vendor/mdota2/mtk_default/MTK_OPOTA_SBPID_0.mcfopota :2 (0x0)
+[   14.393102]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.398547]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open T:/custom/MTK_OPOTA_SBPID_0.mcfopota /mnt/vendor/mdota2/custom/MTK_OPOTA_SBPID_0.mcfopota :2 (0x0)
+[   14.413196]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.418715]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_SBPID_0.mcfopota /mnt/vendor/mdota/MTK_OPOTA_SBPID_0.mcfopota :2 (0x0)
+[   14.432671]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.438191]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open T:/mtk_default/MTK_OPOTA_GENERAL.mcfopota /mnt/vendor/mdota2/mtk_default/MTK_OPOTA_GENERAL.mcfopota :2 (0x0)
+[   14.453781]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.462776]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_GENERAL.mcfopota /mnt/vendor/mdota/MTK_OPOTA_GENERAL.mcfopota :2 (0x0)
+[   14.476629]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.495807]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open T:/custom/MTK_OPOTA_SBPID_129.mcfopota /mnt/vendor/mdota2/custom/MTK_OPOTA_SBPID_129.mcfopota :2 (0x0)
+[   14.510809]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.516222]  (3)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_SBPID_129.mcfopota /mnt/vendor/mdota/MTK_OPOTA_SBPID_129.mcfopota :2 (0x0)
+[   14.530425]  (3)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.558868]  (0)[2621:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_SBPID_50.mcfopota /mnt/vendor/mdota/MTK_OPOTA_SBPID_50.mcfopota :2 (0x0)
+[   14.573052]  (0)[2621:ccci_fsd]ccci_fsd: Error_code=2
+[   14.728656]  (2)[2621:ccci_fsd]ccci_fsd: GetDrive: [error]type not FS_DRIVE_I_SYSTEM: 0x8 
+[   14.795402]  (3)[2912:ccci_rpcd_com]ccci_rpcd_com: md status is: MD_STA_EV_READY, close(g_drdi_fd)
+[   14.804818]  (3)[2912:ccci_rpcd_com]ccci_rpcd_com: MD ready md_state_polling_thread stop
+[   14.806296]  (1)[2621:ccci_fsd]ccci_fsd: Error, can't use relative path for security: ..
+[   14.830377]  (1)[2621:ccci_fsd]ccci_fsd: FindNext: [error]no more files...
+[   14.849988]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   14.889357]  (0)[67:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   14.935447]  (3)[2621:ccci_fsd]ccci_fsd: Error, can't use relative path for security: ..
+[   14.948144]  (3)[2621:ccci_fsd]ccci_fsd: FindNext: [error]no more files...
+[   15.809548] WiFi@ERROR.CFG,get_dbg_setting_by_profile() 4213: debug level setting=INDEX0_debug_level not found!!
+[   15.819772] WiFi@ERROR.CFG,get_dbg_setting_by_profile() 4238: debug option setting=INDEX0_debug_option not found!!
+[   15.830143] WiFi@ERROR.MLO,bss_mngr_con_init() 3042: bss_mngr_con_init: inited = 0
+[   15.837722] WiFi@ERROR.MLO,bss_idx_bitmap_init() 88: bss_idx_bitmap_init: map_size=12
+[   15.845554] WiFi@ERROR.MLO,mld_grp_bitmap_init() 209: : map_size=12
+[   15.851835] WiFi@ERROR.MLO,bss_mngr_ext_entry_init() 3023: bss(64), grp(65)
+[   16.097350]  (2)[21:kworker/2:0]mtk-extcon-usb extcon_usb: failed to get vbus
+[   16.113689]  (0)[3224:kmodloader]2.31 U_ETHER LOG,gether_init, 
+[   16.119645]  (0)[3224:kmodloader]2.31 U_ETHER LOG,gether_init, MTK_USB_NET_HWNAT_SUPPORT
+[   16.753192] WiFi@ERROR.CFG,llget_profile_setting() 2167: value of INDEX0_EEPROM_def_bin_path not found
+[   16.767355] WiFi@ERROR.RSV,CFG80211_RegNotifier() 14675: crda> requlation requestion by core: WiFi@ERROR.RSV,CFG80211_RegNotifier() 14709: 00
+[   16.780115] WiFi@ERROR.RSV,CFG80211_Register() 14616: 80211> end
+[   16.800811] WiFi@ERROR.RSV,CFG80211_RegNotifier() 14675: crda> requlation requestion by core: WiFi@ERROR.RSV,CFG80211_RegNotifier() 14709: 00
+[   16.813584] WiFi@ERROR.RSV,CFG80211_Register() 14616: 80211> end
+[   16.832979] WiFi@ERROR.RSV,CFG80211_RegNotifier() 14675: crda> requlation requestion by core: WiFi@ERROR.RSV,CFG80211_RegNotifier() 14709: 00
+[   16.845760] WiFi@ERROR.RSV,CFG80211_Register() 14616: 80211> end
+[   16.853571]  (0)[67:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   16.862987]  (0)[67:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   22.225324]  (2)[9820:sh]mtu3 11201000.usb: clks of sts1 are not stable!
+[   22.840322]  (0)[10528:mkdir]1.01 RNDIS LOG,rndis_alloc_inst,
+[   22.846156]  (0)[10528:mkdir]gether_setup_name_default - dev->qmult:30, qmult:30
+[   22.859577]  (0)[10549:mkdir]1.00 ECM LOG,ecm_alloc_inst,
+[   22.865120]  (0)[10549:mkdir]gether_setup_name_default - dev->qmult:30, qmult:30
+[   22.877947]  (1)[10570:mkdir]1.01 NCM LOG, ncm_alloc_inst, 
+[   22.883549]  (1)[10570:mkdir]gether_setup_name_default - dev->qmult:30, qmult:30
+[   23.297789]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_open: in mac[1]
+[   23.305308]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_open: mtk_open refcount  0
+[   23.313653]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_open: netdev_uses_dsa NOT in mac[1]
+[   23.322891]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_dma_init: mtk_dma_init in
+[   23.331185]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_init_fq_dma: eth->scratch_ring no sram
+[   23.342124]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: ana_rgc3= 128 val =14017 speed:2500
+[   23.350965]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2: v2 in
+[   23.358901]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2:SGMSYS_QPHY_PWR_STATE_CTRL 0
+[   23.370008]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: [1] 0x128= 14017 0x020 = 31120009 PCS_control 0x000 = 140
+[   23.380721]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_mac_config: mac[1] MAC_MCR: 4833b
+[   23.389694]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: 10b0ea8e id: 1
+[   23.396715]  (3)[456:kworker/u8:3]mtk_soc_eth 15100000.ethernet: ana_rgc3= 128 val =14017 speed:2500
+[   23.405980]  (3)[456:kworker/u8:3]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2: v2 in
+[   23.414257]  (3)[456:kworker/u8:3]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2:SGMSYS_QPHY_PWR_STATE_CTRL 0
+[   23.415509]  (3)[456:kworker/u8:3]mtk_soc_eth 15100000.ethernet: [1] 0x128= 14017 0x020 = 31120009 PCS_control 0x000 = 140
+[   23.435488]  (3)[456:kworker/u8:3]mtk_soc_eth 15100000.ethernet: mtk_pse_port_link_set: mac[1] fe_glo_cfg = 810000b0
+[   23.435494]  (3)[456:kworker/u8:3]mtk_soc_eth 15100000.ethernet: mtk_mac_link_up: mac[1] mcr = 0x104e33b speed:2500 duplex:1 tx_pause:1 rx_pause:1
+[   27.598460]  (2)[16440:aee_aed] mrdump_worker sched_setscheduler fail
+[   27.607466]  (2)[16440:aee_aed] ipanic_dumchar_open:  MTD_MEMGETINFO failed(22), Invalid argument
+[   27.668553]  (2)[16440:aee_aed] setcolor ioctl failed(Invalid argument)
+[   27.713660]  (2)[16440:aee_aed] aed_reboot_session: SYS_KERNEL_LOG_RAW!
+[   27.713683]  (2)[16440:aee_aed] aed_reboot_session: offset is 0!
+[   27.720412]  (2)[16440:aee_aed] aed_reboot_session: offset is invalid, keep kernel log as raw
+[   28.070982]  (3)[16440:aee_aed] copy_file: Copy /dev/block/sspm_1 to SYS_SSPM_XFILE_BLOCK failed(2), No such file or directory
+[   28.071027]  (3)[16832:aee_aed] copy_file: Copy /dev/block/sspm_2 to SYS_SSPM_XFILE_BLOCK failed(2), No such file or directory
+[   28.129537]  (3)[16440:aee_aed] Could not open /proc/chip/info:No such file or directory
+[   28.709516]  (1)[17036:aee_aed] copy_process: execvp ksyms-query failed(2), No such file or directory
+[   28.733077]  (3)[16440:aee_aed] MRDUMP: processing file copy...
+[   28.881242]  (3)[16440:aee_aed] copy_file: Copy /data/log/messages to SYS_VAR_LOG failed(2), No such file or directory
+[   29.024608] WiFi@ERROR.CFG,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   29.035964] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   29.184166] WiFi@ERROR.CFG,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   29.193458] 7990@ERROR.CFG,rai0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   29.322260] WiFi@ERROR.CFG,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   29.333002] 7990@ERROR.CFG,rax0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   29.456455] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   29.474080] 7990@ERROR.CFG,rai0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   29.483927] 7990@ERROR.CFG,rax0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   29.687795]  (3)[16440:aee_aed] setcolor ioctl failed
+[   29.688012]  (3)[16440:aee_aed] show DAL failed: Invalid argument
+[   30.728397]  (0)[16440:aee_aed] Open /dev/ccci_hsapif_minidump fail, error: 2(No such file or directory)
+[   32.258667] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra0
+[   32.274386] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra0
+[   32.338088] 7990@ERROR.CFG,ra0,RTMPWirelessModeCfg() 500: Init: BSS0 PhyMode=78
+[   32.345960] 7990@ERROR.CFG,ra0,RTMPWirelessModeCfg() 500: Init: BSS1 PhyMode=78
+[   32.353273] 7990@ERROR.CFG,ra0,RTMPWirelessModeCfg() 500: Init: BSS2 PhyMode=78
+[   32.371282] 7990@ERROR.AP,ra0,rtmp_read_wds_from_file() 1335: invalid input(=0;0;0)
+[   32.389110] 7990@ERROR.SEC,ra0,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=0, Desired MFPC=1
+[   32.397226] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=1, Desired MFPC=1
+[   32.405014] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=2, Desired MFPC=1
+[   32.415014] WiFi@ERROR.SEC,Set_ApCliPMFMFPC_Proc() 2589: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   32.423177] WiFi@ERROR.SEC,Set_ApCliPMFMFPR_Proc() 2653: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   32.431433] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1380: APCLI[0] ApCliMuMimoDlEnable = 0
+[   32.440349] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1399: APCLI[0] ApCliMuMimoUlEnable = 0
+[   32.666973]  (0)[67:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   32.796184]  (0)[67:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   33.047935]  (0)[5188:hostapd]mt7990 0000:01:00.0: HW/SW Version: 0x8a108a10, Build Time: 20230704161925a
+[   33.047935] 
+[   33.236946]  (0)[5188:hostapd]mt7990 0000:01:00.0: -->dsp_start
+[   33.258479]  (0)[5188:hostapd]mt7990 0000:01:00.0: DSP Firmware Version: ____000000, Build Time: 20231113135337
+[   33.268637]  (0)[5188:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:57936, addr:0x86000000
+[   33.307112]  (0)[5188:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:5840, addr:0x86200000
+[   33.345345]  (0)[5188:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:57936, addr:0x86400000
+[   33.373939]  (0)[5188:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:5840, addr:0x86600000
+[   33.405075]  (0)[5188:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:57936, addr:0x86800000
+[   33.423951]  (3)[5188:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:5840, addr:0x86a00000
+[   33.463857]  (3)[5188:hostapd]mt7990 0000:01:00.0: <--mcu_dsp_fwdl_done
+[   54.233913] WiFi@ERROR.FW,UniCmdResultToRsp() 50: id=0x2d,eid=0x0 cmd timeout
+[   54.241068] WiFi@ERROR.HIF,hwifi_mcu_tx() 1241: send cmd fail! ret -110
+[   54.247778] WiFi@ERROR.HW,antenna_default_reset() 1373: value = 0x25, TxPath = 4, RxPath = 4
+[   54.845512] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   55.573910] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4160: [RDM]: wdev is not 5G.
+[   55.581746] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   55.647983] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(1) DoCAL(0) Band(1)---------------------
+[   55.659689] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT1
+[   55.996044] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   56.004592] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4160: [RDM]: wdev is not 5G.
+[   56.061890] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   56.069059] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   56.078230] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[   56.087296] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [0]
+[   56.092975] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[   56.101006] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[   56.111064] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   56.123828] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805bfd2000(bss_idx_tx = 0) (dev_cnt = 1)
+[   56.134286] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[   56.146119] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   56.153087] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   56.164630] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 0, tx_pwr_sku_en: 0
+[   56.182907] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 0, fgTxBFBackoffEn: 0
+[   56.234631] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 0, fgTxPowerPercentEn: 0
+[   56.265940] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 0, cPowerDropLevel: 0
+[   56.324448] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   56.394590] 7990@ERROR.CFG,ra0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   56.402255] 7990@ERROR.AP,ra0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   56.660740] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   56.668142] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   56.677323] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[   56.686409] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[   56.694439] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[   56.704423] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805bfd2000(bss_idx_tx = 0) (dev_cnt = 1)
+[   56.714919] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[   57.226439] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apcli0
+[   58.005514] WiFi@ERROR.RSV,CFG80211_OpsVirtualInfAdd() 3609: pDev ra2 existed
+[   58.013937] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   58.027160] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   58.134481] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   58.142925] 7990@ERROR.CFG80211,ra0,DfsBuildChannelList() 4160: [RDM]: wdev is not 5G.
+[   58.213363] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   58.220528] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   58.229683] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(40) (ra2)
+[   58.238737] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [1]
+[   58.244422] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [1]
+[   58.252428] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra2) is not in any mld, (grp_idx:0)
+[   58.262459] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   58.275597] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805bfd7000(bss_idx_tx = 1) (dev_cnt = 2)
+[   58.286232] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[   58.664317] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 0, tx_pwr_sku_en: 0
+[   58.715050] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 0, fgTxBFBackoffEn: 0
+[   58.725230] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 0, fgTxPowerPercentEn: 0
+[   58.764015] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 0, cPowerDropLevel: 0
+[   58.823413] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   58.845300] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra2
+[   58.856833] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra2
+[   58.944123] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra2
+[   58.995202] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra2
+[   59.063127] 7990@ERROR.CFG,ra0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   59.123954] 7990@ERROR.AP,ra0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   59.400975] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   59.408147] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   59.417321] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(40) (ra2)
+[   59.426413] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [1]
+[   59.434437] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra2) is not in any mld, (grp_idx:0)
+[   59.444423] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805bfd7000(bss_idx_tx = 1) (dev_cnt = 2)
+[   59.454889] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[   59.767451] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai0
+[   59.813898] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rai0
+[   59.905894] 7990@ERROR.CFG,rai0,RTMPWirelessModeCfg() 500: Init: BSS0 PhyMode=1201
+[   59.913466] 7990@ERROR.CFG,rai0,RTMPWirelessModeCfg() 500: Init: BSS1 PhyMode=1201
+[   59.921094] 7990@ERROR.CFG,rai0,RTMPWirelessModeCfg() 500: Init: BSS2 PhyMode=1201
+[   59.939268] 7990@ERROR.AP,rai0,rtmp_read_wds_from_file() 1335: invalid input(=0;0;0)
+[   59.957154] 7990@ERROR.SEC,rai0,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=0, Desired MFPC=1
+[   59.965337] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=1, Desired MFPC=1
+[   59.973071] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=2, Desired MFPC=1
+[   59.983054] WiFi@ERROR.SEC,Set_ApCliPMFMFPC_Proc() 2589: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   59.991232] WiFi@ERROR.SEC,Set_ApCliPMFMFPR_Proc() 2653: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   59.999459] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1380: APCLI[0] ApCliMuMimoDlEnable = 0
+[   60.008358] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1399: APCLI[0] ApCliMuMimoUlEnable = 0
+[   60.392126] WiFi@ERROR.HW,antenna_default_reset() 1373: value = 0x24, TxPath = 4, RxPath = 4
+[   60.424934] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   61.129084] WiFi@ERROR.CFG80211,DfsAdjustOpBwSetting() 6714: [Phil]: CurrentBw: 3, NewBw 2
+[   61.137428] WiFi@ERROR.CFG80211,Set_Zwdfs_Proc() 3416: DFS ch 52 is set, use non-DFS ch 36
+[   61.145971] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   61.158797] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   61.254968] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(11) DoCAL(0) Band(2)---------------------
+[   61.266754] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT2
+[   61.735644] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   61.745563] WiFi@ERROR.MLO,mld_grp_aquire() 197: mld_grp [17]
+[   61.800808] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   61.807964] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   61.817126] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[   61.826273] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [2]
+[   61.831957] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[   61.840240] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   61.853051] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805b8db000(bss_idx_tx = 2) (dev_cnt = 3)
+[   61.866825] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   61.873841] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   62.163773] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 1, tx_pwr_sku_en: 0
+[   62.203785] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 1, fgTxBFBackoffEn: 0
+[   62.224402] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 1, fgTxPowerPercentEn: 0
+[   62.259703] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 1, cPowerDropLevel: 0
+[   62.332231] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   62.414949] WiFi@ERROR.CFG,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   62.422359] WiFi@ERROR.AP,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   62.681967] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   62.689151] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   62.698338] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[   62.707530] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[   62.715558] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai0) has already affiliated with mld_grp(17)
+[   62.726435] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805b8db000(bss_idx_tx = 2) (dev_cnt = 3)
+[   63.087115] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apclii0
+[   63.832189] WiFi@ERROR.RSV,CFG80211_OpsVirtualInfAdd() 3609: pDev rai2 existed
+[   63.841376] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   63.854647] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   63.867961] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   63.881265] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   64.095614] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   64.184016] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   64.191157] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   64.200341] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(43) (rai2)
+[   64.209505] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [3]
+[   64.215227] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [3]
+[   64.223505] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   64.236783] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff80530a3000(bss_idx_tx = 3) (dev_cnt = 4)
+[   64.363824] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 1, tx_pwr_sku_en: 0
+[   64.384260] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 1, fgTxBFBackoffEn: 0
+[   64.403826] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 1, fgTxPowerPercentEn: 0
+[   64.423792] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 1, cPowerDropLevel: 0
+[   64.458413] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   64.477557] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai2
+[   64.506000] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai2
+[   64.534870] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rai2
+[   64.579755] 7990@ERROR.CFG,rai2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   64.590595] 7990@ERROR.AP,rai2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   64.854034] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   64.861203] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   64.870464] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(43) (rai2)
+[   64.879668] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [3]
+[   64.887718] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai2) has already affiliated with mld_grp(2)
+[   64.898557] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff80530a3000(bss_idx_tx = 3) (dev_cnt = 4)
+[   65.128280] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rax0
+[   65.174985] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rax0
+[   65.275956] 7990@ERROR.CFG,rax0,RTMPWirelessModeCfg() 500: Init: BSS0 PhyMode=2480
+[   65.283534] 7990@ERROR.CFG,rax0,RTMPWirelessModeCfg() 500: Init: BSS1 PhyMode=2480
+[   65.291196] 7990@ERROR.CFG,rax0,RTMPWirelessModeCfg() 500: Init: BSS2 PhyMode=2480
+[   65.309537] 7990@ERROR.AP,rax0,rtmp_read_wds_from_file() 1335: invalid input(=0;0;0)
+[   65.327602] 7990@ERROR.SEC,rax0,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=0, Desired MFPC=1
+[   65.335795] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=1, Desired MFPC=1
+[   65.343532] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=2, Desired MFPC=1
+[   65.353565] WiFi@ERROR.SEC,Set_ApCliPMFMFPC_Proc() 2589: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   65.361760] WiFi@ERROR.SEC,Set_ApCliPMFMFPR_Proc() 2653: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   65.370012] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1380: APCLI[0] ApCliMuMimoDlEnable = 0
+[   65.378923] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1399: APCLI[0] ApCliMuMimoUlEnable = 0
+[   65.474554] WiFi@ERROR.HW,antenna_default_reset() 1373: value = 0x24, TxPath = 4, RxPath = 5
+[   65.504303] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   66.235135] WiFi@ERROR.PROTO,afc_init() 3759: : AFC Init Settings
+[   66.241252] WiFi@ERROR.PROTO,afc_check_pre_cond() 3561: Country Code is JP 
+[   66.248276] WiFi@ERROR.PROTO,afc_check_pre_cond() 3567: CountryRegion is 2
+[   66.255166] WiFi@ERROR.PROTO,afc_check_pre_cond() 3574: Device is not standard power
+[   66.262902] WiFi@ERROR.PROTO,afc_check_pre_cond() 3579: : u1Status = 0
+[   66.269438] WiFi@ERROR.PROTO,afc_update_state_to_disable() 3635: : Update state to AFC_DISABLE
+[   66.278623] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4155: [DfsBuildChannelList]: wdev is 6G
+[   66.287192] WiFi@ERROR.CFG80211,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[   66.295111] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   66.307935] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   66.556203] WiFi@ERROR.PROTO,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   66.573825] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   66.586029] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   67.766467] WiFi@ERROR.PROTO,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   67.775895] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   67.787676] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   67.905850] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   67.914320] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4155: [DfsBuildChannelList]: wdev is 6G
+[   67.923334] WiFi@ERROR.MLO,mld_grp_aquire() 197: mld_grp [18]
+[   67.978238] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   67.985424] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(34) (rax0)
+[   67.994572] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [4]
+[   68.000259] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [4]
+[   68.008558] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   68.021390] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8052563000(bss_idx_tx = 4) (dev_cnt = 5)
+[   68.035365] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   68.042329] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   68.054535] WiFi@ERROR.PROTO,afc_beacon_init_handler() 3374: : CurrState: 1, bAfcBeaconInit= 0
+[   68.063425] WiFi@ERROR.AP,ap_6g_build_discovery_frame() 914: pkt_buf = NULL!
+[   68.084549] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 2, tx_pwr_sku_en: 1
+[   68.103846] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 2, fgTxBFBackoffEn: 0
+[   68.114447] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 2, fgTxPowerPercentEn: 0
+[   68.134490] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 2, cPowerDropLevel: 0
+[   68.180246] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   68.210030] WiFi@ERROR.CFG,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   68.271247] WiFi@ERROR.AP,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   69.359431] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   69.366725] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(34) (rax0)
+[   69.375927] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [4]
+[   69.383939] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax0) has already affiliated with mld_grp(18)
+[   69.394863] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8052563000(bss_idx_tx = 4) (dev_cnt = 5)
+[   69.897268]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   69.909057]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   70.039854] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apclix0
+[   70.067613] WiFi@ERROR.CFG80211,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[   70.112287] WiFi@ERROR.PROTO,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   70.154618] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   70.166432] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   70.608157] WiFi@ERROR.RSV,CFG80211_OpsVirtualInfAdd() 3609: pDev rax2 existed
+[   70.615690] 7990@ERROR.PROTO,rax2,afc_init() 3759: : AFC Init Settings
+[   70.622229] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3561: Country Code is JP 
+[   70.629707] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3567: CountryRegion is 2
+[   70.637051] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3574: Device is not standard power
+[   70.645258] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3579: : u1Status = 0
+[   70.652219] 7990@ERROR.PROTO,rax2,afc_update_state_to_disable() 3635: : Update state to AFC_DISABLE
+[   70.661746] 7990@ERROR.CFG80211,rax2,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[   70.670190] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   70.683524] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   70.697658] 7990@ERROR.PROTO,rax2,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   70.708538] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   70.720823] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   70.732893] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   70.746263] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   70.762751] 7990@ERROR.PROTO,rax2,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   70.772415] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   70.784952] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   70.797469] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   70.806093] 7990@ERROR.CFG80211,rax2,DfsBuildChannelList() 4155: [DfsBuildChannelList]: wdev is 6G
+[   70.865260] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   70.872400] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   70.881587] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(46) (rax2)
+[   70.890754] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [5]
+[   70.896480] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [5]
+[   70.904876] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   70.918253] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff80533ec000(bss_idx_tx = 5) (dev_cnt = 6)
+[   70.933314] 7990@ERROR.PROTO,rax2,afc_beacon_init_handler() 3374: : CurrState: 1, bAfcBeaconInit= 0
+[   70.942838] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 2, tx_pwr_sku_en: 1
+[   70.942894] 7990@ERROR.AP,rax2,ap_6g_build_discovery_frame() 914: pkt_buf = NULL!
+[   70.958116] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 2, fgTxBFBackoffEn: 0
+[   70.966288] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 2, fgTxPowerPercentEn: 0
+[   70.975452] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 2, cPowerDropLevel: 0
+[   71.005756] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   71.015732] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rax2
+[   71.029232] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rax2
+[   71.041296] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rax2
+[   71.057222] 7990@ERROR.CFG,rax2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   71.065079] 7990@ERROR.AP,rax2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   71.322919] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   71.330132] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   71.339314] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(46) (rax2)
+[   71.348522] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [5]
+[   71.356576] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax2) has already affiliated with mld_grp(2)
+[   71.367501] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff80533ec000(bss_idx_tx = 5) (dev_cnt = 6)
+[   73.894027] 7990@ERROR.FW,ra0,mtk_cfg80211_reply_wdev() 7965: incoming index 32 - 32 driver index name ra0
+[   73.903933] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x0
+[   73.913700] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[   73.924606] 7990@ERROR.AP,ra0,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[   73.933390] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[   73.943603] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   73.953299] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   73.962831] 7990@ERROR.FW,ra2,mtk_cfg80211_reply_wdev() 7965: incoming index 40 - 40 driver index name ra2
+[   73.972707] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x0
+[   73.982564] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x20
+[   73.993175] 7990@ERROR.AP,ra2,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[   74.002063] 7990@ERROR.CFG,ra2,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[   74.012344] 7990@ERROR.CFG,apcli0,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   74.022306] 7990@ERROR.CFG,apcli0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   74.031980] 7990@ERROR.FW,rai0,mtk_cfg80211_reply_wdev() 7965: incoming index 33 - 33 driver index name rai0
+[   74.042105] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x0
+[   74.052102] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[   74.062833] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[   74.073422] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   74.085576] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   74.095328] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   74.104672] 7990@ERROR.FW,rai2,mtk_cfg80211_reply_wdev() 7965: incoming index 43 - 43 driver index name rai2
+[   74.114727] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x0
+[   74.124713] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x20
+[   74.135431] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[   74.146013] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   74.158178] 7990@ERROR.CFG,apclii0,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   74.168229] 7990@ERROR.CFG,apclii0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   74.177862] 7990@ERROR.FW,rax0,mtk_cfg80211_reply_wdev() 7965: incoming index 34 - 34 driver index name rax0
+[   74.187892] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x0
+[   74.197891] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[   74.208750] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[   74.219337] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   74.231874] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   74.241699] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   74.251061] 7990@ERROR.FW,rax2,mtk_cfg80211_reply_wdev() 7965: incoming index 46 - 46 driver index name rax2
+[   74.261100] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x0
+[   74.271085] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x20
+[   74.281819] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[   74.292388] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   74.304771] 7990@ERROR.CFG,apclix0,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   74.314782] 7990@ERROR.CFG,apclix0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   74.324337] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.334188] 7990@ERROR.CFG,apcli0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.344327] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.354292] 7990@ERROR.CFG,apclii0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.364514] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.374466] 7990@ERROR.CFG,apclix0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.653991]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[   79.024055]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[   83.354352]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[   87.713951]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[   95.114138]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[   99.453971]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  103.804504]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  105.489659] 7990@ERROR.CFG80211,rax0,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[  105.498856] 7990@ERROR.PROTO,rax0,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[  105.508939] 7990@ERROR.HW,rax0,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[  105.521195] 7990@ERROR.HW,rax0,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[  108.133939]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  112.484149]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  113.900876] 7990@ERROR.CFG,rai0,set_pp_cap_ctrl() 434: Format Error! Please enter in the following format
+[  113.900876] Band-PpMgmtEn-PpCtrl-PpBitMap-PpMgmtMode-PPCsaEn
+[  116.356528] 7990@ERROR.FW,ra0,mtk_cfg80211_reply_wdev() 7965: incoming index 32 - 32 driver index name ra0
+[  116.366561] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x0
+[  116.376446] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[  116.387107] 7990@ERROR.AP,ra0,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[  116.396004] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[  116.406386] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[  116.416059] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[  116.425360] 7990@ERROR.FW,ra2,mtk_cfg80211_reply_wdev() 7965: incoming index 40 - 40 driver index name ra2
+[  116.435285] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x0
+[  116.445311] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x20
+[  116.455942] 7990@ERROR.AP,ra2,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[  116.464793] 7990@ERROR.CFG,ra2,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[  116.475208] 7990@ERROR.FW,apcli0,mtk_cfg80211_reply_wdev() 7965: incoming index 38 - 38 driver index name apcli0
+[  116.486558] 7990@ERROR.FW,rai0,mtk_cfg80211_reply_wdev() 7965: incoming index 33 - 33 driver index name rai0
+[  116.496631] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x0
+[  116.506624] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[  116.517213] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[  116.527802] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  116.540032] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[  116.549812] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[  116.559187] 7990@ERROR.FW,rai2,mtk_cfg80211_reply_wdev() 7965: incoming index 43 - 43 driver index name rai2
+[  116.569188] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x0
+[  116.579115] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x20
+[  116.589827] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[  116.600404] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  116.612662] 7990@ERROR.FW,apclii0,mtk_cfg80211_reply_wdev() 7965: incoming index 41 - 41 driver index name apclii0
+[  116.623676] 7990@ERROR.FW,rax0,mtk_cfg80211_reply_wdev() 7965: incoming index 34 - 34 driver index name rax0
+[  116.633668] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x0
+[  116.643703] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[  116.654463] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[  116.665032] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  116.677321] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[  116.694519] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[  116.704735] 7990@ERROR.FW,rax2,mtk_cfg80211_reply_wdev() 7965: incoming index 46 - 46 driver index name rax2
+[  116.722394] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x0
+[  116.732859] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x20
+[  116.750269] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[  116.760891] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  116.773356] 7990@ERROR.FW,apclix0,mtk_cfg80211_reply_wdev() 7965: incoming index 44 - 44 driver index name apclix0
+[  116.784460] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[  116.794498] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[  116.804761] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[  120.680327] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  120.689098] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  120.699538] 7990@ERROR.CFG,rai0,SrMeshSrEnable() 578: SrMode:0
+[  120.708008] 7990@ERROR.CFG,rai0,SrMeshSrEnable() 578: SrMode:0
+[  120.715920] 7990@ERROR.CFG,ra0,SrMeshSrEnable() 578: SrMode:0
+[  120.726159] 7990@ERROR.CFG,ra0,SrMeshSrEnable() 578: SrMode:0
+[  120.743842] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x20
+[  120.743964]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  120.761946] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[  120.780080] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x20
+[  120.799979] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[  120.818525] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x20
+[  120.836963] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[  120.918787] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[  121.013646] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x0
+[  121.094198] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[  121.202654] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x0
+[  121.296353] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[  121.406299] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x0
+[  121.424743] WiFi@ERROR.MLO,bss_mngr_con_mld_group_destroy() 1976: 	mld_grp(2) is not empty (link_cnt=1), can not destroy.
+[  121.435791] 7990@ERROR.MLO,rai2,eht_ap_mld_destroy() 6813: 	EHT AP MLD destroy fail
+[  121.446922] 7990@ERROR.MLO,ra0,eht_ap_mld_add_link() 6922: Error: wdev_type 1, phymode 0x4e, state 3
+[  121.456422] 7990@ERROR.MLO,ra2,eht_ap_mld_add_link() 6922: Error: wdev_type 1, phymode 0x4e, state 3
+[  121.482880] 7990@ERROR.CFG,ra2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.490729] 7990@ERROR.AP,ra2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.498853] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  121.506044] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.515212] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[  121.524297] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[  121.532301] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[  121.542387] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805bfd2000(bss_idx_tx = 0) (dev_cnt = 6)
+[  121.553087] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[  121.563985] 7990@ERROR.CFG,ra0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.571670] 7990@ERROR.AP,ra0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.579778] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  121.586953] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.596131] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[  121.605220] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[  121.613227] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[  121.623300] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805bfd2000(bss_idx_tx = 0) (dev_cnt = 6)
+[  121.633940] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[  121.655350] 7990@ERROR.CFG,ra0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.662947] 7990@ERROR.AP,ra0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.671092] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[  121.678258] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.687426] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(40) (ra2)
+[  121.696552] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [1]
+[  121.704604] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra2) is not in any mld, (grp_idx:0)
+[  121.714716] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805bfd7000(bss_idx_tx = 1) (dev_cnt = 6)
+[  121.725458] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[  121.747032] 7990@ERROR.CFG,rai2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.754918] 7990@ERROR.AP,rai0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.763108] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  121.770275] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.779439] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[  121.788619] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[  121.796640] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai0) has already affiliated with mld_grp(19)
+[  121.807609] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805b8db000(bss_idx_tx = 2) (dev_cnt = 6)
+[  121.818937] 7990@ERROR.CFG,rai0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.826933] 7990@ERROR.AP,rai0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.835131] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  121.842309] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.851516] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[  121.860718] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[  121.868743] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai0) has already affiliated with mld_grp(19)
+[  121.879685] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805b8db000(bss_idx_tx = 2) (dev_cnt = 6)
+[  121.899913] 7990@ERROR.CFG,rai0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.907735] 7990@ERROR.AP,rai0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.915890] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[  121.923086] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.932302] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(43) (rai2)
+[  121.941550] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [3]
+[  121.949575] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai2) has already affiliated with mld_grp(1)
+[  121.960445] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff80530a3000(bss_idx_tx = 3) (dev_cnt = 6)
+[  121.983809] 7990@ERROR.CFG,rax0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.991547] 7990@ERROR.AP,rax0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.999759] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  122.006958] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(34) (rax0)
+[  122.016153] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [4]
+[  122.024183] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax0) has already affiliated with mld_grp(20)
+[  122.035125] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8052563000(bss_idx_tx = 4) (dev_cnt = 6)
+[  122.056827] 7990@ERROR.CFG,rax0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  122.065354] 7990@ERROR.AP,rax0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  122.073488] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[  122.080664] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  122.089827] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(46) (rax2)
+[  122.099003] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [5]
+[  122.107023] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax2) has already affiliated with mld_grp(1)
+[  122.117888] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff80533ec000(bss_idx_tx = 5) (dev_cnt = 6)
+[  122.139555] 7990@ERROR.CFG,ra0,SrMeshSrEnable() 578: SrMode:0
+[  122.147051] 7990@ERROR.CFG,rai0,SrMeshSrEnable() 578: SrMode:0
+[  122.155144] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  122.164120] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  125.104193]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  129.434888]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  133.793934]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  138.134007]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  142.463960]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  148.114751]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  152.464851]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  156.794153]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  161.144613]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  165.484744]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  169.824013]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  174.164772]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  178.494757]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  191.464052]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  195.794213]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  200.124055]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  207.484786]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  211.813962]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  216.164436]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  220.544545]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  227.924367]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  232.274097]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  236.594384]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  240.944033]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  244.014075] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  244.021737] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  244.029935] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  244.037603] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  245.293320]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  249.634041]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  253.973960]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  258.303422]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  262.634014]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  266.973244]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  271.302950]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  275.633087]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  279.973339]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  284.322739]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  288.643395]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  292.983340]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  297.312491]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  301.673096]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  306.003242]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  310.373189]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  314.722328]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  319.063079]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  320.598353] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_ehtbw() 2004: (eht_bw=3)
+[  320.607866] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  320.622402] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_vhtbw() 2252: (vht_bw=2)
+[  323.392883]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  323.674383] 7990@ERROR.HW,rai0,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(2)---------------------
+[  323.686786] 7990@ERROR.HW,rai0,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT2
+[  324.081683] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6769: [RDM]: OutBandCh: 52, band_ch: 36
+[  324.091104] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6772: [RDM]: DfsChBand[0]: 0, DfsChBand[1]: 1, DfsChBand[2]: 1
+[  324.102554] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6777: [RDM] BandIdx: 0, BW: 2, ChannelMode: 0
+[  324.112493] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6781: [RDM] BandIdx: 1, BW: 3, ChannelMode: 0
+[  324.130287] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  324.143663] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  324.160344] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  324.190452] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  324.204623] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  324.204704] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_ehtbw() 2004: (eht_bw=3)
+[  324.212324] 7990@ERROR.CFG80211,rai2,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  324.227703] 7990@ERROR.CFG80211,rai2,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  324.235374] 7990@ERROR.CFG80211,rai2,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  324.243791] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  324.257713] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_vhtbw() 2252: (vht_bw=2)
+[  324.265613] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  324.288671] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  327.782920]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  332.142896]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  336.512038]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  340.831805]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  345.162545]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  352.552450]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  356.871708]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  361.222308]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  365.562224]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  369.891375]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  374.222692]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  378.551893]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  382.882063]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  387.211747]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  391.551935]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  395.901671]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  405.011997]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  411.490774]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  415.840862]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  420.161398]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  424.500649]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  428.870888]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  437.991020]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  442.320525]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  446.680252]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  451.041048]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  455.390494]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  459.770077]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  464.100539]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  468.420156]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  472.780241]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  477.120655]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  484.430582]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  491.779719]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  496.109483]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  500.430180]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  504.779670]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  509.099290]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  513.440015]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  519.069186]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  523.429324]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  527.769380]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  532.109714]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  536.439575]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  540.779479]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  549.059468]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  553.418608]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  557.748641]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  562.068488]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  573.769193]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  578.119168]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  582.459122]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  586.868415]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  591.214565]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  595.558660]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  604.658562]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  610.328573]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  614.668662]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  619.027900]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  623.348644]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  627.727563]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  632.057521]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  636.408353]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  640.767978]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  648.117604]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  652.478102]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  656.837396]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  661.197688]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  665.527049]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  669.929190]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  674.266887]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  678.587623]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  682.917587]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  687.246811]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  693.726911]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  698.067225]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  707.177241]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  716.326327]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  726.756682]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  731.096156]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  735.436214]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  739.756609]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  744.096849]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  749.726132]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  754.056550]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  760.505741]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  764.845753]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  785.615433]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  794.755505]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  799.085266]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  803.445749]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  807.795513]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  812.135017]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  819.475749]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  823.821544]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  830.275523]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  834.634841]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  838.955378]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  843.295312]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  851.515204]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  855.854756]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  864.954284]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  869.285111]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  873.644914]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  877.984338]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  885.303962]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  889.633964]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  893.973995]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  898.304856]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  902.644635]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  906.973676]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  911.304684]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  915.643872]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  922.964368]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  932.113993]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  936.474422]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  940.813375]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  945.153935]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  949.513207]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  964.223097]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  968.562919]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  974.203558]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  978.563509]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  982.903436]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  989.342564]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  993.683175]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  998.013357]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1002.372932]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1006.702865]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1015.772889]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1020.103073]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1024.432113]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1028.762137]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1033.082789]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1037.432766]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1041.771887]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1048.252608]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1052.592554]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1056.941858]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1061.271681]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1065.602523]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1069.942351]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1074.281789]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1078.601477]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1094.131999]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1099.771839]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1104.101880]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1108.441117]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1114.111869]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1118.471705]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1122.810886]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1127.131746]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1131.470728]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1135.810678]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1140.140624]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1144.481310]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1148.840698]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1153.190471]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1157.521318]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1163.141880]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1175.740590]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1180.090841]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1184.450907]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1188.770709]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1193.090609]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1197.450836]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1201.829954]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1206.169983]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1214.420481]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1218.759848]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1223.089588]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1227.440468]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1231.779467]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1236.129405]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1240.469622]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1244.789348]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1249.120062]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1253.449872]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1257.799682]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1262.129120]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1268.599063]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1272.968992]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1277.299729]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1286.419823]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1295.498756]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1301.128760]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1305.459366]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1313.718462]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1318.059014]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1322.438490]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1333.628587]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1337.959309]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1342.309070]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1346.648922]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1350.998543]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1355.318775]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1359.708703]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1364.058672]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1368.397858]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1372.728562]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1377.067869]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1381.418483]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1385.768283]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1390.113431]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1394.458672]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1400.077579]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1404.398190]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1408.757307]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1413.088229]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1417.438184]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1421.787884]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1426.147218]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1430.527790]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1434.847094]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1439.187490]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1445.656993]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1449.977788]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1454.337789]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1458.687401]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1465.156819]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1471.607233]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1478.056554]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1486.287112]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1490.627035]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1499.736799]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1505.366887]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1514.476195]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1518.806232]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1523.216814]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1527.556731]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1535.795933]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1540.126716]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1544.486224]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1548.815976]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1553.136445]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1557.476104]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1561.815695]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1567.456303]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1571.785505]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1576.125485]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1580.485338]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1584.845610]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1589.166164]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1598.305936]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1602.665423]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1607.005868]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1611.345814]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1615.725014]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1626.525604]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1630.865004]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1635.205547]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1639.534769]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1643.864758]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1648.195365]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1652.525496]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1656.874539]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1661.195139]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1665.535182]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1674.704265]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1679.034794]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1683.374379]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1687.694938]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1692.024157]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1696.344853]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1700.674686]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1705.014078]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1714.143965]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1718.464732]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1722.804275]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1727.134512]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1731.493694]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1735.823842]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1747.543986]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1753.203600]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1757.553466]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1769.664139]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1782.693993]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1787.053843]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1791.433633]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1797.063601]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1801.393572]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1805.733184]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1810.072895]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1814.403588]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1818.742687]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1826.123423]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1830.462598]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1834.803079]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1839.133433]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1845.602668]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1849.953199]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1854.292343]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1866.383013]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1870.722559]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1875.062917]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1879.392860]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1887.612776]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1891.962893]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1898.421978]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1907.512663]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1911.861870]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1916.182633]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1923.531729]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1930.841638]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1936.491502]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1940.811446]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1949.041380]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1953.372101]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1957.711906]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1962.051464]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1966.381425]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1970.707426]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1975.032292]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1979.381035]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1983.701909]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 1992.821030]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2001.021652]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2005.371709]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2009.700762]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2014.031069]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2018.360820]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2024.800554]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2029.151295]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2033.553389]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2046.100434]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2050.430936]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2054.750258]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2059.071022]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2063.410249]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2067.730456]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2072.060942]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2076.410828]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2088.110588]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2094.560579]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2103.680571]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2108.040225]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2112.360359]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2116.710234]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2121.039677]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2125.390325]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2129.750069]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2134.089873]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2138.440227]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2150.559279]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2154.899772]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2160.570253]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2169.689238]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2174.019248]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2178.349837]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2182.699668]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2190.039824]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2194.379669]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2198.719491]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2203.079653]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2207.458724]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2211.778718]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2216.119313]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2220.479413]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2224.818673]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2238.789008]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2247.889673]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2256.999077]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2264.338662]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2271.678143]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2277.318760]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2281.678080]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2286.017956]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2290.348701]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2294.688738]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2299.018552]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2303.408683]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2309.868375]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2314.198222]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2318.527734]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2327.658453]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2334.148328]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2341.537628]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2345.867736]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2350.218395]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2354.588122]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2358.958072]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2363.318390]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2367.648016]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2378.458038]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2386.687039]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2391.017709]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2395.347914]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2399.687378]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2407.927649]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2413.577594]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2420.926888]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2428.267441]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2432.616577]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2436.966549]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2441.326615]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2445.657686]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2450.027372]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2454.377217]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2458.746402]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2463.077265]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2467.426284]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2471.756615]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2476.107006]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2482.607076]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2486.956882]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2491.297314]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2498.657005]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2503.016860]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2507.366707]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2516.926664]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2522.556021]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2526.905808]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2531.225800]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2535.546199]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2544.645553]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2548.986579]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2553.346524]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2557.685714]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2562.026208]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2566.376180]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2570.750697]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2575.086117]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2579.436074]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2588.475176]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2592.805134]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2597.185245]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2601.505997]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2605.875528]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2611.605060]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2615.945803]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2620.274924]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2632.805124]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2640.125692]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2651.874859]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2656.235457]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2660.565374]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2664.904532]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2669.224501]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2673.545233]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2677.874872]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2682.214732]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2686.585545]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2690.938278]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2695.275046]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2699.604196]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2703.945098]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2713.065018]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2717.434100]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2721.764471]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2726.114781]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2730.464854]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2736.904394]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2742.573898]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2746.894479]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2751.254663]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2755.584537]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2759.914521]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2764.273734]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2769.894352]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2774.264451]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2781.594384]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2785.974272]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2790.303490]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2794.664213]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2799.013448]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2803.374074]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2807.733270]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2812.074251]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2816.403971]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2820.743832]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2825.073207]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2829.404052]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2833.753838]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2838.113843]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2842.473717]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2849.803337]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2854.133545]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2858.473667]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2867.563717]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2871.913577]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2876.243513]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2881.872693]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2886.232720]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2890.583396]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2899.682519]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2904.032906]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2908.373453]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2916.602559]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2920.923267]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2925.263107]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2929.603099]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2933.982939]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2941.352998]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2945.682750]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2950.022828]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2955.642851]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2962.122113]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2966.452072]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2970.801947]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2975.142526]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2979.472674]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2983.821917]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2988.182630]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2992.522092]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 2996.862046]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3001.202526]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3005.542417]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3012.022104]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3016.362487]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3020.711716]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3025.051708]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3029.392226]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3038.521438]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3042.851630]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3048.602137]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3057.741641]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3062.091212]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3066.451238]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3075.551880]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3079.911825]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3084.241189]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3088.561828]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3097.670958]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3102.001708]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3106.351157]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3110.681034]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3115.011614]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3120.661413]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3125.011792]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3129.370783]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3133.721478]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3138.071409]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3142.420664]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3146.741330]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3151.070554]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3155.411145]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3165.740452]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3170.070492]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3174.410632]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3178.760308]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3183.101171]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3187.440890]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3191.770166]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3199.110840]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3215.100028]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3224.660755]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3232.900333]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3237.240651]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3241.590150]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3245.920031]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3252.390006]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3258.100228]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3262.440601]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3266.790363]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3271.160493]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3275.510172]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3279.870205]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3284.240392]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3288.570246]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3294.230362]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3298.559525]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3302.920282]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3307.270110]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3311.629511]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3315.970101]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3320.320032]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3325.960000]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3330.310088]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3334.659525]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3344.999843]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3349.389675]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3353.718973]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3358.099757]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3362.458957]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3366.809016]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3371.149652]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3380.309633]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3384.648774]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3388.969738]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3393.308713]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3405.818651]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3414.858518]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3431.758372]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3436.118460]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3440.478534]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3448.688474]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3453.008495]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3457.348281]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3461.698242]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3466.028951]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3470.378911]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3474.718119]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3483.808197]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3488.168878]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3493.798384]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3498.138503]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3506.348822]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3510.717879]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3515.077889]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3519.418721]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3523.768550]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3531.997924]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3536.338307]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3540.658523]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3544.988577]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3549.328231]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3562.368081]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3566.697519]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3571.087417]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3575.418079]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3579.748019]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3584.068178]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3588.408094]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3595.737737]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3601.368007]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3605.727176]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3610.047718]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3614.388101]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3622.627998]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3626.967025]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3631.297783]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3635.627768]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3639.977643]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3645.616984]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3649.937687]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3654.287639]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3658.637715]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3662.987408]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3667.316752]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3671.656771]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3675.987169]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3680.327479]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3684.687314]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3689.016654]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3693.386631]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3697.716523]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3702.046644]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3706.377509]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3712.037032]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3716.357245]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3720.726621]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3725.076411]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3729.396989]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3733.746303]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3738.076278]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3742.397033]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3746.736917]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3751.066997]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3755.431701]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3759.766146]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3764.116777]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3768.466785]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3772.806080]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3777.136265]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3781.456918]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3785.796581]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3790.136313]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3794.475891]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3798.796062]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3803.116660]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3807.466629]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3811.816024]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3816.176386]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3820.505734]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3824.835793]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3829.175999]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3833.496160]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3837.855850]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3842.175766]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3846.515829]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3858.256017]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3869.045734]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3877.215392]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3881.556133]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3888.005340]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3892.335349]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3898.024963]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3902.366000]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3911.505924]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3915.845256]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3920.185882]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3924.535226]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3928.865565]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3933.215803]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3937.575531]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3941.895229]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3946.235575]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3950.565692]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3954.914993]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3959.245758]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3963.604805]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3967.945779]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3972.314808]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3976.644766]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3980.985531]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3985.334956]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3989.664884]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3993.995556]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 3998.345400]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4002.694959]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4007.035012]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4011.355417]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4015.695338]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4020.064425]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4024.395236]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4028.734533]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4033.065118]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4037.404811]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4041.785322]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4046.135217]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4050.504254]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4054.834273]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4062.154888]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4068.634151]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4072.985654]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4077.344888]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4081.684899]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4086.024105]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4090.354973]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4094.723999]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4099.074635]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4103.414570]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4107.734180]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4112.074677]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4116.403927]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4120.733899]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4125.074532]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4129.414451]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4135.884626]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4140.214483]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4144.564085]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4148.894638]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4153.224429]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4157.604080]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4161.943613]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4166.274342]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4172.754284]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4177.074272]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4181.404290]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4185.733523]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4190.074435]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4194.423369]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4198.813448]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4203.164063]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4207.503310]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4211.843346]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4216.164215]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4220.503330]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4224.823333]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4229.143973]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4233.473940]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4237.803311]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4242.124020]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4246.473880]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4254.703588]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4259.023882]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4263.373849]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4267.703016]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4272.024815]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4276.363833]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4281.983708]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4286.313657]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4292.782837]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4297.102781]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4306.203643]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4311.852866]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4320.092760]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4324.413857]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4328.743356]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4333.062772]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4337.383473]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4341.733180]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4350.822573]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4355.193160]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4359.553271]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4363.882860]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4370.363137]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4374.683743]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4379.052339]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4383.383125]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4387.722252]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4392.063161]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4396.403228]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4400.762812]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4407.213122]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4417.572059]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4426.652831]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4431.022914]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4435.371966]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4439.721964]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4444.072173]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4448.411996]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4452.742709]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4457.102687]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4466.172616]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4470.512588]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4476.132524]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4486.552527]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4492.221892]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4496.561675]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4500.922572]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4510.032182]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4514.372327]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4518.731652]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4523.071574]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4527.402333]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4531.741480]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4536.092072]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4540.412376]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4544.761464]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4549.081864]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4553.411387]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4557.731697]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4562.061385]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4566.401920]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4570.741462]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4575.111738]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4579.432096]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4583.771642]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4588.111811]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4596.331959]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4600.661059]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4605.021072]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4609.341564]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4613.671791]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4618.011916]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4622.351576]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4626.701242]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4631.080944]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4635.420975]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4639.761544]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4648.000876]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4652.341523]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4656.681549]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4661.011304]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4665.371372]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4669.720924]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4674.061599]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4678.410649]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4682.750645]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4687.101538]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4692.800577]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4697.131426]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4702.770556]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4707.110546]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4711.441266]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4715.801164]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4720.131232]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4726.570461]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4730.890767]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4735.221283]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4739.550310]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4745.990317]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4750.360674]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4754.710625]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4758.538789]  (1)[5491:modprobe]usb_net: exports duplicate symbol gether_cleanup (owned by usb_f_ncm)
+[ 4758.685887]  (0)[5495:modprobe]usb_net: exports duplicate symbol gether_cleanup (owned by usb_f_ncm)
+[ 4758.800804]  (2)[5519:modprobe]usb_net: exports duplicate symbol gether_cleanup (owned by usb_f_ncm)
+[ 4759.065123]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4768.191186]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4772.550959]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4776.910283]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4781.240927]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4785.600901]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4789.960845]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4792.452253]  (1)[7972:reboot]Debugging purpose - dump_backtrace
+[ 4794.340105]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4794.657208]  (0)[2621:ccci_fsd]ccci_fsd: [ccci_status_thread_handle] md status is: MD_STA_EV_STOP, proc(2621) exit.
+[ 4794.661935]  (0)[2621:ccci_fsd]ccci_fsd: signal number=10
+[ 4794.678073]  (0)[2621:ccci_fsd]ccci_fsd: Failed to read from FS device (-1) !! errno = 4
+[ 4794.686384]  (0)[2621:ccci_fsd]ccci_fsd: ccci_fsd exit, free buffer
+[ 4795.621634]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_stop: in mac[1]
+[ 4795.629097]  (3)[10641:kworker/u8:0]mtk_soc_eth 15100000.ethernet: mtk_pse_port_link_set: mac[1] fe_glo_cfg = 810004b0
+[ 4795.639830]  (3)[10641:kworker/u8:0]mtk_soc_eth 15100000.ethernet: mtk_mac_link_down: mac[1] mcr = 10200
+[ 4795.649347]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_stop: in mac[1] done
+[ 4795.657220]  (1)[10321:netifd]mtk_soc_eth 15100000.ethernet: mtk_dma_free: in
+[ 4797.580371] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra2
+[ 4797.591942] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra2
+[ 4797.603638] WiFi@ERROR.RSV,CFG80211_OpsStopAp() 3013: 80211> ==>
+[ 4797.609652] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[ 4797.657062] 7990@ERROR.PROTO,ra0,afc_send_daemon_stop_event() 3490: --->
+[ 4797.664183] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:ap_link_down+0xb4/0x108 [mt_wifi])!!
+[ 4797.676430] WiFi@ERROR.MLO,bss_mngr_dev_dereg() 1499: bss_mngr_dev_dereg: wdev(3)
+[ 4797.684068] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2920: ===> bss_mngr_con_dev_dereg: netdev(40) (ra2)
+[ 4797.693496] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [1]
+[ 4797.701511] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra2) is not in any mld, (grp_idx:0)
+[ 4797.711559] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2941: <=== bss_mngr_con_dev_dereg:
+[ 4797.719573] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[ 4797.900197] WiFi@ERROR.RSV,CFG80211_OpsStopAp() 3013: 80211> ==>
+[ 4797.906224] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[ 4797.916606] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra0
+[ 4797.928094] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra0
+[ 4798.045639] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apclix0
+[ 4798.083411] 7990@ERROR.PROTO,ra0,afc_send_daemon_stop_event() 3490: --->
+[ 4798.090565] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:ap_link_down+0xb4/0x108 [mt_wifi])!!
+[ 4798.102721] WiFi@ERROR.MLO,bss_mngr_dev_dereg() 1499: bss_mngr_dev_dereg: wdev(0)
+[ 4798.110255] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2920: ===> bss_mngr_con_dev_dereg: netdev(32) (ra0)
+[ 4798.119642] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[ 4798.127683] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[ 4798.137705] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2941: <=== bss_mngr_con_dev_dereg:
+[ 4798.145627] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[ 4798.269421] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra0
+[ 4798.280997] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra0
+[ 4798.293601] WiFi@ERROR.RSV,CFG80211_OpsStopAp() 3013: 80211> ==>
+[ 4798.337205] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rai2
+[ 4798.348796] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai2
+[ 4798.360772] 7990@ERROR.PROTO,rai0,afc_send_daemon_stop_event() 3490: --->
+[ 4798.367955] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:ap_link_down+0xb4/0x108 [mt_wifi])!!
+[ 4798.380291] WiFi@ERROR.MLO,bss_mngr_dev_dereg() 1499: bss_mngr_dev_dereg: wdev(3)
+[ 4798.387774] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2920: ===> bss_mngr_con_dev_dereg: netdev(43) (rai2)
+[ 4798.397287] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [3]
+[ 4798.405590] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2941: <=== bss_mngr_con_dev_dereg:
+[ 4798.540342] WiFi@ERROR.RSV,CFG80211_OpsStopAp() 3013: 80211> ==>
+[ 4798.546663] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rai0
+[ 4798.558248] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai0
+[ 4798.610379] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4798.616568] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4798.707088] 7990@ERROR.PROTO,rai0,afc_send_daemon_stop_event() 3490: --->
+[ 4798.714265] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:ap_link_down+0xb4/0x108 [mt_wifi])!!
+[ 4798.726500] WiFi@ERROR.MLO,bss_mngr_dev_dereg() 1499: bss_mngr_dev_dereg: wdev(0)
+[ 4798.734007] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2920: ===> bss_mngr_con_dev_dereg: netdev(33) (rai0)
+[ 4798.743490] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[ 4798.751971] WiFi@ERROR.MLO,bss_mngr_con_dev_dereg() 2941: <=== bss_mngr_con_dev_dereg:
+[ 4798.759946] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (2), mld grp invalid(19)
+[ 4798.840349] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:APStopByBss+0x174/0x3f8 [mt_wifi])!!
+[ 4798.852740] 7990@ERROR.TEST,rai0,pre_cfg_free_peer_all_sta() 2869: No any peer sta in pre cfg entry list!
+[ 4798.862539] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:APStopByBss+0x174/0x3f8 [mt_wifi])!!
+[ 4798.875041] 7990@ERROR.FW,rai0,wdev_search_by_band_omac_idx() 772: can not find registered wdev
+[ 4798.875147] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:APStopByBss+0x174/0x3f8 [mt_wifi])!!
+[ 4798.896098] 7990@ERROR.TEST,rai0,pre_cfg_free_peer_all_sta() 2869: No any peer sta in pre cfg entry list!
+[ 4798.913339] WiFi@ERROR.INIT,multi_inf_active_cnt() 66: failed to find nonempty adapt_list!
+[ 4798.960401] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apclii0
+[ 4798.972664] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rax2
+[ 4798.984240] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rax2
+[ 4799.080960] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rai0
+[ 4799.092643] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai0
+[ 4799.121027] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apcli0
+[ 4799.731277] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4799.737545] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4800.849819] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4800.856007] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4801.680129]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4802.009912] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4802.016114] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4803.119908] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4803.126109] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4804.260920] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4804.267122] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4805.380709] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4805.386912] 7990@ERROR.CFG,ra0,QBSS_LoadUpdate() 651: wdev is NULL
+[ 4806.000500]  (3)[1652:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[ 4806.012145]  (0)[10435:procd]mtk-msdc 11230000.mmc: host->mclk:160000000, ios->clock:0, host->timing:10,ios->timing:0
+[ 4806.022798]  (0)[10435:procd]mtk-msdc 11230000.mmc: set mclk to 0
+[ 4806.038168]  (0)[10435:procd]reboot: Debugging purpose - dump_backtrace
+[ 4806.044884]  (0)[10435:procd]reboot: Restarting system
