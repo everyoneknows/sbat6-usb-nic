@@ -1,0 +1,1 @@
+make -C /home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179 O=/home/user/projects/sbair6-rce/work/build-output M=$PWD/source ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- KBUILD_EXTRA_SYMBOLS=/home/user/projects/butlerx/research/t6a-ncm-telemetry/Module.symvers modules
