@@ -1,0 +1,295 @@
+    1c7c:	88027c61 	stxr	w2, w1, [x3]
+    1c80:	35ffffa2 	cbnz	w2, 1c74 <gether_get_dev_addr+0x374>
+    1c84:	17ffff90 	b	1ac4 <gether_get_dev_addr+0x1c4>
+    1c88:	90000000 	adrp	x0, 0 <ppe_usb_resume_queue_hook>
+			1c88: R_AARCH64_ADR_PREL_PG_HI21	ppe_usb_resume_queue_hook
+    1c8c:	aa0003f4 	mov	x20, x0
+    1c90:	f9400001 	ldr	x1, [x0]
+			1c90: R_AARCH64_LDST64_ABS_LO12_NC	ppe_usb_resume_queue_hook
+    1c94:	b4fff321 	cbz	x1, 1af8 <gether_get_dev_addr+0x1f8>
+    1c98:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1c98: R_AARCH64_ADR_PREL_PG_HI21	.bss+0x20
+    1c9c:	b9400000 	ldr	w0, [x0]
+			1c9c: R_AARCH64_LDST32_ABS_LO12_NC	.bss+0x20
+    1ca0:	34000100 	cbz	w0, 1cc0 <gether_get_dev_addr+0x3c0>
+    1ca4:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1ca4: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1ca8:	91000021 	add	x1, x1, #0x0
+			1ca8: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1cac:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1cac: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x7df
+    1cb0:	2a1503e2 	mov	w2, w21
+    1cb4:	9114e421 	add	x1, x1, #0x539
+    1cb8:	91000000 	add	x0, x0, #0x0
+			1cb8: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x7df
+    1cbc:	94000000 	bl	0 <printk>
+			1cbc: R_AARCH64_CALL26	printk
+    1cc0:	b941f6c0 	ldr	w0, [x22, #500]
+    1cc4:	34fff1a0 	cbz	w0, 1af8 <gether_get_dev_addr+0x1f8>
+    1cc8:	710006b5 	subs	w21, w21, #0x1
+    1ccc:	52800041 	mov	w1, #0x2                   	// #2
+    1cd0:	f9400283 	ldr	x3, [x20]
+			1cd0: R_AARCH64_LDST64_ABS_LO12_NC	ppe_usb_resume_queue_hook
+    1cd4:	120002a2 	and	w2, w21, #0x1
+    1cd8:	1ac10ea1 	sdiv	w1, w21, w1
+    1cdc:	aa1803e0 	mov	x0, x24
+    1ce0:	5a825442 	cneg	w2, w2, mi	// mi = first
+    1ce4:	d63f0060 	blr	x3
+    1ce8:	b9427660 	ldr	w0, [x19, #628]
+    1cec:	11000400 	add	w0, w0, #0x1
+    1cf0:	b9027660 	str	w0, [x19, #628]
+    1cf4:	b901f6df 	str	wzr, [x22, #500]
+    1cf8:	17ffff80 	b	1af8 <gether_get_dev_addr+0x1f8>
+    1cfc:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+    1d00:	910003fd 	mov	x29, sp
+    1d04:	a90153f3 	stp	x19, x20, [sp, #16]
+    1d08:	aa0003f3 	mov	x19, x0
+    1d0c:	394a4800 	ldrb	w0, [x0, #658]
+    1d10:	340001c0 	cbz	w0, 1d48 <gether_get_dev_addr+0x448>
+    1d14:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1d14: R_AARCH64_ADR_PREL_PG_HI21	.bss+0x4
+    1d18:	b9400000 	ldr	w0, [x0]
+			1d18: R_AARCH64_LDST32_ABS_LO12_NC	.bss+0x4
+    1d1c:	340003e0 	cbz	w0, 1d98 <gether_get_dev_addr+0x498>
+    1d20:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1d20: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1d24:	91000063 	add	x3, x3, #0x0
+			1d24: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1d28:	f9400a62 	ldr	x2, [x19, #16]
+    1d2c:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1d2c: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1
+    1d30:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1d30: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x80a
+    1d34:	91151463 	add	x3, x3, #0x545
+    1d38:	91000021 	add	x1, x1, #0x0
+			1d38: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1
+    1d3c:	91000000 	add	x0, x0, #0x0
+			1d3c: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x80a
+    1d40:	94000000 	bl	0 <printk>
+			1d40: R_AARCH64_CALL26	printk
+    1d44:	14000015 	b	1d98 <gether_get_dev_addr+0x498>
+    1d48:	b9428674 	ldr	w20, [x19, #644]
+    1d4c:	7100069f 	cmp	w20, #0x1
+    1d50:	54000241 	b.ne	1d98 <gether_get_dev_addr+0x498>  // b.any
+    1d54:	f9400e60 	ldr	x0, [x19, #24]
+    1d58:	b9404800 	ldr	w0, [x0, #72]
+    1d5c:	7100101f 	cmp	w0, #0x4
+    1d60:	54000228 	b.hi	1da4 <gether_get_dev_addr+0x4a4>  // b.pmore
+    1d64:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1d64: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1d68:	91000063 	add	x3, x3, #0x0
+			1d68: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1d6c:	f9400a62 	ldr	x2, [x19, #16]
+    1d70:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1d70: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1
+    1d74:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1d74: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x83b
+    1d78:	91151463 	add	x3, x3, #0x545
+    1d7c:	91000021 	add	x1, x1, #0x0
+			1d7c: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1
+    1d80:	91000000 	add	x0, x0, #0x0
+			1d80: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x83b
+    1d84:	94000000 	bl	0 <printk>
+			1d84: R_AARCH64_CALL26	printk
+    1d88:	390a4a74 	strb	w20, [x19, #658]
+    1d8c:	79452261 	ldrh	w1, [x19, #656]
+    1d90:	f9400e60 	ldr	x0, [x19, #24]
+    1d94:	94000000 	bl	0 <usb_gadget_wakeup>
+			1d94: R_AARCH64_CALL26	usb_gadget_wakeup
+    1d98:	a94153f3 	ldp	x19, x20, [sp, #16]
+    1d9c:	a8c27bfd 	ldp	x29, x30, [sp], #32
+    1da0:	d65f03c0 	ret
+    1da4:	b9428e74 	ldr	w20, [x19, #652]
+    1da8:	7100069f 	cmp	w20, #0x1
+    1dac:	54000141 	b.ne	1dd4 <gether_get_dev_addr+0x4d4>  // b.any
+    1db0:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1db0: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1db4:	91000063 	add	x3, x3, #0x0
+			1db4: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1db8:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1db8: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1
+    1dbc:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1dbc: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x86d
+    1dc0:	91151463 	add	x3, x3, #0x545
+    1dc4:	91000021 	add	x1, x1, #0x0
+			1dc4: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1
+    1dc8:	91000000 	add	x0, x0, #0x0
+			1dc8: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x86d
+    1dcc:	f9400a62 	ldr	x2, [x19, #16]
+    1dd0:	17ffffed 	b	1d84 <gether_get_dev_addr+0x484>
+    1dd4:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1dd4: R_AARCH64_ADR_PREL_PG_HI21	.bss+0x4
+    1dd8:	b9400000 	ldr	w0, [x0]
+			1dd8: R_AARCH64_LDST32_ABS_LO12_NC	.bss+0x4
+    1ddc:	34fffde0 	cbz	w0, 1d98 <gether_get_dev_addr+0x498>
+    1de0:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1de0: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1de4:	91000063 	add	x3, x3, #0x0
+			1de4: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1de8:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1de8: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1
+    1dec:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1dec: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x8a0
+    1df0:	91151463 	add	x3, x3, #0x545
+    1df4:	91000021 	add	x1, x1, #0x0
+			1df4: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1
+    1df8:	91000000 	add	x0, x0, #0x0
+			1df8: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x8a0
+    1dfc:	f9400a62 	ldr	x2, [x19, #16]
+    1e00:	17ffffd0 	b	1d40 <gether_get_dev_addr+0x440>
+    1e04:	a9b57bfd 	stp	x29, x30, [sp, #-176]!
+    1e08:	910003fd 	mov	x29, sp
+    1e0c:	a9025bf5 	stp	x21, x22, [sp, #32]
+    1e10:	aa0003f5 	mov	x21, x0
+    1e14:	2a0203f6 	mov	w22, w2
+    1e18:	a9046bf9 	stp	x25, x26, [sp, #64]
+    1e1c:	9123001a 	add	x26, x0, #0x8c0
+    1e20:	0b030499 	add	w25, w4, w3, lsl #1
+    1e24:	a90573fb 	stp	x27, x28, [sp, #80]
+    1e28:	9000001b 	adrp	x27, 0 <gether_set_protocol-0x48>
+			1e28: R_AARCH64_ADR_PREL_PG_HI21	.bss
+    1e2c:	91000360 	add	x0, x27, #0x0
+			1e2c: R_AARCH64_ADD_ABS_LO12_NC	.bss
+    1e30:	a90153f3 	stp	x19, x20, [sp, #16]
+    1e34:	aa0103f4 	mov	x20, x1
+    1e38:	a90363f7 	stp	x23, x24, [sp, #48]
+    1e3c:	f9003be0 	str	x0, [sp, #112]
+    1e40:	b9400400 	ldr	w0, [x0, #4]
+    1e44:	340002e0 	cbz	w0, 1ea0 <gether_get_dev_addr+0x5a0>
+    1e48:	79401820 	ldrh	w0, [x1, #12]
+    1e4c:	39403421 	ldrb	w1, [x1, #13]
+    1e50:	2a002020 	orr	w0, w1, w0, lsl #8
+    1e54:	13003c00 	sxth	w0, w0
+    1e58:	7120001f 	cmp	w0, #0x800
+    1e5c:	54000961 	b.ne	1f88 <gether_get_dev_addr+0x688>  // b.any
+    1e60:	79402687 	ldrh	w7, [x20, #18]
+    1e64:	39404e80 	ldrb	w0, [x20, #19]
+    1e68:	2a072007 	orr	w7, w0, w7, lsl #8
+    1e6c:	12003ce7 	and	w7, w7, #0xffff
+    1e70:	f9400b42 	ldr	x2, [x26, #16]
+    1e74:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1e74: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1e78:	91000063 	add	x3, x3, #0x0
+			1e78: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1e7c:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1e7c: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1
+    1e80:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1e80: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x8e8
+    1e84:	2a1903e6 	mov	w6, w25
+    1e88:	2a1603e5 	mov	w5, w22
+    1e8c:	aa1403e4 	mov	x4, x20
+    1e90:	91156c63 	add	x3, x3, #0x55b
+    1e94:	91000021 	add	x1, x1, #0x0
+			1e94: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1
+    1e98:	91000000 	add	x0, x0, #0x0
+			1e98: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x8e8
+    1e9c:	94000000 	bl	0 <printk>
+			1e9c: R_AARCH64_CALL26	printk
+    1ea0:	39471b45 	ldrb	w5, [x26, #454]
+    1ea4:	6b05033f 	cmp	w25, w5
+    1ea8:	5400022b 	b.lt	1eec <gether_get_dev_addr+0x5ec>  // b.tstop
+    1eac:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1eac: R_AARCH64_ADR_PREL_PG_HI21	.data
+    1eb0:	b9400000 	ldr	w0, [x0]
+			1eb0: R_AARCH64_LDST32_ABS_LO12_NC	.data
+    1eb4:	34000160 	cbz	w0, 1ee0 <gether_get_dev_addr+0x5e0>
+    1eb8:	f9400b42 	ldr	x2, [x26, #16]
+    1ebc:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1ebc: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1ec0:	91000063 	add	x3, x3, #0x0
+			1ec0: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1ec4:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1ec4: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1
+    1ec8:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1ec8: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x929
+    1ecc:	2a1903e4 	mov	w4, w25
+    1ed0:	91156c63 	add	x3, x3, #0x55b
+    1ed4:	91000021 	add	x1, x1, #0x0
+			1ed4: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1
+    1ed8:	91000000 	add	x0, x0, #0x0
+			1ed8: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x929
+    1edc:	94000000 	bl	0 <printk>
+			1edc: R_AARCH64_CALL26	printk
+    1ee0:	39471b40 	ldrb	w0, [x26, #454]
+    1ee4:	1ac00f21 	sdiv	w1, w25, w0
+    1ee8:	1b00e439 	msub	w25, w1, w0, w25
+    1eec:	11000720 	add	w0, w25, #0x1
+    1ef0:	b9006be0 	str	w0, [sp, #104]
+    1ef4:	aa1a03e0 	mov	x0, x26
+    1ef8:	97fffcac 	bl	11a8 <gether_cleanup+0x62c>
+    1efc:	f940075b 	ldr	x27, [x26, #8]
+    1f00:	aa0003e1 	mov	x1, x0
+    1f04:	b400047b 	cbz	x27, 1f90 <gether_get_dev_addr+0x690>
+    1f08:	39444360 	ldrb	w0, [x27, #272]
+    1f0c:	7941e773 	ldrh	w19, [x27, #242]
+    1f10:	f940737b 	ldr	x27, [x27, #224]
+    1f14:	b900a3e0 	str	w0, [sp, #160]
+    1f18:	b940fb40 	ldr	w0, [x26, #248]
+    1f1c:	b900a7e0 	str	w0, [sp, #164]
+    1f20:	aa1a03e0 	mov	x0, x26
+    1f24:	97fffc81 	bl	1128 <gether_cleanup+0x5ac>
+    1f28:	b50003bb 	cbnz	x27, 1f9c <gether_get_dev_addr+0x69c>
+    1f2c:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1f2c: R_AARCH64_ADR_PREL_PG_HI21	.data
+    1f30:	b9400000 	ldr	w0, [x0]
+			1f30: R_AARCH64_LDST32_ABS_LO12_NC	.data
+    1f34:	34000140 	cbz	w0, 1f5c <gether_get_dev_addr+0x65c>
+    1f38:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1f38: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    1f3c:	91000063 	add	x3, x3, #0x0
+			1f3c: R_AARCH64_ADD_ABS_LO12_NC	.rodata
+    1f40:	f9400b42 	ldr	x2, [x26, #16]
+    1f44:	90000001 	adrp	x1, 0 <gether_set_protocol-0x48>
+			1f44: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1
+    1f48:	90000000 	adrp	x0, 0 <gether_set_protocol-0x48>
+			1f48: R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x961
+    1f4c:	91156c63 	add	x3, x3, #0x55b
+    1f50:	91000021 	add	x1, x1, #0x0
+			1f50: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1
+    1f54:	91000000 	add	x0, x0, #0x0
+			1f54: R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x961
+    1f58:	94000000 	bl	0 <printk>
+			1f58: R_AARCH64_CALL26	printk
+    1f5c:	aa1403e0 	mov	x0, x20
+    1f60:	97fffa65 	bl	8f4 <gether_get_ifname+0x70>
+    1f64:	52800019 	mov	w25, #0x0                   	// #0
+    1f68:	2a1903e0 	mov	w0, w25
+    1f6c:	a94153f3 	ldp	x19, x20, [sp, #16]
+    1f70:	a9425bf5 	ldp	x21, x22, [sp, #32]
+    1f74:	a94363f7 	ldp	x23, x24, [sp, #48]
+    1f78:	a9446bf9 	ldp	x25, x26, [sp, #64]
+    1f7c:	a94573fb 	ldp	x27, x28, [sp, #80]
+    1f80:	a8cb7bfd 	ldp	x29, x30, [sp], #176
+    1f84:	d65f03c0 	ret
+    1f88:	529fffe7 	mov	w7, #0xffff                	// #65535
+    1f8c:	17ffffb9 	b	1e70 <gether_get_dev_addr+0x570>
+    1f90:	52800013 	mov	w19, #0x0                   	// #0
+    1f94:	29147fff 	stp	wzr, wzr, [sp, #160]
+    1f98:	17ffffe2 	b	1f20 <gether_get_dev_addr+0x620>
+    1f9c:	37000473 	tbnz	w19, #0, 2028 <gether_get_dev_addr+0x728>
+    1fa0:	b9400280 	ldr	w0, [x20]
+    1fa4:	36000420 	tbz	w0, #0, 2028 <gether_get_dev_addr+0x728>
+    1fa8:	79400681 	ldrh	w1, [x20, #2]
+    1fac:	52800118 	mov	w24, #0x8                   	// #8
+    1fb0:	79400280 	ldrh	w0, [x20]
+    1fb4:	52800045 	mov	w5, #0x2                   	// #2
+    1fb8:	0a010000 	and	w0, w0, w1
+    1fbc:	79400a81 	ldrh	w1, [x20, #4]
+    1fc0:	0a010000 	and	w0, w0, w1
+    1fc4:	529fffe1 	mov	w1, #0xffff                	// #65535
+    1fc8:	6b20203f 	cmp	w1, w0, uxth
+    1fcc:	1a850318 	csel	w24, w24, w5, eq	// eq = none
+    1fd0:	6a18027f 	tst	w19, w24
+    1fd4:	540002a1 	b.ne	2028 <gether_get_dev_addr+0x728>  // b.any
+    1fd8:	b9428340 	ldr	w0, [x26, #640]
+    1fdc:	11000400 	add	w0, w0, #0x1
+    1fe0:	b9028340 	str	w0, [x26, #640]
+    1fe4:	aa1403e0 	mov	x0, x20
+    1fe8:	97fffa43 	bl	8f4 <gether_get_ifname+0x70>
+    1fec:	f9403be0 	ldr	x0, [sp, #112]
+    1ff0:	b9400419 	ldr	w25, [x0, #4]
+    1ff4:	34fffbb9 	cbz	w25, 1f68 <gether_get_dev_addr+0x668>
+    1ff8:	f9400b42 	ldr	x2, [x26, #16]
+    1ffc:	90000003 	adrp	x3, 0 <gether_set_protocol-0x48>
+			1ffc: R_AARCH64_ADR_PREL_PG_HI21	.rodata
+    2000:	91000063 	add	x3, x3, #0x0

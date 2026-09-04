@@ -1,0 +1,760 @@
+Linux
+@9!x
+`j`8
+T`B&
+_@y"
+_@y"
+T`B&
+*f2@
+4a.B
+@ya7@9  
+Tg'@y`O@9
+y`:B
+@9C@ 
+Tb\@y
+5d\@y
+9a"Ey`
+@y!4@9  
+ qa	
+`CD9s
+Ay{s@
+R?  k
+4@+A
+6B+A
+TB+A
+T@sB
+Ta_@y
+5b_@y
+4ag@
+@y"4@9@ 
+T%$@y L@9
+R?  k
+DD9@
+X6cc@
+@9v	
+T"Q@
+e,A)!
+T`[@
+#_@yd
+T`~B
+5`zB
+4dzB
+5aBC9`f@
+aBD9
+_  k
+ Xsxa
+sB@Qs
+@Xsxa
+Hs8a
+5X@) 
+Xaxa
+@9!(B
+Rer@
+ E9_
+ E9_
+9`"E9
+ E9_
+5`"E9
+ X`xa
+5`"E9
+T`"E9
+T`"E9
+T`"E9
+T`"E9
+T`"E9
+5`"E9
+5`&@
+KaC<
+9`"E9
+"h xa
+"h xa
+7`r@
+`"E9
+`&E9
+T`r@
+T"H@
+T!H@
+dM9 
+ E9B
+`"E9
+`&E9
+T`r@
+4`r@
+`"E9
+`&E9
+T`r@
+Tbr@
+4`r@
+hwnat_register
+gether_usb_bus_suspend
+gether_usb_bus_resume
+gether_usb_get_status
+gether_usb_func_suspend
+gether_setup_name
+gether_setup_name_default
+gether_register_netdev
+rx_buff_recycle
+hwnat_rx_done
+gether_cleanup
+prealloc
+alloc_tx_buffer
+alloc_usb_tx_context
+process_usb_rx_buff
+ueth_change_mtu
+eth_stop
+rx_complete
+gether_disconnect
+tx_complete
+process_remote_wakeup
+hwnat_tx_send
+eth_start_xmit
+alloc_usb_rx_context
+rx_submit
+eth_start
+eth_open
+gether_connect
+alloc_requests
+gether_init
+tx_buff_num
+uether_tx_max_aggr_num
+uether_rx_worker_cpu
+uether_rx_worker_type
+uether_dbg_ppe_usb_suspend
+uether_usb_request_qlen
+uether_rx_hwnat_enable
+uether_rx_profile
+u_ether_tx_req_threshold
+rndis_gso_debug
+rndis_gso_enable
+rndis_mtu
+uether_tx_profile
+uether_err
+uether_debug
+host_addr
+dev_addr
+qmult
+rndis_set_alt
+rndis_unbind
+rndis_close
+rndis_open
+rndis_command_complete
+rndis_setup
+rndis_response_complete
+rndis_bind
+rndis_disable
+rndis_free
+rndis_alloc_inst
+rndis_aggregation
+f_rndis_debug
+rndis_ul_max_pkt_per_xfer
+rndis_dl_max_pkt_per_xfer
+LSX[^
+rndis_rm_hdr_mtk
+rndis_free_response
+rndis_add_response
+gen_ndis_query_resp
+rndis_msg_parser
+rndis_query_response
+rndis_set_response
+gen_ndis_set_resp
+rndis_reset_response
+rndis_keepalive_response
+rndis_rm_hdr
+rndis_debug
+rndis_ul_max_xfer_size_rcvd
+rndis_ul_max_pkt_per_xfer_rcvd
+ecm_free
+ecm_disable
+ecm_unbind
+ecm_bind
+ecm_alloc_inst
+ecm_do_notify
+ecm_set_alt
+ncm_free
+ncm_disable
+ncm_setup
+NCMHNCM0
+ncmhncm0
+ncm_unbind
+ncm_bind
+ncm_alloc_inst
+ncm_do_notify
+ncm_set_alt
+ncm_wrap_ntb_mtk
+ncm_wrap_ntb
+ncm_alloc
+ncm_open
+ncm_close
+2.31
+0%s %s U_ETHER ERR,%s, no ppe_dev_register_hook()
+0%s %s U_ETHER ERR,%s, no ppe_usb_set_cb_hook()
+0%s %s U_ETHER ERR,%s, no ppe_usb_tx_link_num_hook()
+0%s %s U_ETHER LOG,%s, hwnat_link_num=%d
+0%s %s U_ETHER LOG,%s, 
+0%s %s U_ETHER LOG,%s, ret=0x%x
+0%s %s U_ETHER LOG,%s, suspend_opt=0x%x
+g_ether
+29-May-2008
+%s%%d
+self
+using random %s ethernet address
+6%s: MAC xx:xx:xx:xx:xx:%x
+6%s: HOST MAC xx:xx:xx:xx:xx:%x
+0%s %s U_ETHER LOG,%s, hwnat_register()
+0%s - dev->qmult:%d, qmult:%d
+4using random %s ethernet address
+host
+4cannot set self ethernet address: %d
+(unnamed net_device)
+0%s %s U_ETHER DBG,%s,id=0x%x done=0x%x expect=0x%x
+0%s %s U_ETHER DBG,%s,usb_ep_queue()
+0%s %s U_ETHER ERR,%s, usb_ep_queue() fail, ret=%d
+0%s %s U_ETHER ERR,%s, id=%d num=%d done_bitmap=0x%x already report
+0%s %s U_ETHER LOG,%s, ppe_dev_unregister_hook() called
+0%s %s U_ETHER LOG,%s, no ppe unregister hook
+0%s %s U_ETHER ERR,%s, usb_ep_alloc_request() fail
+0%s %s U_ETHER LOG,%s, multi_pkt_xfer=%d dl_max_pkts_per_xfer=%d tx_req_bufsize=%d
+0%s %s U_ETHER ERR,%s, kmalloc() 1 return NULL
+0%s %s U_ETHER ERR,%s, kmalloc() 2 return NULL
+0%s %s U_ETHER ERR,%s, kzalloc() fail for size=%d
+0%s %s U_ETHER ERR,%s, req->context is NULL
+0%s %s U_ETHER ERR,%s, port_usb is NULL
+0%s %s U_ETHER ERR,%s, mtk_unwrap() fail, ret=%d
+0%s %s U_ETHER DBG,%s,actual=%d num=%d aggr=%d expect=0x%x
+0%s %s U_ETHER LOG,%s, num=%d i=%d len=%d ipid=0x%04x
+0%s %s U_ETHER ERR,%s, len=%d error
+0%s %s U_ETHER DBG,%s,HW accept id=%d bnum=%d
+0%s %s U_ETHER LOG,%s, alloc_skb() return NULL
+0%s %s U_ETHER DBG,%s,netif_rx_ni() NET_RX_DROP
+0%s %s U_ETHER LOG,%s, new_mtu=%d status=%d
+6%s, END !!!!
+0%s %s U_ETHER ERR,%s, port_bus is NULL
+0%s %s U_ETHER ERR,%s, ECONNABORTED
+0%s %s U_ETHER DBG,%s,len=%d
+0%s %s U_ETHER ERR,%s, status=%d len=%d
+0%s %s U_ETHER ERR,%s, port_usb is NULL
+0%s %s U_ETHER ERR,%s, req->status=%d
+0%s %s U_ETHER ERR,%s, usb_ep_queue() fail ret=%d
+0%s ppe_usb_resume_queue_hook link_id=%d
+0%s %s U_ETHER DBG,%s,already call wakeup once
+0%s %s U_ETHER LOG,%s, wakeup host (high-speed)
+0%s %s U_ETHER LOG,%s, wakeup host (super-speed)
+0%s %s U_ETHER DBG,%s,host does not allow remote wakeup (super-speed)
+0%s %s U_ETHER LOG,%s, buf=[%px] len=%d link_id=%d ipid=0x%04x
+0%s %s U_ETHER ERR,%s, link_id=%d is over link_num=%d
+0%s %s U_ETHER ERR,%s, ep in is null
+0%s %s U_ETHER DBG,%s,cdc_filter=0x%x type=0x%x
+0%s %s U_ETHER ERR,%s, alloc_tx_buffer() fail
+0%s %s U_ETHER DBG,%s,no available tx buffer 1
+0%s ppe_usb_suspend_queue_hook link_id=%d
+0%s %s U_ETHER ERR,%s, rndis_ptr is NULL
+0%s %s U_ETHER ERR,%s, unknown USB protocol type=%d
+0%s %s U_ETHER DBG,%s,aggregate the packet, num=%d len=%d
+0%s %s U_ETHER DBG,%s,usb_ep_queue() success, len=%d
+0%s %s U_ETHER LOG,%s, len=%d ipid=0x%04x
+0%s %s U_ETHER DBG,%s,len=%d skblen=%d skbdata_len=%d hr=%d f=0x%llx
+0%s %s U_ETHER DBG,%s,len=%d max_pkts=%d max_size=%d mtu=%d threshold=%d
+0%s %s U_ETHER ERR,%s, kmalloc() 3 return NULL
+0%s %s U_ETHER ERR,%s, kmalloc() 4 return NULL
+0%s %s U_ETHER ERR,%s, kmalloc() 5 return NULL
+0%s %s U_ETHER ERR,%s, alloc_usb_rx_context() return NULL
+0%s %s U_ETHER ERR,%s, usb_ep_queue() fail at %d, ret=%d
+0%s %s U_ETHER DBG,%s,
+0%s %s U_ETHER LOG,%s, speed=%d (USB_SPEED_SUPER=%d)
+0%s %s U_ETHER ERR,%s, usb_ep_enable(in) fail %s %d
+0%s %s U_ETHER ERR,%s, usb_ep_enable(out) fail %s %d
+0%s %s U_ETHER LOG,%s, qlen=%d
+0%s %s U_ETHER LOG,%s, link_num=%d total=%d num=%d
+0%s %s U_ETHER ERR,%s, tx_list fail, status=%d
+0%s %s U_ETHER ERR,%s, prealloc() rx_reqs fail, status=%d
+uether
+0%s U_ETHER ERR,%s, create_singlethread_workqueue() fail
+uether_delay
+0%s U_ETHER ERR,%s, create_workqueue() fail
+0%s U_ETHER LOG,%s, 
+0%s U_ETHER LOG,%s, MTK_USB_NET_HWNAT_SUPPORT
+gadget
+1.01
+0%s RNDIS LOG,%s,intf=%d (ctrl=%d data=%d) alt=%d
+0%s RNDIS ERR,%s,config_ep_by_speed() for notify fail
+0%s RNDIS ERR,%s,config_ep_by_speed() for in/out fail
+0%s RNDIS LOG,%s,after rndis_set_param_medium, params->speed = %d
+0%s RNDIS LOG,%s,
+enabled
+disabled
+5%s():rndis is NULL.
+5%s(): cdev or config is NULL.
+0%s RNDIS ERR,%s,rndis_msg_parser() fail, status=%d %d/%d
+0%s RNDIS LOG,%s,MaxTransferSize=%d Multi_pkt_txr=%s
+0%s RNDIS ERR,%s,usb_ep_queue() fail %d
+rndis
+super
+dual
+full
+RNDIS: %s speed IN/%s OUT/%s NOTIFY/%s
+0%s RNDIS ERR,%s,fail status=%d
+&opts->lock
+ifname
+qmult
+host_addr
+dev_addr
+RNDIS Communications Control
+RNDIS Ethernet Data
+RNDIS
+1.01
+0%s RNDIS ERR,%s,num_pkts=%d is over max_ul_num=%d
+0%s RNDIS ERR,%s,len=%d < hdr=44, in num_pkts=%d
+0%s RNDIS ERR,%s,msg len: %d/%d/%d/%d, len:%d
+0%s RNDIS ERR,%s,msg id: %d/%d/%d/%d, len:%d
+5RNDIS,%s, 
+5RNDIS,%s, OID is 0x%x
+5RNDIS,%s, OID_GEN_MEDIA_CONNECT_STATUS, media_state %d
+5RNDIS,%s, %s, retval is %d
+5RNDIS,%s, MsgType is %d, RequestID is 0x%x
+0%s RNDIS LOG,%s,RNDIS_MSG_INIT
+0%s RNDIS LOG,%s,RNDIS_MSG_HALT
+5RNDIS,%s, rndis_add_response return NULL
+6%s, rndis_add_response return NULL
+4%s: set unknown OID 0x%08X, size %d
+5RNDIS,%s, retval is %d
+0%s RNDIS LOG,%s,RNDIS_MSG_RESET
+5RNDIS,%s, reset, clean old response
+4%s: unknown RNDIS message 0x%08X len %d
+6invalid rndis pkt: skblen:%u hdr_len:%zu
+6invalid rndis message: %d/%d/%d/%d, len:%d
+6%s:skb clone failed
+1.00
+0%s ECM LOG,%s,
+ecm req %02x.%02x response err %d
+0%s ECM DBG,%s,fail status=%d
+cdc_ethernet
+&opts->lock
+0%s ECM LOG,%s,ECM_NOTIFY_CONNECT is_open=%d
+0%s ECM LOG,%s,ECM_NOTIFY_SPEED %d
+0%s ECM ERR,%s,usb_ep_queue() fail status=%d
+0%s ECM LOG,%s,intf=%d (ctrl=%d data=%d) alt=%d
+ifname
+qmult
+host_addr
+dev_addr
+CDC Ethernet Control Model (ECM)
+CDC Ethernet Data
+CDC ECM
+1.01
+0%s NCM LOG, %s, 
+0%s NCM LOG, %s, packet filter %02x
+0%s NCM LOG, %s, Host asked NTB parameters
+0%s NCM LOG, %s, Host asked INPUT SIZE, sending %d
+0%s NCM LOG, %s, Host asked NTB FORMAT, sending %d
+0%s NCM LOG, %s, NCM16 selected
+0%s NCM LOG, %s, NCM32 selected
+0%s NCM LOG, %s, Host asked CRC MODE, sending %d
+0%s NCM LOG, %s, non-CRC mode selected
+0%s NCM LOG, %s, CRC mode selected
+0%s NCM LOG, %s, invalid control req%02x.%02x v%04x i%04x l%d
+0%s NCM LOG, %s, ncm req%02x.%02x v%04x i%04x l%d
+0%s NCM ERR, %s, ncm req %02x.%02x response err %d
+Wrong NTH SIGN, skblen %d
+HEAD:
+Wrong NTB headersize
+OUT size exceeded
+Bad index: %#X
+Wrong NDP SIGN
+Bad NDP length: %#X
+Bad dgram length: %#X
+Bad CRC
+super
+dual
+full
+0%s NCM LOG, %s, CDC Network: %s speed IN/%s OUT/%s NOTIFY/%s
+0%s NCM ERR, %s, %s: can't bind, err %d
+0%s NCM ERR, %s, opts alloc fail
+&opts->lock
+0%s NCM ERR, %s, gether_setup_name_default fail
+0%s NCM ERR, %s, usb_os_desc_prepare_interf_dir fail
+true
+false
+0%s NCM LOG, %s, NCM_NOTIFY_CONNECT is_open %s
+0%s NCM LOG, %s, NCM_NOTIFY_SPEED speed %u
+0%s NCM ERR, %s, usb_ep_queue() fail status %d
+0%s NCM LOG, %s, intf=%d (ctrl=%d data=%d) alt=%d
+0%s NCM ERR, %s, gether_connect fail
+0%s NCM ERR, %s, kmalloc() for mtk_ndp failed
+0%s NCM ERR, %s, kmalloc() for mtk_ntb failed
+0%s NCM ERR, %s, [%s] skb is NULL
+0%s NCM ERR, %s, ncm alloc fail
+0%s NCM ERR, %s, host addr len < 12 is unexpected
+cdc_network
+ifname
+qmult
+host_addr
+dev_addr
+CDC Network Control Model (NCM)
+CDC Network Data
+CDC NCM
+/home/yhchin/Work/Projects/Keyonet/Rudolf/01_release/sdk.mtk.quectel.rg620t/T830/openwrt/build_dir/target-aarch64-openwrt-linux-musl_musl/linux-gem6xxx_evb6990_cpe_mt7990_emmc/usb_net/u_ether.c
+/home/yhchin/Work/Projects/Keyonet/Rudolf/01_release/sdk.mtk.quectel.rg620t/T830/openwrt/build_dir/target-aarch64-openwrt-linux-musl_musl/linux-gem6xxx_evb6990_cpe_mt7990_emmc/usb_net/f_ncm.c
+license=GPL v2
+parmtype=tx_buff_num:uint
+parmtype=uether_tx_max_aggr_num:uint
+parmtype=uether_rx_worker_cpu:uint
+parmtype=uether_rx_worker_type:uint
+parmtype=uether_dbg_ppe_usb_suspend:uint
+parmtype=uether_usb_request_qlen:uint
+parmtype=uether_rx_hwnat_enable:uint
+parmtype=uether_rx_profile:uint
+parmtype=u_ether_tx_req_threshold:uint
+parmtype=rndis_gso_debug:uint
+parmtype=rndis_gso_enable:uint
+parmtype=rndis_mtu:uint
+parmtype=uether_tx_profile:uint
+parmtype=uether_err:uint
+parmtype=uether_debug:uint
+parmtype=host_addr:charp
+parmtype=dev_addr:charp
+parmtype=qmult:uint
+license=GPL
+alias=usbfunc:rndis
+parmtype=rndis_aggregation:uint
+parmtype=f_rndis_debug:uint
+parmtype=rndis_ul_max_pkt_per_xfer:uint
+parmtype=rndis_dl_max_pkt_per_xfer:uint
+parmtype=rndis_debug:uint
+parmtype=rndis_ul_max_xfer_size_rcvd:int
+parmtype=rndis_ul_max_pkt_per_xfer_rcvd:int
+license=GPL
+alias=usbfunc:ecm
+license=GPL
+alias=usbfunc:ncm
+depends=
+name=usb_net
+vermagic=5.4.238 SMP mod_unload modversions aarch64
+gether_disconnect
+gether_connect
+gether_cleanup
+gether_set_remote_wakeup_id
+gether_usb_func_suspend
+gether_usb_get_status
+gether_usb_bus_resume
+gether_usb_bus_suspend
+gether_set_hwnat
+gether_update_dl_max_xfer_size
+gether_get_ifname
+gether_get_qmult
+gether_set_qmult
+gether_get_host_addr_u8
+gether_get_host_addr_cdc
+gether_get_host_addr
+gether_set_host_addr
+gether_get_dev_addr
+gether_set_dev_addr
+gether_set_gadget
+gether_set_protocol
+gether_register_netdev
+gether_setup_name_default
+gether_setup_name
+rndis_borrow_net
+rndis_rm_hdr
+rndis_rm_hdr_mtk
+rndis_get_next_response
+rndis_free_response
+rndis_add_hdr
+rndis_set_param_medium
+rndis_set_param_vendor
+rndis_set_param_dev
+rndis_deregister
+rndis_register
+rndis_msg_parser
+rndis_set_host_mac
+rndis_uninit
+rndis_signal_disconnect
+rndis_signal_connect
+module_layout
+flush_work
+ppe_usb_set_cb_hook
+kmalloc_caches
+__kmalloc
+usb_gstrings_attach
+usb_free_all_descriptors
+strchr
+param_ops_int
+usb_ep_disable
+usb_ep_enable
+strlen
+ppe_usb_tx_link_num_hook
+usb_ep_queue
+get_random_bytes
+hrtimer_cancel
+rtnl_lock
+netif_carrier_on
+skb_clone
+hex_to_bin
+delayed_work_timer_fn
+netif_carrier_off
+ppe_dev_register_hook
+ppe_dev_unregister_hook
+__dev_kfree_skb_any
+init_timer_key
+mutex_unlock
+usb_ep_set_halt
+ppe_usb_suspend_queue_hook
+usb_ep_alloc_request
+sprintf
+usb_function_unregister
+trace_hardirqs_on
+jiffies
+skb_trim
+param_ops_charp
+hrtimer_start_range_ns
+_dev_warn
+memset
+netif_rx_ni
+dev_set_mac_address
+netif_tx_wake_queue
+usb_put_function_instance
+kstrtou8
+__mutex_init
+ethtool_op_get_link
+printk
+usb_ep_autoconfig
+free_netdev
+ida_free
+register_netdev
+strlcpy
+skb_push
+mutex_lock
+crc32_le
+destroy_workqueue
+config_group_init_type_name
+skb_pull
+_dev_err
+usb_function_register
+usb_ep_dequeue
+print_hex_dump
+skb_queue_tail
+_dev_info
+__alloc_skb
+ppe_hook_tx_rndis
+queue_delayed_work_on
+queued_spin_lock_slowpath
+__stack_chk_fail
+usb_gadget_wakeup
+kmalloc_order_trace
+eth_type_trans
+sched_clock
+cpu_hwcap_keys
+config_ep_by_speed
+usb_ep_free_request
+kmem_cache_alloc_trace
+eth_validate_addr
+kfree
+memcpy
+hrtimer_init
+usb_assign_descriptors
+usb_interface_id
+unregister_netdev
+hrtimer_try_to_cancel
+queue_work_on
+nJne
+snprintf
+ppe_usb_resume_queue_hook
+usb_os_desc_prepare_interf_dir
+skb_put
+eth_mac_addr
+trace_hardirqs_off
+param_ops_uint
+arm64_const_caps_ready
+alloc_workqueue
+ppe_usb_tx_done_hook
+rtnl_unlock
+ppe_usb_rx_send_hook
+dev_get_stats
+ida_alloc_range
+alloc_etherdev_mqs
+usb_net
+.L14472
+rndis_mod_init
+__crc_rndis_borrow_net
+__crc_gether_usb_func_suspend
+__crc_gether_update_dl_max_xfer_size
+__crc_gether_set_dev_addr
+gether_exit
+__crc_rndis_set_param_medium
+__crc_gether_get_host_addr
+rx_fill
+ncm_mod_exit
+__crc_gether_get_dev_addr
+__crc_rndis_add_hdr
+__crc_gether_get_host_addr_u8
+__crc_rndis_msg_parser
+cleanup_module
+__crc_rndis_deregister
+__crc_rndis_signal_disconnect
+__crc_gether_register_netdev
+__crc_rndis_set_host_mac
+__crc_gether_set_qmult
+__crc_gether_usb_get_status
+rndis_add_header_mtk
+__crc_gether_disconnect
+__crc_gether_get_ifname
+init_module
+__crc_gether_usb_bus_suspend
+rndis_mod_exit
+__crc_rndis_free_response
+__crc_rndis_get_next_response
+rndis_suspend
+__crc_rndis_set_param_vendor
+ecm_mod_exit
+gether_init
+rndis_get_status
+__crc_gether_set_host_addr
+ecm_mod_init
+__crc_gether_cleanup
+rndis_resume
+rndis_ul_max_xfer_size_rcvd
+__crc_rndis_signal_connect
+__crc_gether_set_protocol
+__crc_gether_setup_name_default
+__crc_gether_setup_name
+__crc_rndis_register
+__crc_gether_set_hwnat
+__crc_gether_connect
+rndis_func_suspend
+__crc_gether_set_remote_wakeup_id
+__crc_rndis_rm_hdr_mtk
+__crc_gether_set_gadget
+rndis_set_max_pkt_xfer
+__crc_rndis_set_param_dev
+__crc_rndis_rm_hdr
+__crc_gether_get_qmult
+__crc_gether_get_host_addr_cdc
+__crc_gether_usb_bus_resume
+__crc_rndis_uninit
+rndis_ul_max_pkt_per_xfer_rcvd
+ncm_mod_init
+alloc_etherdev_mqs
+ida_alloc_range
+dev_get_stats
+ppe_usb_rx_send_hook
+rtnl_unlock
+ppe_usb_tx_done_hook
+alloc_workqueue
+arm64_const_caps_ready
+param_ops_uint
+trace_hardirqs_off
+eth_mac_addr
+skb_put
+usb_os_desc_prepare_interf_dir
+ppe_usb_resume_queue_hook
+__this_module
+snprintf
+queue_work_on
+hrtimer_try_to_cancel
+unregister_netdev
+usb_interface_id
+usb_assign_descriptors
+hrtimer_init
+memcpy
+kfree
+eth_validate_addr
+kmem_cache_alloc_trace
+usb_ep_free_request
+config_ep_by_speed
+cpu_hwcap_keys
+sched_clock
+eth_type_trans
+kmalloc_order_trace
+usb_gadget_wakeup
+__stack_chk_fail
+queued_spin_lock_slowpath
+queue_delayed_work_on
+ppe_hook_tx_rndis
+__alloc_skb
+_dev_info
+skb_queue_tail
+print_hex_dump
+usb_ep_dequeue
+usb_function_register
+_dev_err
+skb_pull
+config_group_init_type_name
+destroy_workqueue
+crc32_le
+mutex_lock
+skb_push
+strlcpy
+ida_free
+free_netdev
+usb_ep_autoconfig
+ethtool_op_get_link
+printk
+__mutex_init
+kstrtou8
+usb_put_function_instance
+netif_tx_wake_queue
+dev_set_mac_address
+netif_rx_ni
+memset
+_dev_warn
+hrtimer_start_range_ns
+param_ops_charp
+skb_trim
+jiffies
+trace_hardirqs_on
+usb_function_unregister
+sprintf
+usb_ep_alloc_request
+ppe_usb_suspend_queue_hook
+usb_ep_set_halt
+mutex_unlock
+init_timer_key
+__dev_kfree_skb_any
+ppe_dev_unregister_hook
+ppe_dev_register_hook
+netif_carrier_off
+delayed_work_timer_fn
+hex_to_bin
+skb_clone
+netif_carrier_on
+rtnl_lock
+hrtimer_cancel
+get_random_bytes
+usb_ep_queue
+ppe_usb_tx_link_num_hook
+strlen
+usb_ep_enable
+usb_ep_disable
+param_ops_int
+strchr
+usb_free_all_descriptors
+usb_gstrings_attach
+__kmalloc
+kmalloc_caches
+ppe_usb_set_cb_hook
+flush_work
+.symtab
+.strtab
+.shstrtab
+.note.Linux
+.rela.text
+.rela.text.unlikely
+.rela.init.text
+.rela.exit.text
+.rela__ksymtab_gpl
+.rela__kcrctab_gpl
+.rela.rodata
+.rela.altinstructions
+.rodata.str1.1
+.rodata.str
+.modinfo
+__ksymtab_strings
+.rela__param
+.rela.eh_frame
+__versions
+.rela__jump_table
+.rela.data
+.rela__bug_table
+.rela.gnu.linkonce.this_module
+.init.plt
+.text.ftrace_trampoline
+.bss
