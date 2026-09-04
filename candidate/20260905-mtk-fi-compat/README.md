@@ -28,8 +28,9 @@ The compiled layout is:
 The ELF disassembly records `+0xb0 = ncm_free_inst` and no assignment to
 `+0xa8`; zero initialization therefore leaves `f` and `set_inst_name` NULL.
 
-The artifact was built offline and is not approved for T6A deployment. The
-static gate currently reports `FAIL` for required symbol CRCs because the
-available shared kernel output produces a different symbol universe/CRC set
-than the recorded vendor map. This candidate must not be called PASS until
-that build-input discrepancy is resolved.
+The artifact build is offline and is not approved for T6A deployment. The
+static gate reports `RESULT=FAIL`. The vendor map is demonstrably used only
+after the isolated `vmlinux` input is disabled, but the diagnostic ELF has 72
+imports instead of the old 74 and lacks `__stack_chk_fail` and
+`kmem_cache_alloc_trace`. Strict modpost also rejects vendor-map-missing
+symbols.
