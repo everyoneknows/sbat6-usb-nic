@@ -1,0 +1,28 @@
+[PASS] candidate artifact exists
+[PASS] candidate exact f_ncm.c exists
+[PASS] candidate exact u_ether.c exists
+[PASS] usbfunc:ncm registration
+[PASS] ncm_alloc_inst present
+[PASS] ncm_func_type present
+[PASS] ncm_func_type.ct_attrs present
+[PASS] dev_addr attribute present
+[PASS] host_addr attribute present
+[PASS] qmult attribute present
+[PASS] ifname attribute present
+[PASS] gether setup path present
+[PASS] free_func_inst present
+[PASS] attribute table present
+[PASS] config_group initialization present
+[PASS] OS descriptor path present
+[PASS] netdev registration path present
+[PASS] vermagic exact
+[PASS] telemetry-only dependency
+[PASS] ncm_alloc_inst in ELF
+[PASS] ncm_alloc in ELF
+[PASS] ncm_func_type in ELF
+[PASS] ncm_attrs in ELF
+[PASS] ncm_free_inst in ELF
+[PASS] performance changes absent
+[PASS] vendor ABI map present
+RESULT=PASS
+

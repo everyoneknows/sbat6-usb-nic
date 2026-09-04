@@ -1,0 +1,1 @@
+make -C /home/masataka/projects/sbair6-rce/work/src/linux-5.4.238-ax88179 O=/home/masataka/projects/sbat6-usbnet/tmp-kernel-out.yf9KMT M=/home/masataka/projects/sbat6-usbnet/source ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- KBUILD_EXTRA_SYMBOLS=/home/masataka/projects/butlerx/research/t6a-ncm-telemetry/Module.symvers modules
