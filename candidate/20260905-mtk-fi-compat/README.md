@@ -29,8 +29,13 @@ The ELF disassembly records `+0xb0 = ncm_free_inst` and no assignment to
 `+0xa8`; zero initialization therefore leaves `f` and `set_inst_name` NULL.
 
 The artifact build is offline and is not approved for T6A deployment. The
-static gate reports `RESULT=FAIL`. The vendor map is demonstrably used only
-after the isolated `vmlinux` input is disabled, but the diagnostic ELF has 72
-imports instead of the old 74 and lacks `__stack_chk_fail` and
-`kmem_cache_alloc_trace`. Strict modpost also rejects vendor-map-missing
-symbols.
+static gate reports `RESULT=FAIL`. Import-set equality with the old candidate
+is informational only. Direct extraction from the final diagnostic ELF found
+81 undefined symbols and 72 `__versions` entries. The old ELF has 73 direct
+undefined symbols and 74 `__versions` entries (the extra entry is
+`module_layout`). The new ELF does not reference `__stack_chk_fail` or
+`kmem_cache_alloc_trace`, but it has ten other actual kernel imports without
+`__versions`: `hrtimer_init`, `kmem_cache_alloc`, and the eight `usb_ep_*`
+symbols. Consequently the mandatory actual-import coverage gate fails;
+64/74 kernel CRCs match, while all 7/7 telemetry CRCs match. The diagnostic
+ELF is retained under `artifacts/` for audit only.
