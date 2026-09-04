@@ -1,0 +1,845 @@
+[    0.307970]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip conn_on pwr_on 
+[    0.326142]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip disp pwr_on 
+[    1.350774]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Failed to power on domain eth
+[    1.359981]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip medsys pwr_on 
+[    1.368134]  (1)[1:swapper/0]mtk-scpsys 12001000.power-controller: Skip hsm_top pwr_on 
+[    1.407561]  (1)[1:swapper/0]spmi spmi-0: node /spmi@12804000/md1_sim1_hot_plug_eint err (-22) does not have 'reg' property
+[    1.418864]  (1)[1:swapper/0]spmi spmi-0: node /spmi@12804000/md1_sim2_hot_plug_eint err (-22) does not have 'reg' property
+[    1.430011]  (1)[1:swapper/0]spmi spmi-0: node /spmi@12804000/md1_pmic1_eint err (-22) does not have 'reg' property
+[    1.559199]  (0)[1:swapper/0]SSPM: sspm_boot ok
+[    2.254311]  (2)[1:swapper/0]mtk-pcie 11290000.pcie: PCIe link down, ltssm reg val: 0x1
+[    2.437054]  (2)[1:swapper/0]mtk_eth_soc_overlay 15100000.ethernet_phy_adapt: eth_overlay_probe in
+[    2.894489]  (1)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@0/compatible
+[    2.908433]  (1)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@0/reg
+[    2.921752]  (1)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@0/phy-mode
+[    3.378850]  (2)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@1/compatible
+[    3.392792]  (2)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@1/reg
+[    3.406112]  (2)[1:swapper/0]OF: overlay: WARNING: memory leak will occur if overlay removed, property: /netsys@15100000/ethernet@15100000/mac@1/phy-mode
+[    3.523788]  (2)[1:swapper/0]mtk_soc_eth 15100000.ethernet: mtk_probe in
+[    3.532333]  (2)[1:swapper/0]mtk_soc_eth 15100000.ethernet: [PHY_CNT_GPIO] ql_phy_power_on Failed to request mac:0 phy_power gpio 17
+[    5.100818]  (3)[1:swapper/0]Kernel RAWDATA EMMC: can't open /dev/block/qraw
+[    5.108029]  (3)[1:swapper/0]mtk_soc_eth 15100000.ethernet: Rawdata Pop MAC1 address is invalid
+[    5.118084]  (3)[1:swapper/0]Kernel RAWDATA EMMC: can't open /dev/block/qraw
+[    5.125294]  (3)[1:swapper/0]mtk_soc_eth 15100000.ethernet: Rawdata Pop MAC0 address is invalid
+[    5.135167]  (3)[1:swapper/0](unnamed net_device) (dummy): netif_napi_add() called with weight 256
+[    5.144323]  (3)[1:swapper/0] ql_2p5g_phydev1: mac_id:0 addr:0  register attrs for adummy
+[    5.152502]  (3)[1:swapper/0]mtk_soc_eth 15100000.ethernet: mtk_probe: mtk_probe done
+[    5.163504]  (3)[1:swapper/0]mcupm c540000.mcupm: invalid resource
+[    5.169758]  (3)[1:swapper/0]MBOX 0 can't find init reg
+[    5.258272]  (3)[1:swapper/0]vsim1: invalid voltage constraints
+[    5.264213]  (3)[1:swapper/0]mt6361-regulator 12804000.spmi:mt6361@4:regulator: failed to register LDO25 regulator(-22)
+[    5.275180]  (3)[1:swapper/0]vsim2: invalid voltage constraints
+[    5.281108]  (3)[1:swapper/0]mt6361-regulator 12804000.spmi:mt6361@4:regulator: failed to register LDO26 regulator(-22)
+[    5.979243]  (0)[1:swapper/0]mtu3 11201000.usb: clks of sts1 are not stable!
+[    5.992703]  (0)[1:swapper/0]no file given for LUN0
+[    5.997660]  (0)[1:swapper/0]udc 11201000.usb: failed to start g_mass_storage: -22
+[    6.029612]  (1)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.038183]  (1)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.044196]  (0)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.052903]  (0)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.058927]  (0)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.067449]  (0)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.073444]  (0)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.081969]  (0)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.087995]  (1)[1:swapper/0]bmp380 i2c_trans err:76 76 (0 ffffffc01002379e 1) -6
+[    6.096733]  (1)[1:swapper/0]bmp380_check_chip_id fail(0x 0).
+[    6.102478]  (1)[1:swapper/0]bmp380 chip id mismatch,exit probe!
+[    6.108497]  (1)[1:swapper/0]bmp380_probe fail!
+[    6.116502]  (1)[1:swapper/0]i2c i2c-3: Failed to register i2c client slave_charger at 0x5b (-16)
+[    6.125413]  (1)[1:swapper/0]i2c i2c-3: of_i2c: Failure registering /i2c@11ed1000/slave_charger@5b
+[    6.134387]  (1)[1:swapper/0]i2c i2c-3: Failed to create I2C device for /i2c@11ed1000/slave_charger@5b
+[    6.143995]  (1)[1:swapper/0]i2c i2c-3: Failed to register i2c client mhl_switch at 0x28 (-16)
+[    6.152634]  (1)[1:swapper/0]i2c i2c-3: of_i2c: Failure registering /i2c@11ed1000/mhl_switch@28
+[    6.161347]  (1)[1:swapper/0]i2c i2c-3: Failed to create I2C device for /i2c@11ed1000/mhl_switch@28
+[    8.272427]  (1)[1:swapper/0]mtk-msdc 11230000.mmc: Unsupported signal voltage!
+[    8.292541]  (1)[1:swapper/0]mtk-msdc 11230000.mmc: host->mclk:0, ios->clock:400000, host->timing:0,ios->timing:0
+[    8.651558]  (1)[1:swapper/0]mtk-msdc 11240000.mmc: host->mclk:0, ios->clock:400000, host->timing:0,ios->timing:0
+[    8.680840]  (1)[37:kworker/1:1]mtk-msdc 11240000.mmc: host->mclk:400000, ios->clock:0, host->timing:0,ios->timing:0
+[    8.691395]  (1)[37:kworker/1:1]mtk-msdc 11240000.mmc: set mclk to 0
+[    8.709241]  (3)[1:swapper/0]proslic_spi spi3.0: mtk_ext_spi_probe()
+[    8.716098]  (0)[1:swapper/0]proslic_spi2 spi0.0: mtk_ext_spi_probe()
+[    8.729456]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_enable_clock()
+[    8.738048]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_runtime_resume()
+[    8.747955]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_runtime_suspend()
+[    8.760161]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_afe_pcm_dev_probe()line 4184
+[    8.771228]  (0)[1:swapper/0]debugfs: Directory '11210000.mt6990-afe-pcm' with parent 'mt6990-slic' already present!
+[    8.782892]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: Control not supported for path ETDM_PCM0_MUX -> [PCM] -> ETDM Capture
+[    8.795179]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: Failed to add route ETDM_PCM0_MUX -> PCM -> ETDM Capture
+[    8.806839]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: Control not supported for path ETDM_PCM1_MUX -> [PCM] -> ETDM Capture
+[    8.819108]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: Failed to add route ETDM_PCM1_MUX -> PCM -> ETDM Capture
+[    8.831664]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: no source widget found for AP_DMIC_CH34_EN
+[    8.842116]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: ASoC: Failed to add route AP_DMIC_CH34_EN -> direct -> AP DMIC CH34 Capture
+[    8.858006]  (1)[1653:kworker/1:2]mtk-msdc 11230000.mmc: host->mclk:400000, ios->clock:400000, host->timing:0,ios->timing:9
+[    8.858939]  (0)[1:swapper/0]mt6990-audio 11210000.mt6990-afe-pcm: mt6990_add_misc_control()
+[    8.877590]  (1)[1653:kworker/1:2]mtk-msdc 11230000.mmc: host->mclk:400000, ios->clock:200000000, host->timing:9,ios->timing:9
+[    8.900853]  (0)[1:swapper/0][MEDMCU] core_0 enable
+[    8.917544]  (1)[1653:kworker/1:2]mtk-msdc 11230000.mmc: host->mclk:200000000, ios->clock:200000000, host->timing:9,ios->timing:1
+[    8.930308]  (1)[1653:kworker/1:2]mtk-msdc 11230000.mmc: host->mclk:200000000, ios->clock:52000000, host->timing:1,ios->timing:1
+[    8.942084]  (1)[1653:kworker/1:2]mtk-msdc 11230000.mmc: host->mclk:52000000, ios->clock:52000000, host->timing:1,ios->timing:10
+[    8.953693]  (1)[1653:kworker/1:2]mtk-msdc 11230000.mmc: host->mclk:52000000, ios->clock:200000000, host->timing:10,ios->timing:10
+[    8.973806]  (1)[1653:kworker/1:2]mtk-msdc 11230000.mmc: host->mclk:200000000, ios->clock:160000000, host->timing:10,ios->timing:10
+[    8.988569]  (2)[55:kworker/2:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=0, o_vts = 0x602
+[    8.997549]  (2)[55:kworker/2:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=1, o_vts = 0x602
+[    9.006509]  (2)[55:kworker/2:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=2, o_vts = 0x602
+[    9.015554]  (2)[55:kworker/2:1]mtk-pmic-temp mt6361_temp: [pmic6361_debug] tz_id=3, o_vts = 0x602
+[    9.041387]  (2)[1:swapper/0]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.049727]  (2)[1:swapper/0]gpio-keys gpio-keys: Button without wakeup-event-action
+[    9.057504]  (2)[1:swapper/0]gpio-keys gpio-keys: Button without wakeup-event-action
+[    9.065264]  (2)[1:swapper/0]gpio-keys gpio-keys: Button without wakeup-event-action
+[    9.141884]  (2)[1859:kworker/2:2]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.151816]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.160021]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.168165]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.176319]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.184973]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.199354]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.795825]  (0)[1911:kmodloader]conninfra@(platform_request_firmware:530) failed to open or read!(conninfra.cfg)
+[    9.806128]  (0)[1911:kmodloader]conninfra@(conninfra_conf_init:584) read conninfra.cfg file fails (only check file existence, this is ok)
+[    9.824705]  (0)[1911:kmodloader][clkbuf] [consys_hw_tcxo_parser]:645: Fail to get conninfra pinctrl
+[    9.834962]  (0)[68:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[    9.849942]  (2)[55:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   12.857057]  (3)[2620:ccci_fsd]ccci_fsd: fsd_dump_init: create fsd_dump[0xbc81020/0xfff] with ret=0
+[   12.857284]  (3)[2620:ccci_fsd]ccci_fsd: ccci_fsd/md_fsd Ver:v2.1, CCCI Ver:6, ppid=1, pid=2620
+[   12.875458]  (3)[2620:ccci_fsd]ccci_fsd: dev_node=/dev/ccci_fs stream_support=1 DBG_LV=0[E/W/I/D/V] PF=1
+[   12.941878]  (3)[2671:ccci_mdinit]ccci_mdinit: md_init ver:2.12
+[   12.951191]  (3)[2671:ccci_mdinit]ccci_mdinit: Open ipc port 2 fail
+[   12.960536]  (1)[2671:ccci_mdinit]ccci_mdinit: Open md_log_config file failed, errno=2!
+[   12.970467]  (1)[2671:ccci_mdinit]ccci_mdinit: get_aee_off_fast_reboot_enable: aee_off_fast_reboot_enable not exist, using default value
+[   12.983815]  (1)[2671:ccci_mdinit]ccci_mdinit: modem state 0
+[   13.032981]  (0)[2746:ccci_rpcd_com]ccci_rpcd_com: ccci_rpcd Ver:v2.00, CCCI Ver:6 
+[   13.041676]  (0)[2746:ccci_rpcd_com]ccci_rpcd_com: main:dev_node=/dev/ccci_rpc,devicefd= 3
+[   13.386175]  (2)[2620:ccci_fsd]ccci_fsd: can't catch SIGKILL
+[   13.477707]  (0)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open X:/nv_config /mnt/vendor/protect_f/md/nv_config :2 (0x0)
+[   13.488813]  (0)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.505804]  (1)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open Z:/FATDC4230CE.log /mnt/vendor/nvdata/md/FATDC4230CE.log :2 (0x0)
+[   13.517787]  (1)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.542566]  (1)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open Z:/NVRA56C1012.log /mnt/vendor/nvdata/md/NVRA56C1012.log :2 (0x0)
+[   13.554582]  (1)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.559692]  (1)[2620:ccci_fsd]ccci_fsd: cmpt_Read, open fail
+[   13.575416]  (3)[2620:ccci_fsd]ccci_fsd: CreateDir: [error]fail create Dir /mnt/vendor/mdota: 17 
+[   13.584601]  (3)[2620:ccci_fsd]ccci_fsd: Error_code=17
+[   13.619281]  (1)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/MTK_RAWOTA_DEFAULT.mcfrawota, error=2
+[   13.631679]  (1)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.637889]  (1)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/MTK_RAWOTA_DEFAULT.mcfrawota, error=2
+[   13.650872]  (1)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.657370]  (1)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/MTK_RAWOTA_DEFAULT.mcfrawota, error=2
+[   13.670589]  (1)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.675976]  (0)[2746:ccci_rpcd_com]ccci_rpcd_com: Main: IPC_RPC_SAR_TABLE_IDX_QUERY_OP:mtk_sar_table_id_get fail
+[   13.688016]  (1)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_GSM.mcfrawota, error=2
+[   13.700993]  (1)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.706396]  (1)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_GSM.mcfrawota, error=2
+[   13.720033]  (1)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.725534]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_GSM.mcfrawota, error=2
+[   13.739550]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.745109]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_WCDMA.mcfrawota, error=2
+[   13.758239]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.763802]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_WCDMA.mcfrawota, error=2
+[   13.777635]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.783082]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_WCDMA.mcfrawota, error=2
+[   13.797245]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.802671]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set1_LTE.mcfrawota, error=2
+[   13.815571]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.820963]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set1_LTE.mcfrawota, error=2
+[   13.834570]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.840003]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set1_LTE.mcfrawota, error=2
+[   13.854036]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.859487]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_C2K.mcfrawota, error=2
+[   13.872423]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.877884]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_C2K.mcfrawota, error=2
+[   13.891445]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.896829]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_C2K.mcfrawota, error=2
+[   13.910837]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.916268]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set1_NR_FR1.mcfrawota, error=2
+[   13.929457]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.934839]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set1_NR_FR1.mcfrawota, error=2
+[   13.948675]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.954102]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set1_NR_FR1.mcfrawota, error=2
+[   13.968392]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.973883]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_NR_FR2.mcfrawota, error=2
+[   13.987046]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   13.992448]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_NR_FR2.mcfrawota, error=2
+[   14.006330]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.011865]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_NR_FR2.mcfrawota, error=2
+[   14.026207]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.031625]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_SAR_Type0_Set0_MMRF.mcfrawota, error=2
+[   14.044571]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.049987]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_SAR_Type0_Set0_MMRF.mcfrawota, error=2
+[   14.063695]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.069183]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_SAR_Type0_Set0_MMRF.mcfrawota, error=2
+[   14.083332]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.088740]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota/HW_CONFIG_NR_FR2_ULBM_Beambook_Set0.mcfrawota, error=2
+[   14.102224]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.107619]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/custom/HW_CONFIG_NR_FR2_ULBM_Beambook_Set0.mcfrawota, error=2
+[   14.121797]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.127269]  (2)[2620:ccci_fsd]ccci_fsd: FS_IsReadOnly: [error]fail on file: /mnt/vendor/mdota2/mtk_default/HW_CONFIG_NR_FR2_ULBM_Beambook_Set0.mcfrawota, error=2
+[   14.141964]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.152317]  (2)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OTA.mcfota /mnt/vendor/mdota/MTK_OTA.mcfota :2 (0x0)
+[   14.164152]  (2)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.196281]  (3)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open T:/mtk_default/MTK_OPOTA_SBPID_0.mcfopota /mnt/vendor/mdota2/mtk_default/MTK_OPOTA_SBPID_0.mcfopota :2 (0x0)
+[   14.211849]  (3)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.217322]  (3)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open T:/custom/MTK_OPOTA_SBPID_0.mcfopota /mnt/vendor/mdota2/custom/MTK_OPOTA_SBPID_0.mcfopota :2 (0x0)
+[   14.231983]  (3)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.237532]  (0)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_SBPID_0.mcfopota /mnt/vendor/mdota/MTK_OPOTA_SBPID_0.mcfopota :2 (0x0)
+[   14.251472]  (0)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.256970]  (0)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open T:/mtk_default/MTK_OPOTA_GENERAL.mcfopota /mnt/vendor/mdota2/mtk_default/MTK_OPOTA_GENERAL.mcfopota :2 (0x0)
+[   14.272752]  (0)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.279761]  (0)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_GENERAL.mcfopota /mnt/vendor/mdota/MTK_OPOTA_GENERAL.mcfopota :2 (0x0)
+[   14.293701]  (0)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.312774]  (0)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open T:/custom/MTK_OPOTA_SBPID_129.mcfopota /mnt/vendor/mdota2/custom/MTK_OPOTA_SBPID_129.mcfopota :2 (0x0)
+[   14.327881]  (0)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.333236]  (0)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_SBPID_129.mcfopota /mnt/vendor/mdota/MTK_OPOTA_SBPID_129.mcfopota :2 (0x0)
+[   14.347480]  (0)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.375946]  (0)[2620:ccci_fsd]ccci_fsd: Open: [error]fail open S:/mdota/MTK_OPOTA_SBPID_50.mcfopota /mnt/vendor/mdota/MTK_OPOTA_SBPID_50.mcfopota :2 (0x0)
+[   14.390114]  (0)[2620:ccci_fsd]ccci_fsd: Error_code=2
+[   14.542533]  (2)[2620:ccci_fsd]ccci_fsd: GetDrive: [error]type not FS_DRIVE_I_SYSTEM: 0x8 
+[   14.615520]  (3)[2906:ccci_rpcd_com]ccci_rpcd_com: md status is: MD_STA_EV_READY, close(g_drdi_fd)
+[   14.618455]  (1)[2620:ccci_fsd]ccci_fsd: Error, can't use relative path for security: ..
+[   14.624596]  (3)[2906:ccci_rpcd_com]ccci_rpcd_com: MD ready md_state_polling_thread stop
+[   14.642548]  (2)[2620:ccci_fsd]ccci_fsd: FindNext: [error]no more files...
+[   14.715666]  (3)[2620:ccci_fsd]ccci_fsd: Error, can't use relative path for security: ..
+[   14.729128]  (3)[2620:ccci_fsd]ccci_fsd: FindNext: [error]no more files...
+[   14.741766]  (2)[55:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   14.777732]  (0)[68:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   15.762911] WiFi@ERROR.CFG,get_dbg_setting_by_profile() 4213: debug level setting=INDEX0_debug_level not found!!
+[   15.773150] WiFi@ERROR.CFG,get_dbg_setting_by_profile() 4238: debug option setting=INDEX0_debug_option not found!!
+[   15.783605] WiFi@ERROR.MLO,bss_mngr_con_init() 3042: bss_mngr_con_init: inited = 0
+[   15.791192] WiFi@ERROR.MLO,bss_idx_bitmap_init() 88: bss_idx_bitmap_init: map_size=12
+[   15.799029] WiFi@ERROR.MLO,mld_grp_bitmap_init() 209: : map_size=12
+[   15.805316] WiFi@ERROR.MLO,bss_mngr_ext_entry_init() 3023: bss(64), grp(65)
+[   16.063252]  (1)[37:kworker/1:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   16.079801]  (1)[3223:kmodloader]2.31 U_ETHER LOG,gether_init, 
+[   16.085768]  (1)[3223:kmodloader]2.31 U_ETHER LOG,gether_init, MTK_USB_NET_HWNAT_SUPPORT
+[   16.712343] WiFi@ERROR.CFG,llget_profile_setting() 2167: value of INDEX0_EEPROM_def_bin_path not found
+[   16.726238] WiFi@ERROR.RSV,CFG80211_RegNotifier() 14675: crda> requlation requestion by core: WiFi@ERROR.RSV,CFG80211_RegNotifier() 14709: 00
+[   16.738991] WiFi@ERROR.RSV,CFG80211_Register() 14616: 80211> end
+[   16.759645] WiFi@ERROR.RSV,CFG80211_RegNotifier() 14675: crda> requlation requestion by core: WiFi@ERROR.RSV,CFG80211_RegNotifier() 14709: 00
+[   16.772404] WiFi@ERROR.RSV,CFG80211_Register() 14616: 80211> end
+[   16.791802] WiFi@ERROR.RSV,CFG80211_RegNotifier() 14675: crda> requlation requestion by core: WiFi@ERROR.RSV,CFG80211_RegNotifier() 14709: 00
+[   16.804570] WiFi@ERROR.RSV,CFG80211_Register() 14616: 80211> end
+[   16.812040]  (2)[55:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   16.821046]  (2)[55:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   22.127303]  (1)[9847:sh]mtu3 11201000.usb: clks of sts1 are not stable!
+[   22.718950]  (2)[10546:mkdir]1.01 RNDIS LOG,rndis_alloc_inst,
+[   22.724976]  (2)[10546:mkdir]gether_setup_name_default - dev->qmult:30, qmult:30
+[   22.736126]  (0)[10558:mkdir]1.00 ECM LOG,ecm_alloc_inst,
+[   22.741555]  (0)[10558:mkdir]gether_setup_name_default - dev->qmult:30, qmult:30
+[   22.751683]  (2)[10569:mkdir]1.01 NCM LOG, ncm_alloc_inst, 
+[   22.757420]  (2)[10569:mkdir]gether_setup_name_default - dev->qmult:30, qmult:30
+[   23.162279]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_open: in mac[1]
+[   23.169852]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_open: mtk_open refcount  0
+[   23.178252]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_open: netdev_uses_dsa NOT in mac[1]
+[   23.187404]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_dma_init: mtk_dma_init in
+[   23.195685]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_init_fq_dma: eth->scratch_ring no sram
+[   23.206780]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: ana_rgc3= 128 val =14017 speed:2500
+[   23.215623]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2: v2 in
+[   23.223538]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2:SGMSYS_QPHY_PWR_STATE_CTRL 0
+[   23.234659]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: [1] 0x128= 14017 0x020 = 31120009 PCS_control 0x000 = 140
+[   23.245369]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: mtk_mac_config: mac[1] MAC_MCR: 4833b
+[   23.254338]  (3)[10330:netifd]mtk_soc_eth 15100000.ethernet: 10b0ea8e id: 1
+[   23.261334]  (0)[685:kworker/u8:4]mtk_soc_eth 15100000.ethernet: ana_rgc3= 128 val =14017 speed:2500
+[   23.270574]  (0)[685:kworker/u8:4]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2: v2 in
+[   23.278916]  (0)[685:kworker/u8:4]mtk_soc_eth 15100000.ethernet: mtk_sgmii_phy_gen2:SGMSYS_QPHY_PWR_STATE_CTRL 0
+[   23.290351]  (0)[685:kworker/u8:4]mtk_soc_eth 15100000.ethernet: [1] 0x128= 14017 0x020 = 31120009 PCS_control 0x000 = 140
+[   23.301431]  (0)[685:kworker/u8:4]mtk_soc_eth 15100000.ethernet: mtk_pse_port_link_set: mac[1] fe_glo_cfg = 810000b0
+[   23.311962]  (0)[685:kworker/u8:4]mtk_soc_eth 15100000.ethernet: mtk_mac_link_up: mac[1] mcr = 0x104e33b speed:2500 duplex:1 tx_pause:1 rx_pause:1
+[   27.422893]  (1)[16398:aee_aed] mrdump_worker sched_setscheduler fail
+[   27.436112]  (1)[16398:aee_aed] ipanic_dumchar_open:  MTD_MEMGETINFO failed(22), Invalid argument
+[   27.447107]  (1)[16398:aee_aed] ipanic_dumchar_open:  MTD_MEMGETINFO failed(22), Invalid argument
+[   27.501432]  (1)[16398:aee_aed] Open /dev/ccci_hsapif_minidump fail, error: 2(No such file or directory)
+[   28.745191] WiFi@ERROR.CFG,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   28.754549] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   28.850669] WiFi@ERROR.CFG,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   28.860028] 7990@ERROR.CFG,rai0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   28.953818] WiFi@ERROR.CFG,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   28.965536] 7990@ERROR.CFG,rax0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   29.093881] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   29.105477] 7990@ERROR.CFG,rai0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   29.124537] 7990@ERROR.CFG,rax0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   31.189073] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra0
+[   31.217534] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra0
+[   31.276917] 7990@ERROR.CFG,ra0,RTMPWirelessModeCfg() 500: Init: BSS0 PhyMode=78
+[   31.284293] 7990@ERROR.CFG,ra0,RTMPWirelessModeCfg() 500: Init: BSS1 PhyMode=78
+[   31.291601] 7990@ERROR.CFG,ra0,RTMPWirelessModeCfg() 500: Init: BSS2 PhyMode=78
+[   31.310249] 7990@ERROR.AP,ra0,rtmp_read_wds_from_file() 1335: invalid input(=0;0;0)
+[   31.327976] 7990@ERROR.SEC,ra0,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=0, Desired MFPC=1
+[   31.336098] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=1, Desired MFPC=1
+[   31.343833] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=2, Desired MFPC=1
+[   31.353811] WiFi@ERROR.SEC,Set_ApCliPMFMFPC_Proc() 2589: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   31.362001] WiFi@ERROR.SEC,Set_ApCliPMFMFPR_Proc() 2653: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   31.370253] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1380: APCLI[0] ApCliMuMimoDlEnable = 0
+[   31.379156] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1399: APCLI[0] ApCliMuMimoUlEnable = 0
+[   31.779662]  (2)[55:kworker/2:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   31.926912]  (0)[68:kworker/0:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   32.188843]  (0)[5367:hostapd]mt7990 0000:01:00.0: HW/SW Version: 0x8a108a10, Build Time: 20230704161925a
+[   32.188843] 
+[   32.384332]  (0)[5367:hostapd]mt7990 0000:01:00.0: -->dsp_start
+[   32.419934]  (1)[5367:hostapd]mt7990 0000:01:00.0: DSP Firmware Version: ____000000, Build Time: 20231113135337
+[   32.430719]  (1)[5367:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:57936, addr:0x86000000
+[   32.465099]  (1)[5367:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:5840, addr:0x86200000
+[   32.475539]  (1)[5367:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:57936, addr:0x86400000
+[   32.495686]  (1)[5367:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:5840, addr:0x86600000
+[   32.515744]  (1)[5367:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:57936, addr:0x86800000
+[   32.536644]  (1)[5367:hostapd]mt7990 0000:01:00.0: mcu_dsp_send_ram_firmware:5840, addr:0x86a00000
+[   32.557123]  (1)[5367:hostapd]mt7990 0000:01:00.0: <--mcu_dsp_fwdl_done
+[   52.954329] WiFi@ERROR.FW,UniCmdResultToRsp() 50: id=0x2d,eid=0x0 cmd timeout
+[   52.961486] WiFi@ERROR.HIF,hwifi_mcu_tx() 1241: send cmd fail! ret -110
+[   52.968220] WiFi@ERROR.HW,antenna_default_reset() 1373: value = 0x25, TxPath = 4, RxPath = 4
+[   53.927364] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   54.687164] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4160: [RDM]: wdev is not 5G.
+[   54.695056] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   54.787245] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(1) DoCAL(0) Band(1)---------------------
+[   54.798947] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT1
+[   55.160452] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   55.172029] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4160: [RDM]: wdev is not 5G.
+[   55.229489] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   55.236664] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   55.245832] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[   55.254900] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [0]
+[   55.260579] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[   55.268622] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[   55.278669] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   55.291423] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fb8000(bss_idx_tx = 0) (dev_cnt = 1)
+[   55.301905] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[   55.313831] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   55.320922] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   55.336876] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 0, tx_pwr_sku_en: 0
+[   55.345189] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 0, fgTxBFBackoffEn: 0
+[   55.355123] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 0, fgTxPowerPercentEn: 0
+[   55.364280] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 0, cPowerDropLevel: 0
+[   55.412396] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   55.524512] 7990@ERROR.CFG,ra0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   55.552708] 7990@ERROR.AP,ra0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   56.537841] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   56.545022] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   56.554167] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[   56.563250] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[   56.571265] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[   56.581240] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fb8000(bss_idx_tx = 0) (dev_cnt = 1)
+[   56.591727] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[   57.059367] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apcli0
+[   57.888387] WiFi@ERROR.RSV,CFG80211_OpsVirtualInfAdd() 3609: pDev ra2 existed
+[   57.896685] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   57.910002] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   58.008373] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   58.044365] 7990@ERROR.CFG80211,ra0,DfsBuildChannelList() 4160: [RDM]: wdev is not 5G.
+[   58.102024] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   58.109196] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   58.118372] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(40) (ra2)
+[   58.127440] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [1]
+[   58.133116] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [1]
+[   58.141146] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra2) is not in any mld, (grp_idx:0)
+[   58.151182] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   58.164302] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054bf2000(bss_idx_tx = 1) (dev_cnt = 2)
+[   58.174945] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[   58.410842] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 0, tx_pwr_sku_en: 0
+[   58.464304] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 0, fgTxBFBackoffEn: 0
+[   58.485673] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 0, fgTxPowerPercentEn: 0
+[   58.514327] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 0, cPowerDropLevel: 0
+[   58.556668] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 0, ucTxPowerInfoCatg = 2
+[   58.576166] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra2
+[   58.634641] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf ra2
+[   58.674393] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf ra2
+[   58.723655] 7990@ERROR.CFG,ra0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   58.794576] 7990@ERROR.AP,ra0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   59.624493] 7990@ERROR.AP,ra0,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:update_ap_qload_to_bcn+0xa0/0xac [mt_wifi])!!
+[   59.724690] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   59.731834] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   59.741021] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(40) (ra2)
+[   59.750102] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [1]
+[   59.758131] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra2) is not in any mld, (grp_idx:0)
+[   59.768130] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054bf2000(bss_idx_tx = 1) (dev_cnt = 2)
+[   59.778602] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[   60.278004] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai0
+[   60.324668] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rai0
+[   60.410516] 7990@ERROR.CFG,rai0,RTMPWirelessModeCfg() 500: Init: BSS0 PhyMode=1201
+[   60.418153] 7990@ERROR.CFG,rai0,RTMPWirelessModeCfg() 500: Init: BSS1 PhyMode=1201
+[   60.425737] 7990@ERROR.CFG,rai0,RTMPWirelessModeCfg() 500: Init: BSS2 PhyMode=1201
+[   60.443893] 7990@ERROR.AP,rai0,rtmp_read_wds_from_file() 1335: invalid input(=0;0;0)
+[   60.461806] 7990@ERROR.SEC,rai0,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=0, Desired MFPC=1
+[   60.469995] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=1, Desired MFPC=1
+[   60.477756] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=2, Desired MFPC=1
+[   60.487738] WiFi@ERROR.SEC,Set_ApCliPMFMFPC_Proc() 2589: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   60.495920] WiFi@ERROR.SEC,Set_ApCliPMFMFPR_Proc() 2653: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   60.504132] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1380: APCLI[0] ApCliMuMimoDlEnable = 0
+[   60.513029] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1399: APCLI[0] ApCliMuMimoUlEnable = 0
+[   60.657223] WiFi@ERROR.HW,antenna_default_reset() 1373: value = 0x24, TxPath = 4, RxPath = 4
+[   60.684704] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   61.438146] WiFi@ERROR.CFG80211,DfsAdjustOpBwSetting() 6714: [Phil]: CurrentBw: 3, NewBw 2
+[   61.446487] WiFi@ERROR.CFG80211,Set_Zwdfs_Proc() 3416: DFS ch 52 is set, use non-DFS ch 36
+[   61.455024] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   61.467881] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   61.635378] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(11) DoCAL(0) Band(2)---------------------
+[   61.647160] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT2
+[   62.085387] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   62.095873] WiFi@ERROR.MLO,mld_grp_aquire() 197: mld_grp [17]
+[   62.151140] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   62.158331] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   62.167522] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[   62.176720] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [2]
+[   62.182410] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[   62.190694] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   62.203509] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fbf000(bss_idx_tx = 2) (dev_cnt = 3)
+[   62.216702] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   62.223671] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   62.619562] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 1, tx_pwr_sku_en: 0
+[   62.631476] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 1, fgTxBFBackoffEn: 0
+[   62.648897] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 1, fgTxPowerPercentEn: 0
+[   62.659344] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 1, cPowerDropLevel: 0
+[   62.690236] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   62.730357] WiFi@ERROR.CFG,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   62.765610] WiFi@ERROR.AP,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   63.036721] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   63.043867] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   63.053158] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[   63.062347] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[   63.070376] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai0) has already affiliated with mld_grp(17)
+[   63.081264] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fbf000(bss_idx_tx = 2) (dev_cnt = 3)
+[   63.399185] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apclii0
+[   64.190779] WiFi@ERROR.RSV,CFG80211_OpsVirtualInfAdd() 3609: pDev rai2 existed
+[   64.234183] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   64.247563] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   64.260899] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   64.274185] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   64.405308] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   64.463535] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   64.470710] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   64.479936] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(43) (rai2)
+[   64.489091] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [3]
+[   64.494800] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [3]
+[   64.503438] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   64.516705] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae7c000(bss_idx_tx = 3) (dev_cnt = 4)
+[   64.534521] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 1, tx_pwr_sku_en: 0
+[   64.542764] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 1, fgTxBFBackoffEn: 0
+[   64.552351] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 1, fgTxPowerPercentEn: 0
+[   64.562012] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 1, cPowerDropLevel: 0
+[   64.593322] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 1, ucTxPowerInfoCatg = 2
+[   64.616229] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai2
+[   64.654715] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rai2
+[   64.695279] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rai2
+[   64.748688] 7990@ERROR.CFG,rai2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   64.794534] 7990@ERROR.AP,rai2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   65.055036] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   65.062180] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   65.071389] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(43) (rai2)
+[   65.080578] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [3]
+[   65.088632] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai2) has already affiliated with mld_grp(2)
+[   65.099487] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae7c000(bss_idx_tx = 3) (dev_cnt = 4)
+[   65.435707] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rax0
+[   65.464427] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rax0
+[   65.531815] 7990@ERROR.CFG,rax0,RTMPWirelessModeCfg() 500: Init: BSS0 PhyMode=2480
+[   65.539493] 7990@ERROR.CFG,rax0,RTMPWirelessModeCfg() 500: Init: BSS1 PhyMode=2480
+[   65.547072] 7990@ERROR.CFG,rax0,RTMPWirelessModeCfg() 500: Init: BSS2 PhyMode=2480
+[   65.565303] 7990@ERROR.AP,rax0,rtmp_read_wds_from_file() 1335: invalid input(=0;0;0)
+[   65.583232] 7990@ERROR.SEC,rax0,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=0, Desired MFPC=1
+[   65.591424] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=1, Desired MFPC=1
+[   65.599179] WiFi@ERROR.SEC,Set_PMFMFPC_Proc() 2221: [PMF] :: apidx=2, Desired MFPC=1
+[   65.609175] WiFi@ERROR.SEC,Set_ApCliPMFMFPC_Proc() 2589: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   65.617348] WiFi@ERROR.SEC,Set_ApCliPMFMFPR_Proc() 2653: [PMF]: MFPC=0, MFPR=0, SHA256=0
+[   65.625570] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1380: APCLI[0] ApCliMuMimoDlEnable = 0
+[   65.634462] WiFi@ERROR.CFG,rtmp_read_ap_client_from_file() 1399: APCLI[0] ApCliMuMimoUlEnable = 0
+[   65.735503] WiFi@ERROR.HW,antenna_default_reset() 1373: value = 0x24, TxPath = 4, RxPath = 5
+[   65.758356] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   66.486081] WiFi@ERROR.PROTO,afc_init() 3759: : AFC Init Settings
+[   66.492193] WiFi@ERROR.PROTO,afc_check_pre_cond() 3561: Country Code is JP 
+[   66.499201] WiFi@ERROR.PROTO,afc_check_pre_cond() 3567: CountryRegion is 2
+[   66.506100] WiFi@ERROR.PROTO,afc_check_pre_cond() 3574: Device is not standard power
+[   66.513918] WiFi@ERROR.PROTO,afc_check_pre_cond() 3579: : u1Status = 0
+[   66.520488] WiFi@ERROR.PROTO,afc_update_state_to_disable() 3635: : Update state to AFC_DISABLE
+[   66.529672] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4155: [DfsBuildChannelList]: wdev is 6G
+[   66.538237] WiFi@ERROR.CFG80211,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[   66.546166] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   66.559042] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   66.586686] WiFi@ERROR.PROTO,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   66.614310] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   66.626159] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   67.758916] WiFi@ERROR.PROTO,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   67.784287] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   67.796055] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   67.874366] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   67.887912] WiFi@ERROR.CFG80211,DfsBuildChannelList() 4155: [DfsBuildChannelList]: wdev is 6G
+[   67.896996] WiFi@ERROR.MLO,mld_grp_aquire() 197: mld_grp [18]
+[   67.951763] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   67.958950] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(34) (rax0)
+[   67.968105] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [4]
+[   67.973781] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [4]
+[   67.982069] WiFi@ERROR.AP,UpdateBeaconHandler() 1631: wdev(0) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   67.994899] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae0a000(bss_idx_tx = 4) (dev_cnt = 5)
+[   68.009055] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   68.016268] WiFi@ERROR.HW,HcGetBandByWdev() 556: no hook api, please check.
+[   68.027699] WiFi@ERROR.PROTO,afc_beacon_init_handler() 3374: : CurrState: 1, bAfcBeaconInit= 0
+[   68.036787] WiFi@ERROR.AP,ap_6g_build_discovery_frame() 914: pkt_buf = NULL!
+[   68.194613] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 2, tx_pwr_sku_en: 1
+[   68.214403] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 2, fgTxBFBackoffEn: 0
+[   68.226249] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 2, fgTxPowerPercentEn: 0
+[   68.254351] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 2, cPowerDropLevel: 0
+[   68.284400] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   68.309736] WiFi@ERROR.CFG,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   68.351784] WiFi@ERROR.AP,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   68.614783] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[   68.621951] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(34) (rax0)
+[   68.631194] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [4]
+[   68.639237] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax0) has already affiliated with mld_grp(18)
+[   68.650180] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae0a000(bss_idx_tx = 4) (dev_cnt = 5)
+[   68.925704] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf apclix0
+[   68.950517] WiFi@ERROR.CFG80211,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[   68.976482] WiFi@ERROR.PROTO,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   68.994908] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   69.006741] WiFi@ERROR.HW,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   69.711988]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   69.723099]  (3)[41:kworker/3:1]mtk-extcon-usb extcon_usb: failed to get vbus
+[   69.789435] WiFi@ERROR.RSV,CFG80211_OpsVirtualInfAdd() 3609: pDev rax2 existed
+[   69.799406] 7990@ERROR.PROTO,rax2,afc_init() 3759: : AFC Init Settings
+[   69.805987] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3561: Country Code is JP 
+[   69.813378] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3567: CountryRegion is 2
+[   69.820728] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3574: Device is not standard power
+[   69.828930] 7990@ERROR.PROTO,rax2,afc_check_pre_cond() 3579: : u1Status = 0
+[   69.835900] 7990@ERROR.PROTO,rax2,afc_update_state_to_disable() 3635: : Update state to AFC_DISABLE
+[   69.845360] 7990@ERROR.CFG80211,rax2,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[   69.853727] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   69.867018] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   69.994325] 7990@ERROR.PROTO,rax2,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   70.044332] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   70.056617] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   70.134642] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   70.147938] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[   70.257677] 7990@ERROR.PROTO,rax2,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[   70.296776] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[   70.309057] 7990@ERROR.HW,rax2,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[   70.404368] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   70.444942] 7990@ERROR.CFG80211,rax2,DfsBuildChannelList() 4155: [DfsBuildChannelList]: wdev is 6G
+[   70.503435] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   70.510592] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   70.519766] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(46) (rax2)
+[   70.528925] WiFi@ERROR.MLO,bss_idx_aquire() 75: : bssidx [5]
+[   70.534623] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [5]
+[   70.542947] 7990@ERROR.AP,rax2,UpdateBeaconHandler() 1631: wdev(3) bss not ready (state:2, caller:bss_mngr_event_bcn_update+0x70/0x80 [mt_wifi])!!
+[   70.556222] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae08000(bss_idx_tx = 5) (dev_cnt = 6)
+[   70.572095] 7990@ERROR.PROTO,rax2,afc_beacon_init_handler() 3374: : CurrState: 1, bAfcBeaconInit= 0
+[   70.581523] WiFi@ERROR.HW,UniCmdTxPowerSKUCtrl() 22934: BandIdx 2, tx_pwr_sku_en: 1
+[   70.581581] 7990@ERROR.AP,rax2,ap_6g_build_discovery_frame() 914: pkt_buf = NULL!
+[   70.594284] WiFi@ERROR.BF,UniCmdTxBfBackoffCtrl() 23162: BandIdx 2, fgTxBFBackoffEn: 0
+[   70.614369] WiFi@ERROR.HW,UniCmdTxPowerPercentCtrl() 23010: BandIdx 2, fgTxPowerPercentEn: 0
+[   70.624926] WiFi@ERROR.HW,UniCmdTxPowerDropCtrl() 23086: BandIdx 2, cPowerDropLevel: 0
+[   70.666256] WiFi@ERROR.HW,UniCmdTxPwrShowInfo() 23379: u1BandIdx 2, ucTxPowerInfoCatg = 2
+[   70.685272] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rax2
+[   70.714365] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x800 for intf rax2
+[   70.734982] WiFi@ERROR.RSV,CFG80211_OpsUpdate_mgmt_frame_registrations() 2420: UNSUPPORT mgmt frame type mask: 0x5 for intf rax2
+[   70.772923] 7990@ERROR.CFG,rax2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[   70.789994] 7990@ERROR.AP,rax2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[   71.048916] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[   71.056150] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[   71.065332] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(46) (rax2)
+[   71.074524] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [5]
+[   71.082527] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax2) has already affiliated with mld_grp(2)
+[   71.093406] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae08000(bss_idx_tx = 5) (dev_cnt = 6)
+[   73.670769] 7990@ERROR.FW,ra0,mtk_cfg80211_reply_wdev() 7965: incoming index 32 - 32 driver index name ra0
+[   73.681103] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x0
+[   73.691064] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[   73.701792] 7990@ERROR.AP,ra0,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[   73.710634] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[   73.720938] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   73.730729] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   73.740030] 7990@ERROR.FW,ra2,mtk_cfg80211_reply_wdev() 7965: incoming index 40 - 40 driver index name ra2
+[   73.749901] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x0
+[   73.759734] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x20
+[   73.770316] 7990@ERROR.AP,ra2,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[   73.779243] 7990@ERROR.CFG,ra2,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[   73.789795] 7990@ERROR.CFG,apcli0,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   73.799747] 7990@ERROR.CFG,apcli0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   73.809558] 7990@ERROR.FW,rai0,mtk_cfg80211_reply_wdev() 7965: incoming index 33 - 33 driver index name rai0
+[   73.819626] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x0
+[   73.830043] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[   73.840878] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[   73.851558] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   73.863923] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   73.873663] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   73.883189] 7990@ERROR.FW,rai2,mtk_cfg80211_reply_wdev() 7965: incoming index 43 - 43 driver index name rai2
+[   73.893419] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x0
+[   73.903544] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x20
+[   73.914436] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[   73.925149] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   73.937522] 7990@ERROR.CFG,apclii0,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   73.947680] 7990@ERROR.CFG,apclii0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   73.957321] 7990@ERROR.FW,rax0,mtk_cfg80211_reply_wdev() 7965: incoming index 34 - 34 driver index name rax0
+[   73.967387] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x0
+[   73.977397] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[   73.988262] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[   73.998947] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   74.011403] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   74.021244] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   74.030670] 7990@ERROR.FW,rax2,mtk_cfg80211_reply_wdev() 7965: incoming index 46 - 46 driver index name rax2
+[   74.040735] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x0
+[   74.050721] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x20
+[   74.061501] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[   74.072074] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[   74.084573] 7990@ERROR.CFG,apclix0,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[   74.094890] 7990@ERROR.CFG,apclix0,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[   74.104594] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.114483] 7990@ERROR.CFG,apcli0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.124638] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.134613] 7990@ERROR.CFG,apclii0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.144862] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.154949] 7990@ERROR.CFG,apclix0,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[   74.273004]  (3)[3344:kworker/3:2]usb usb2-port1: Cannot enable. Maybe the USB cable is bad?
+[  105.040480] 7990@ERROR.CFG80211,rax0,Set_Zwdfs_Proc() 3398: zero-wait DFS is not enabled
+[  105.049992] 7990@ERROR.PROTO,rax0,afc_save_switch_channel_params() 1612: ::AFC is not Enabled(1)
+[  105.060132] 7990@ERROR.HW,rax0,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(3)---------------------
+[  105.072871] 7990@ERROR.HW,rax0,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT3
+[  113.168882] 7990@ERROR.CFG,rai0,set_pp_cap_ctrl() 434: Format Error! Please enter in the following format
+[  113.168882] Band-PpMgmtEn-PpCtrl-PpBitMap-PpMgmtMode-PPCsaEn
+[  115.642059] 7990@ERROR.FW,ra0,mtk_cfg80211_reply_wdev() 7965: incoming index 32 - 32 driver index name ra0
+[  115.652025] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x0
+[  115.661881] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[  115.672414] 7990@ERROR.AP,ra0,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[  115.681262] 7990@ERROR.CFG,ra0,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[  115.691602] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[  115.701242] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[  115.710561] 7990@ERROR.FW,ra2,mtk_cfg80211_reply_wdev() 7965: incoming index 40 - 40 driver index name ra2
+[  115.720490] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x0
+[  115.730529] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x20
+[  115.741561] 7990@ERROR.AP,ra2,mtk_cfg80211_reply_mlo_cap() 8324: Entry not affiliated to MLO GRP
+[  115.750382] 7990@ERROR.CFG,ra2,mtk_cfg80211_get_cap() 11217: mtk_cfg80211_reply_mlo_cap failed.
+[  115.760951] 7990@ERROR.FW,apcli0,mtk_cfg80211_reply_wdev() 7965: incoming index 38 - 38 driver index name apcli0
+[  115.771884] 7990@ERROR.FW,rai0,mtk_cfg80211_reply_wdev() 7965: incoming index 33 - 33 driver index name rai0
+[  115.781963] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x0
+[  115.792016] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[  115.802740] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[  115.813375] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  115.825570] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[  115.835341] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[  115.844689] 7990@ERROR.FW,rai2,mtk_cfg80211_reply_wdev() 7965: incoming index 43 - 43 driver index name rai2
+[  115.854686] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x0
+[  115.864725] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x20
+[  115.875542] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[  115.886127] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  115.898531] 7990@ERROR.FW,apclii0,mtk_cfg80211_reply_wdev() 7965: incoming index 41 - 41 driver index name apclii0
+[  115.909610] 7990@ERROR.FW,rax0,mtk_cfg80211_reply_wdev() 7965: incoming index 34 - 34 driver index name rax0
+[  115.919715] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x0
+[  115.929760] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[  115.940616] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 0
+[  115.951226] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  115.963628] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_static_info() 8973: failed - [ERROR] Interface is down .
+[  115.973369] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_cap() 11164: failed - [ERROR] Interface is down .
+[  115.982899] 7990@ERROR.FW,rax2,mtk_cfg80211_reply_wdev() 7965: incoming index 46 - 46 driver index name rax2
+[  115.992948] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x0
+[  116.002950] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x20
+[  116.013665] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 0 StatPunc Support 1, MloEnable 1
+[  116.024248] WiFi@ERROR.MLO,mtk_cfg80211_reply_mlo_cap() 8338: MLO CAP :device role 1 StatPunc Support 1, MloEnable 0
+[  116.045907] 7990@ERROR.FW,apclix0,mtk_cfg80211_reply_wdev() 7965: incoming index 44 - 44 driver index name apclix0
+[  116.057044] 7990@ERROR.CFG,ra1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[  116.074114] 7990@ERROR.CFG,rai1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[  116.084355] 7990@ERROR.CFG,rax1,mtk_cfg80211_get_runtime_info() 8847: failed - [ERROR] Interface is down .
+[  119.769589] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  119.785069] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  119.793771] 7990@ERROR.CFG,rai0,SrMeshSrEnable() 578: SrMode:0
+[  119.802948] 7990@ERROR.CFG,rai0,SrMeshSrEnable() 578: SrMode:0
+[  119.810631] 7990@ERROR.CFG,ra0,SrMeshSrEnable() 578: SrMode:0
+[  119.818867] 7990@ERROR.CFG,ra0,SrMeshSrEnable() 578: SrMode:0
+[  119.838145] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x20
+[  119.856093] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[  119.874343] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x20
+[  119.892725] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[  119.911180] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x20
+[  119.929398] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[  120.009192] 7990@ERROR.PROTO,ra0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra0 bandIdx = 0 ,DevOwnRole 0x20
+[  120.104916] 7990@ERROR.PROTO,ra2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: ra2 bandIdx = 0 ,DevOwnRole 0x0
+[  120.185568] 7990@ERROR.PROTO,rai0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai0 bandIdx = 1 ,DevOwnRole 0x20
+[  120.293793] 7990@ERROR.PROTO,rai2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rai2 bandIdx = 1 ,DevOwnRole 0x0
+[  120.390164] 7990@ERROR.PROTO,rax0,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax0 bandIdx = 2 ,DevOwnRole 0x20
+[  120.499804] 7990@ERROR.PROTO,rax2,mtk_cfg80211_vndr_subcmd_easymesh() 6424: rax2 bandIdx = 2 ,DevOwnRole 0x0
+[  120.518110] WiFi@ERROR.MLO,bss_mngr_con_mld_group_destroy() 1976: 	mld_grp(2) is not empty (link_cnt=1), can not destroy.
+[  120.529167] 7990@ERROR.MLO,rai2,eht_ap_mld_destroy() 6813: 	EHT AP MLD destroy fail
+[  120.540060] 7990@ERROR.MLO,ra0,eht_ap_mld_add_link() 6922: Error: wdev_type 1, phymode 0x4e, state 3
+[  120.549574] 7990@ERROR.MLO,ra2,eht_ap_mld_add_link() 6922: Error: wdev_type 1, phymode 0x4e, state 3
+[  120.576289] 7990@ERROR.CFG,ra2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  120.584741] 7990@ERROR.AP,ra2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  120.592894] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  120.600043] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  120.609224] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[  120.618332] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[  120.626399] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[  120.636505] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fb8000(bss_idx_tx = 0) (dev_cnt = 6)
+[  120.647208] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[  120.658016] 7990@ERROR.CFG,ra2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  120.666582] 7990@ERROR.AP,ra2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  120.674672] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  120.681838] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  120.691019] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(32) (ra0)
+[  120.700092] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [0]
+[  120.708112] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra0) is not in any mld, (grp_idx:0)
+[  120.718174] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fb8000(bss_idx_tx = 0) (dev_cnt = 6)
+[  120.728812] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (0), mld grp invalid(0)
+[  120.749635] 7990@ERROR.CFG,ra2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  120.757592] 7990@ERROR.AP,ra2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  120.765678] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[  120.772838] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  120.782000] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(40) (ra2)
+[  120.791075] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [1]
+[  120.799077] WiFi@ERROR.MLO,bss_mngr_con_mld_group_del_link() 2224: 	entry(ra2) is not in any mld, (grp_idx:0)
+[  120.809140] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054bf2000(bss_idx_tx = 1) (dev_cnt = 6)
+[  120.819768] WiFi@ERROR.MLO,bss_mngr_con_sync_ml_probe_rsp_per_sta_profile() 5019: bss_idx (1), mld grp invalid(0)
+[  120.840911] 7990@ERROR.CFG,rai2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  120.848720] 7990@ERROR.AP,rai2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  120.856914] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  120.864083] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  120.873265] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[  120.882535] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[  120.890589] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai0) has already affiliated with mld_grp(19)
+[  120.901611] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fbf000(bss_idx_tx = 2) (dev_cnt = 6)
+[  120.912817] 7990@ERROR.CFG,rai2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  120.920853] 7990@ERROR.AP,rai2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  120.929060] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  120.936316] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  120.945545] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(33) (rai0)
+[  120.954789] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [2]
+[  120.962862] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai0) has already affiliated with mld_grp(19)
+[  120.973836] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff8054fbf000(bss_idx_tx = 2) (dev_cnt = 6)
+[  120.993843] 7990@ERROR.CFG,rai2,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.001760] 7990@ERROR.AP,rai2,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.009910] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[  121.017162] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.026380] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(43) (rai2)
+[  121.035582] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [3]
+[  121.043612] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rai2) has already affiliated with mld_grp(1)
+[  121.054482] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae7c000(bss_idx_tx = 3) (dev_cnt = 6)
+[  121.074014] 7990@ERROR.CFG,rax0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.081749] 7990@ERROR.AP,rax0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.081790] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(0)
+[  121.081815] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(34) (rax0)
+[  121.081868] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [4]
+[  121.106323] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax0) has already affiliated with mld_grp(20)
+[  121.125294] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae0a000(bss_idx_tx = 4) (dev_cnt = 6)
+[  121.145056] 7990@ERROR.CFG,rax0,parse_hostapd_ftie() 11285: 11R disabled in driver
+[  121.152888] 7990@ERROR.AP,rax0,CFG80211DRV_UpdateApSettingFromBeacon() 860: MDIE is NULL
+[  121.161095] WiFi@ERROR.MLO,bss_mngr_dev_reg() 1481: bss_mngr_dev_reg: wdev(3)
+[  121.168239] WiFi@ERROR.MLO,bss_mngr_fill_bss_info() 1366: bss_mngr_fill_bss_info: dev_type UNDEFINED
+[  121.177429] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2817: ===> bss_mngr_con_dev_reg: netdev(46) (rax2)
+[  121.186638] WiFi@ERROR.MLO,bss_mngr_con_sync_entry() 2636: bss_mngr_con_sync_entry: [5]
+[  121.194693] WiFi@ERROR.MLO,bss_mngr_con_mld_group_add_link() 2109: 	entry(rax2) has already affiliated with mld_grp(1)
+[  121.205604] WiFi@ERROR.MLO,bss_mngr_con_dev_reg() 2894: <=== entry = ffffff805ae08000(bss_idx_tx = 5) (dev_cnt = 6)
+[  121.220173] 7990@ERROR.CFG,ra0,SrMeshSrEnable() 578: SrMode:0
+[  121.227962] 7990@ERROR.CFG,rai0,SrMeshSrEnable() 578: SrMode:0
+[  121.236484] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  121.246416] 7990@ERROR.CFG,rax0,SrMeshSrEnable() 578: SrMode:0
+[  243.095061] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  243.102810] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  243.111002] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  243.118686] 7990@ERROR.CFG80211,rai0,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  319.666077] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_ehtbw() 2004: (eht_bw=3)
+[  319.674550] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  319.688741] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_vhtbw() 2252: (vht_bw=2)
+[  322.707840] 7990@ERROR.HW,rai0,mt7990_apply_dpd_flatness_data() 716: ---------------------SKU(d1) DoCAL(0) Band(2)---------------------
+[  322.720199] 7990@ERROR.HW,rai0,mt7990_apply_dpd_flatness_data() 772: eeprom 0x1a5 bit 0 is 0, do runtime cal DOCAL0 BANDSELECT2
+[  323.121857] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6769: [RDM]: OutBandCh: 52, band_ch: 36
+[  323.131227] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6772: [RDM]: DfsChBand[0]: 0, DfsChBand[1]: 1, DfsChBand[2]: 1
+[  323.142908] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6777: [RDM] BandIdx: 0, BW: 2, ChannelMode: 0
+[  323.152980] 7990@ERROR.CFG80211,rai0,WrapDfsRadarDetectStart() 6781: [RDM] BandIdx: 1, BW: 3, ChannelMode: 0
+[  323.169440] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  323.182766] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  323.199221] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  323.213907] 7990@ERROR.AP,rai0,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  323.229601] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_ehtbw() 2004: (eht_bw=3)
+[  323.229746] 7990@ERROR.CFG80211,rai2,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  323.244538] 7990@ERROR.CFG80211,rai2,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  323.244570] 7990@ERROR.CFG80211,rai2,DfsBwChQueryByDefault() 6490: DefSelectCh(100)
+[  323.244575] 7990@ERROR.CFG80211,rai2,DfsBwChQueryByDefault() 6497: DefSelectCh!!(100), 2
+[  323.268978] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  323.282858] WiFi@ERROR.PROTO,mtk_nl80211_easymesh_set_vhtbw() 2252: (vht_bw=2)
+[  323.290830] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  323.305890] 7990@ERROR.AP,rai2,UpdateBeaconHandler() 1631: wdev(2) bss not ready (state:0, caller:UpdateBeaconHandler_BPCC+0xb4/0xeb4 [mt_wifi])!!
+[  617.424993]  (0)[29168:insmod]usb_f_ncm: exports duplicate symbol gether_cleanup (owned by usb_net)
+[  635.274799]  (2)[30453:insmod]usb_f_ncm: exports duplicate symbol gether_cleanup (owned by usb_net)
+[  667.007244]  (3)[32744:ash]mtu3 11201000.usb: clks of sts1 are not stable!
+[  667.038531]  (1)[32744:ash]mtu3 11201000.usb: clks of sts1 are not stable!
+[  698.478529]  (2)[2658:ash]Unable to handle kernel NULL pointer dereference at virtual address 0000000000000000
+[  698.488630]  (2)[2658:ash]Mem abort info:
+[  698.492663]  (2)[2658:ash]  ESR = 0x96000046
+[  698.497031]  (2)[2658:ash]  EC = 0x25: DABT (current EL), IL = 32 bits
+[  698.503590]  (2)[2658:ash]  SET = 0, FnV = 0
+[  698.507854]  (2)[2658:ash]  EA = 0, S1PTW = 0
+[  698.512237]  (2)[2658:ash]Data abort info:
+[  698.512241]  (2)[2658:ash]  ISV = 0, ISS = 0x00000046
+[  698.512245]  (2)[2658:ash]  CM = 0, WnR = 1
+[  698.521464]  (2)[2658:ash]user pgtable: 4k pages, 39-bit VAs, pgdp=00000000d6195000
+[  698.525585] Primary Channel Busy Time = 81700
+[  698.533242]  (2)[2658:ash][0000000000000000] pgd=00000000f1a93003, pud=00000000f1a93003, pmd=0000000000000000
+[  698.533260] -(2)[2658:ash]Internal error: Oops: 96000046 [#1] SMP
+[  698.537604] OBSS Air Time = 70262
+[  698.547504] -(2)[2658:ash]mtk_aee_exception_notifier_call_chain: val=1
+[  698.550216]  (3)[2712:mwctl]aee_get_modules failed
+[  698.553635] My Tx Air Time = 13950
+[  698.562274] -(2)[2658:ash]Kernel Offset: 0x80000 from 0xffffffc010000000
+[  698.563448] My Rx Air Time = 0
+[  698.568204] -(2)[2658:ash]PHYS_OFFSET: 0x80000000
+[  698.568212] -(2)[2658:ash]CPU: 2 PID: 2658 Comm: ash Tainted: P        W         5.4.238 #0
+[  698.571596] EDCCA Time = 13318
+[  698.578283] -(2)[2658:ash]Hardware name: MediaTek evb6990_cpe_mt7990_emmc (DT)
+[  698.578287] -(2)[2658:ash]pstate: 00400005 (nzcv daif +PAN -UAO)
+[  698.578300] -(2)[2658:ash]pc : gether_register_netdev+0x2c/0x8c [usb_f_ncm]
+[  698.578305] -(2)[2658:ash]lr : ncm_bind+0x8c/0x2d4 [usb_f_ncm]
+[  698.581346] PD count = 0
+[  698.586037] -(2)[2658:ash]sp : ffffffc0227bbb90
+[  698.586039] -(2)[2658:ash]x29: ffffffc0227bbb90 x28: ffffff8071776488 
+[  698.586043] -(2)[2658:ash]x27: ffffff8071776000 x26: ffffff80671178b0 
+[  698.586046] -(2)[2658:ash]x25: ffffff8067437950 x24: ffffff805ae69d98 
+[  698.586050] -(2)[2658:ash]x23: ffffff8067437920 x22: ffffff805d9ee930 
+[  698.594417] MDRDY Count = 0
+[  698.597432] -(2)[2658:ash]x21: ffffff8067117800 x20: ffffff8071776438 
+[  698.604669] Rx Cck Mdry Time = 44910
+[  698.610634] -(2)[2658:ash]x19: ffffff805d9ee000 x18: 0000000000000000 
+[  698.617604] Rx Ofdm Lg Mixed Mdry Time = 3794
+[  698.623403] -(2)[2658:ash]x17: 0000000000000000 x16: 0000000000000000 
+[  698.623407] -(2)[2658:ash]x15: 0000000000000000 x14: 544f4e2074756f34 
+[  698.623410] -(2)[2658:ash]x13: 70652f54554f206e x12: 693670652f4e4920 
+[  698.623414] -(2)[2658:ash]x11: 6465657073207265 x10: 707573203a315347 
+[  698.623417] -(2)[2658:ash]x9 : 797474206d636120 x8 : ffffffc0111f7a9c 
+[  698.623421] -(2)[2658:ash]x7 : 0000000000000000 x6 : 0000000000000004 
+[  698.623425] -(2)[2658:ash]x5 : 0000000000000000 x4 : 0000000000000007 
+[  698.625948] Rx Ofdm Green Mdry Time = 0
+[  698.630465] -(2)[2658:ash]x3 : 00000000c1eda206 x2 : 0000000000005980 
+[  698.637006] My MAC2PHY Tx Time = 14300
+[  698.643494] -(2)[2658:ash]x1 : 0000000000000000 x0 : ffffff805d9ee000 
+[  698.643501] -(2)[2658:ash]CPU: 2 PID: 2658 Comm: ash Tainted: P        W         5.4.238 #0
+[  698.643503] -(2)[2658:ash]Hardware name: MediaTek evb6990_cpe_mt7990_emmc (DT)
+[  698.643506] -(2)[2658:ash]Call trace:
+[  698.643514] -(2)[2658:ash] dump_backtrace+0x0/0x178
+[  698.643518] -(2)[2658:ash] show_stack+0x14/0x1c
+[  698.650032] after ajust, my tx airtime = 14300
+[  698.656549] -(2)[2658:ash] dump_stack+0xf0/0x154
+[  698.656554] -(2)[2658:ash] mrdump_common_die+0x1c0/0x1d4
+[  698.656559] -(2)[2658:ash] ipanic_die+0x30/0x3c
+[  698.656564] -(2)[2658:ash] notifier_call_chain+0x64/0x84
+[  698.656568] -(2)[2658:ash] __atomic_notifier_call_chain+0x24/0x3c
+[  698.659350] after ajust, my rx airtime = 0
+[  698.665863] -(2)[2658:ash] atomic_notifier_call_chain+0x14/0x1c
+[  698.665866] -(2)[2658:ash] notify_die+0x28/0x44
+[  698.665870] -(2)[2658:ash] die+0x98/0x1e8
+[  698.665875] -(2)[2658:ash] die_kernel_fault+0x60/0x70
+[  698.665878] -(2)[2658:ash] __do_kernel_fault+0x12c/0x160
+[  698.665881] -(2)[2658:ash] do_page_fault+0x358/0x35c
+[  698.665885] -(2)[2658:ash] do_translation_fault+0x38/0x7c
+[  698.669448] after ajust, obss airtime = 48480
+[  698.675961] -(2)[2658:ash] do_mem_abort+0x3c/0x94
+[  698.675965] -(2)[2658:ash] el1_da+0x1c/0xc0
+[  698.675971] -(2)[2658:ash] gether_register_netdev+0x2c/0x8c [usb_f_ncm]
+[  698.675975] -(2)[2658:ash] ncm_bind+0x8c/0x2d4 [usb_f_ncm]
+[  698.675980] -(2)[2658:ash] usb_add_function+0xec/0x10c
+[  698.680322] after ajust, MibBss0CtrlFrameCntTime = 0
+[  698.686839] -(2)[2658:ash] configfs_composite_bind+0x2b0/0x30c
+[  698.686842] -(2)[2658:ash] udc_bind_to_driver+0x5c/0xf8
+[  698.686845] -(2)[2658:ash] usb_gadget_probe_driver+0x120/0x128
+[  698.686848] -(2)[2658:ash] gadget_dev_desc_UDC_store+0xcc/0x108
+[  698.686854] -(2)[2658:ash] configfs_write_file+0x1b8/0x2a4
+[  698.686858] -(2)[2658:ash] __vfs_write+0x18/0x38
+[  698.686862] -(2)[2658:ash] vfs_write+0x80/0xcc
+[  698.693388] after ajust, MibCntAmpduTime = 0
+[  698.699888] -(2)[2658:ash] ksys_write+0x5c/0xa8
+[  698.699892] -(2)[2658:ash] __arm64_sys_write+0x14/0x1c
+[  698.712120]  (1)[1364:wdtk-1][wdk-c] cpu=1 o_k=1 lbit=0x2 cbit=0xf,d,3,1,5194537165,f,0,0,0,0,[698712105280,15000000] 19
+[  698.712124]  (3)[1366:wdtk-3][wdk-c] cpu=3 o_k=3 lbit=0xa cbit=0xf,5,3,1,5194537165,f,0,0,0,0,[698712115434,14999989] 19
+[  698.712130]  (0)[1362:wdtk-0][wdk-c] cpu=0 o_k=0 lbit=0xb cbit=0xf,4,3,1,5194537165,f,0,0,0,0,[698712122511,14999982] 19
+[  698.712920] -(2)[2658:ash] el0_svc_common.constprop.0+0xa0/0x134
+[  698.712925] -(2)[2658:ash] el0_svc_handler+0x44/0x80
+[  698.974514] -(2)[2658:ash] el0_svc+0x8/0x180
+[  698.986533] -(2)[2658:ash]mrdump: extra fail 0xffffffc014b9d000 sz:0x0 name:CCCI
+[  698.993924] -(2)[2658:ash]mrdump: add CCCI:0xffffff807a5b0000 sz:0x0 failed
