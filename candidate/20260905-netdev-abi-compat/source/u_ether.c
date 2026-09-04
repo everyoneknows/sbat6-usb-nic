@@ -18,9 +18,25 @@
 #include <linux/ethtool.h>
 #include <linux/if_vlan.h>
 #include <linux/ktime.h>
+#include <linux/stddef.h>
 
 #include "u_ether.h"
 #include "sbat6_ncm_telemetry.h"
+
+/*
+ * This TU is consumed by a vendor 5.4.238 kernel whose net_device layout
+ * differs from upstream 5.4.  Keep the ABI contract next to the code that
+ * emits the field accesses; a standalone layout probe is insufficient.
+ */
+#if defined(CONFIG_T6A_VENDOR_NETDEV_COMPAT)
+static inline void __maybe_unused sbat6_assert_net_device_abi(void)
+{
+	BUILD_BUG_ON(sizeof(struct net_device) != 0x8c0);
+	BUILD_BUG_ON(offsetof(struct net_device, dev_addr) != 0x318);
+	BUILD_BUG_ON(offsetof(struct net_device, dev) != 0x510);
+	BUILD_BUG_ON(ALIGN(sizeof(struct net_device), NETDEV_ALIGN) != 0x8c0);
+}
+#endif
 
 #define SBAT6_TX_REQ_SLOTS 64
 
