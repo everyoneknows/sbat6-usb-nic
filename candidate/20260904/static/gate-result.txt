@@ -24,5 +24,5 @@
 [PASS] ncm_free_inst in ELF
 [PASS] performance changes absent
 [PASS] vendor ABI map present
+[PASS] required symbol CRCs match recorded maps
 RESULT=PASS
-
