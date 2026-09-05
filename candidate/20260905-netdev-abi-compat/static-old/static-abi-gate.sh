@@ -5,7 +5,7 @@ ROOT=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
 SRC=$ROOT/source
 KO=${KO:-$ROOT/artifacts/usb_f_ncm.ko}
 VENDOR_MAP=${VENDOR_MAP:-$ROOT/abi/vendor-kimage.Module.symvers}
-TELEMETRY_MAP=${TELEMETRY_MAP:-/home/masataka/projects/butlerx/research/t6a-ncm-telemetry/Module.symvers}
+TELEMETRY_MAP=${TELEMETRY_MAP:-./research/t6a-ncm-telemetry/Module.symvers}
 fail=0
 pass() { printf '[PASS] %s\n' "$1"; }
 fail() { printf '[FAIL] %s\n' "$1"; fail=1; }

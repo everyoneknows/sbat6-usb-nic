@@ -12,7 +12,7 @@ TX/RX双方へ同じ本数を `prealloc()` する。しかし、このsourceは
 
 ## 確認した事実
 
-- `/home/masataka/projects/sbat6-usbnet/source/u_ether.c` は、保存された
+- `./source/u_ether.c` は、保存された
   Linux 5.4.238 sourceとSHA256が一致する。
 - 同sourceの `qlen()` は、High/SuperSpeedで `qmult * DEFAULT_QLEN`、
   `DEFAULT_QLEN=2` を返す。
@@ -67,5 +67,5 @@ ConfigFS変更、NTB変更はこの監査の成功条件ではなく、先送り
 ## アクセス状態
 
 今回の監査中、raspi2へのSSHは成功したが、raspi2からT6A
-`root@192.168.3.2` への公開鍵認証は `Permission denied` となった。
+`root@T6A-MGMT-IP` への公開鍵認証は `Permission denied` となった。
 T6Aの設定・module・通信状態は変更していない。

@@ -2,14 +2,14 @@
 
 ## Scope and management
 
-The authorized path was `agent-101-vm -> raspi2 -> LAN/SSH -> root@192.168.3.2`.
+The authorized path was `agent-101-vm -> raspi2 -> LAN/SSH -> root@T6A-MGMT-IP`.
 ADB, `sbat6_usb_role_runtime2.ko`, RPS/IRQ affinity/backlog/queue/NTB/qdisc/
 descriptor/streams/performance-source changes were not used. Windows was not
 connected.
 
 Precheck reached T6A over SSH. The target initially had vendor `usb_net`
 refcount 6, UDC `11201000.usb`, state `not attached`, `mode=2`, GPIO322=1,
-and xHCI present. Ping from raspi2 to `192.168.3.2` failed, but the authorized
+and xHCI present. Ping from raspi2 to `T6A-MGMT-IP` failed, but the authorized
 SSH path was available; SSH was used as the management continuity test.
 
 ## Artifact verification

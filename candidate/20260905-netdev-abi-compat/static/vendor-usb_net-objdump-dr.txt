@@ -1,5 +1,5 @@
 
-/home/masataka/projects/sbat6-usb-nic/candidate/20260905-mtk-fi-compat/vendor/usb_net.ko:     file format elf64-littleaarch64
+./candidate/20260905-mtk-fi-compat/vendor/usb_net.ko:     file format elf64-littleaarch64
 
 
 Disassembly of section .text:

@@ -1,5 +1,5 @@
 
-/home/masataka/projects/butlerx/analysis/t6a-usb_net/usb_net.ko:     file format elf64-littleaarch64
+./analysis/t6a-usb_net/usb_net.ko:     file format elf64-littleaarch64
 
 
 Disassembly of section .text:

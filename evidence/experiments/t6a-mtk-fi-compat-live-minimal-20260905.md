@@ -3,7 +3,7 @@
 ## Scope
 
 Only the one-time ConfigFS instance creation test was performed. The path was
-`agent-101-vm -> raspi2 -> LAN/SSH -> root@192.168.3.2`. ADB, the forbidden
+`agent-101-vm -> raspi2 -> LAN/SSH -> root@T6A-MGMT-IP`. ADB, the forbidden
 `sbat6_usb_role_runtime2.ko`, UDC bind/rebind, `f5` linking, Windows, network,
 performance, GPIO, role, and mode operations were not performed.
 

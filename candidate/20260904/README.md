@@ -12,7 +12,7 @@ The matching source and build inputs are retained under `source/` and
 ## Provenance boundary
 
 The candidate source is the saved Linux 5.4.238 `f_ncm.c`/`u_ether.c` from
-`/home/masataka/projects/sbair6-rce/work/src/linux-5.4.238-ax88179`, with
+`../vendor-workspace/work/src/linux-5.4.238-ax88179`, with
 telemetry edits. It is **not** the source of the running vendor `usb_net.ko`.
 The vendor ELF identifies its original path as:
 

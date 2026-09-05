@@ -1,3 +1,3 @@
-make -C /home/masataka/projects/sbair6-rce/work/src/linux-5.4.238-ax88179 O=/home/masataka/projects/sbat6-usbnet/tmp-kernel-out.vendorcrc-20260905 M=/home/masataka/projects/sbat6-usb-nic/candidate/20260905-mtk-fi-compat/source ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- KBUILD_EXTRA_SYMBOLS=/home/masataka/projects/butlerx/research/t6a-ncm-telemetry/Module.symvers modules
+make -C ../vendor-workspace/work/src/linux-5.4.238-ax88179 O=./tmp-kernel-out.vendorcrc-20260905 M=./candidate/20260905-mtk-fi-compat/source ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- KBUILD_EXTRA_SYMBOLS=./research/t6a-ncm-telemetry/Module.symvers modules
 
 Diagnostic-only retry: KBUILD_MODPOST_WARN=1 with isolated vmlinux renamed to vmlinux.modpost-disabled.

@@ -2,7 +2,7 @@
 
 ## Scope
 
-Read-only inspection through `agent-101-vm -> raspi2 -> root@192.168.3.2`.
+Read-only inspection through `agent-101-vm -> raspi2 -> root@T6A-MGMT-IP`.
 No ConfigFS, module parameter, trace event, endpoint, module, or firmware
 state was changed.
 

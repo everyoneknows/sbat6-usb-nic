@@ -1,5 +1,5 @@
---- /home/masataka/projects/sbair6-rce/work/build/linux-5.4.238-air6-upstream/drivers/usb/gadget/function/f_ncm.c	2026-08-25 01:22:05.780019443 +0900
-+++ /home/masataka/projects/sbat6-usbnet/source/f_ncm.c	2026-09-04 18:31:26.077696697 +0900
+--- ../vendor-workspace/work/build/linux-5.4.238-air6-upstream/drivers/usb/gadget/function/f_ncm.c	2026-08-25 01:22:05.780019443 +0900
++++ ./source/f_ncm.c	2026-09-04 18:31:26.077696697 +0900
 @@ -24,6 +24,7 @@
  #include "u_ether_configfs.h"
  #include "u_ncm.h"

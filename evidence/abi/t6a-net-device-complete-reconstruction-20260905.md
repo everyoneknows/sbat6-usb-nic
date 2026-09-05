@@ -34,14 +34,14 @@ superseded `UNPROVEN` report.
 Actual translation units are:
 
 ```text
-/home/masataka/projects/sbat6-usbnet/source/u_ether.c
-/home/masataka/projects/sbat6-usbnet/source/f_ncm.c
+./source/u_ether.c
+./source/f_ncm.c
 ```
 
 The header used by the provenance tree is:
 
 ```text
-/home/masataka/projects/sbair6-rce/work/isolated/t6a-netdev-provenance-20260905/linux-5.4.238-ax88179/include/linux/netdevice.h
+../vendor-workspace/work/isolated/t6a-netdev-provenance-20260905/linux-5.4.238-ax88179/include/linux/netdevice.h
 ```
 
 It contains this conditional block immediately before `netdev_ops`:

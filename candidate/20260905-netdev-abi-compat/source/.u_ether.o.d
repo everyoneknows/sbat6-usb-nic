@@ -1,5 +1,5 @@
 u_ether.o: \
- /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/u_ether.c \
+ ./candidate/20260905-netdev-abi-compat/source/u_ether.c \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/linux/kconfig.h \
  include/generated/autoconf.h \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/linux/compiler_types.h \
@@ -578,7 +578,7 @@ u_ether.o: \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/uapi/linux/rtnetlink.h \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/uapi/linux/if_addr.h \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/uapi/linux/if_vlan.h \
- /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/u_ether.h \
+ ./candidate/20260905-netdev-abi-compat/source/u_ether.h \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/linux/usb/composite.h \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/linux/bcd.h \
  include/generated/uapi/linux/version.h \
@@ -588,4 +588,4 @@ u_ether.o: \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/linux/configfs.h \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/linux/usb/cdc.h \
  /tmp/linux-5.4.238-netdev-abi-probe.uMrajx/include/uapi/linux/usb/cdc.h \
- /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/sbat6_ncm_telemetry.h
+ ./candidate/20260905-netdev-abi-compat/source/sbat6_ncm_telemetry.h

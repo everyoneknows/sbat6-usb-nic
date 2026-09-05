@@ -1,7 +1,7 @@
 # T6A CDC-NCM A班 observation-only candidate — aborted during ConfigFS teardown
 
 実施時刻: 2026-09-04 22:05–22:14 JST
-経路: `agent-101-vm -> raspi2 -> root@192.168.3.2`。ADB、runtime2、flashは未使用。
+経路: `agent-101-vm -> raspi2 -> root@T6A-MGMT-IP`。ADB、runtime2、flashは未使用。
 
 ## 結果
 
@@ -29,7 +29,7 @@ ConfigFS解体がハングしたため通常再起動へ移行。再起動後に
 
 最終確認:
 
-- 管理LAN: `br-lan UP 192.168.3.2/24`
+- 管理LAN: `br-lan UP T6A-MGMT-IP/24`
 - xHCI: mode=3後にplatform deviceなし
 - mode=`3`
 - GPIO322=`0`

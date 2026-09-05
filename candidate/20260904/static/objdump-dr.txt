@@ -1,5 +1,5 @@
 
-/home/masataka/projects/sbat6-usbnet/source/usb_f_ncm.ko:     file format elf64-littleaarch64
+./source/usb_f_ncm.ko:     file format elf64-littleaarch64
 
 
 Disassembly of section .text:

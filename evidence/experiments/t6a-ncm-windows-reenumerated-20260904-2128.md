@@ -1,6 +1,6 @@
 # T6A CDC-NCM Windows re-enumeration confirmation — 2026-09-04 21:28 JST
 
-管理経路は `agent-101-vm -> raspi2 -> LAN/SSH -> root@192.168.3.2` のみ。
+管理経路は `agent-101-vm -> raspi2 -> LAN/SSH -> root@T6A-MGMT-IP` のみ。
 ADB、runtime2、USB role操作、candidate差替えは使用していない。
 
 旦那さまのWindows Pavilion接続後、T6A上で以下を読み取り確認した。

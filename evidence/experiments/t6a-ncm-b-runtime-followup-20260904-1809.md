@@ -2,7 +2,7 @@
 
 ## Access and safety
 
-操作経路は `agent-101-vm -> raspi2 -> SSH root@192.168.3.2` のみ。ADB、raspi4
+操作経路は `agent-101-vm -> raspi2 -> SSH root@T6A-MGMT-IP` のみ。ADB、raspi4
 経路、UDC/configfs操作、rebind、module reload、rebootは行っていない。
 
 ## Windows host autonomous measurement

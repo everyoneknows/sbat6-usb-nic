@@ -11,7 +11,7 @@
 
 ## 現在状態の読み取り
 
-指定された正規経路 `agent-101-vm → raspi2 → LAN/SSH → T6A 192.168.3.2`
+指定された正規経路 `agent-101-vm → raspi2 → LAN/SSH → T6A T6A-MGMT-IP`
 を使用した。ADB、USB serial、Zen3、物理ケーブル操作は行っていない。
 
 12:05 JST のT6A read-only readback:

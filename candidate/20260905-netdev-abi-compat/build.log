@@ -1,9 +1,9 @@
 make: Entering directory '/tmp/linux-5.4.238-netdev-abi-probe.uMrajx'
-  CC [M]  /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/f_ncm.o
-  CC [M]  /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/u_ether.o
-  LD [M]  /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/usb_f_ncm.o
+  CC [M]  ./candidate/20260905-netdev-abi-compat/source/f_ncm.o
+  CC [M]  ./candidate/20260905-netdev-abi-compat/source/u_ether.o
+  LD [M]  ./candidate/20260905-netdev-abi-compat/source/usb_f_ncm.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC [M]  /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/usb_f_ncm.mod.o
-  LD [M]  /home/masataka/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/source/usb_f_ncm.ko
+  CC [M]  ./candidate/20260905-netdev-abi-compat/source/usb_f_ncm.mod.o
+  LD [M]  ./candidate/20260905-netdev-abi-compat/source/usb_f_ncm.ko
 make: Leaving directory '/tmp/linux-5.4.238-netdev-abi-probe.uMrajx'

@@ -4,7 +4,7 @@
 
 T6A操作は既知のLAN/SSH経路のみを使用した。
 
-`agent-101-vm -> raspi2 -> root@192.168.3.2`
+`agent-101-vm -> raspi2 -> root@T6A-MGMT-IP`
 
 ADB、USB serial、Zen3経路は使用していない。
 

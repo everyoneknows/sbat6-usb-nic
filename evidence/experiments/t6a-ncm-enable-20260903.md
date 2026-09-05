@@ -55,7 +55,7 @@ Primary AFTER snapshot was retained on T6A as
 - FACT: UDC remained `function=g1`, `state=not attached`.
 - FACT: `f1..f4` remained unchanged; `f5` is the only ConfigFS link added.
 - FACT: `eth0`, `br-lan`, Wi-Fi interfaces, and `ccmni*` remained present;
-  existing route entries remained `172.16.255.0/24` and `192.168.3.0/24`.
+  existing route entries remained `172.16.255.0/24` and `T6A-MGMT-IP/24`.
 - FACT: after snapshot observed `/sys/devices/platform/11201000.usb/mode=2`;
   this agent did not write that node. The earlier value immediately before
   this experiment was not captured, so mode continuity is UNKNOWN.

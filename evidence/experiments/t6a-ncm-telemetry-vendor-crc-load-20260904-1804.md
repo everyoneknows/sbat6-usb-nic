@@ -18,7 +18,7 @@ sbat6_ncm_telemetry: disagrees about version of symbol module_layout
 ```
 
 The Makefile was corrected to build against the saved vendor tree
-`/home/masataka/projects/sbair6-rce/work/src/linux-5.4.238`, whose vendor
+`../vendor-workspace/work/src/linux-5.4.238`, whose vendor
 `Module.symvers` contains the target CRC set.
 
 ## Exact rebuild

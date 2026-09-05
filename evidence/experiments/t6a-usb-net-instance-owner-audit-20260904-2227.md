@@ -2,7 +2,7 @@
 
 ## Scope
 
-Path: `agent-101-vm -> raspi2 -> root@192.168.3.2`.
+Path: `agent-101-vm -> raspi2 -> root@T6A-MGMT-IP`.
 Read-only inventory and trace setup preceded the requested destructive phase.
 ACM, FFS, and mass-storage instances were never removed.
 

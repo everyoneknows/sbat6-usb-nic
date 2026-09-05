@@ -4,7 +4,7 @@
 
 Read-only static analysis of the saved original vendor module and read-only
 observation of T6A through the approved path `agent-101-vm -> raspi2 ->
-192.168.3.2`. No ConfigFS, module, endpoint, trace, or tuning value was
+T6A-MGMT-IP`. No ConfigFS, module, endpoint, trace, or tuning value was
 changed.
 
 Static object SHA256: `271919fa9a37b00d03f73c1d390bf7360384562286c88b9619714877718e748f`.

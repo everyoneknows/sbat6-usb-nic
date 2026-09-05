@@ -1,10 +1,10 @@
 # Reproduction record
 
 Kernel source/KDIR:
-`/home/masataka/projects/sbair6-rce/work/src/linux-5.4.238-ax88179`
+`../vendor-workspace/work/src/linux-5.4.238-ax88179`
 
 Kernel output:
-`/home/masataka/projects/sbat6-usbnet/tmp-kernel-out.yf9KMT`
+`./tmp-kernel-out.yf9KMT`
 
 Architecture/toolchain: `ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-`
 

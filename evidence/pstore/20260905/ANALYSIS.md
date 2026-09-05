@@ -2,7 +2,7 @@
 
 ## Preservation
 
-The target was read through `agent-101-vm -> raspi2 -> root@192.168.3.2`.
+The target was read through `agent-101-vm -> raspi2 -> root@T6A-MGMT-IP`.
 No pstore file was removed, truncated, or otherwise modified.
 
 | item | result |

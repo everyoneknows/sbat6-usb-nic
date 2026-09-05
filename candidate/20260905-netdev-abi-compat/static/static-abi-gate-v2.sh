@@ -5,7 +5,7 @@ ROOT=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
 KO=${KO:-$ROOT/usb_f_ncm-netdev-abi-rebuilt.ko}
 MODC=${MODC:-$ROOT/static/usb_f_ncm-rebuilt.mod.c}
 VENDOR_MAP=${VENDOR_MAP:-$ROOT/../20260905-mtk-fi-compat/abi/vendor-kimage-extended.Module.symvers}
-TELEMETRY_MAP=${TELEMETRY_MAP:-/home/masataka/projects/butlerx/research/t6a-ncm-telemetry/Module.symvers}
+TELEMETRY_MAP=${TELEMETRY_MAP:-./research/t6a-ncm-telemetry/Module.symvers}
 WORK=$(mktemp -d)
 trap 'find "$WORK" -depth -delete' EXIT
 fail=0

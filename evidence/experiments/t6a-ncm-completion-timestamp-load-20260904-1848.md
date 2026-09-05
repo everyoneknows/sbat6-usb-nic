@@ -19,7 +19,7 @@ configfs access was added to the telemetry path.
 ## Build and static audit
 
 Both modules were rebuilt against the target vendor tree
-`/home/masataka/projects/sbair6-rce/work/src/linux-5.4.238`, whose
+`../vendor-workspace/work/src/linux-5.4.238`, whose
 `module_layout` CRC is `0x3a3eb6e9`, matching the known T6A vendor ABI.
 The arm64 build completed without warnings. Candidate metadata is
 `vermagic=5.4.238 SMP mod_unload modversions aarch64` and
@@ -49,7 +49,7 @@ creation. The final observed state before management loss was:
 - UDC `11201000.usb` reported `configured`
 - `ncm0` absent
 - config `b.1/f5` absent
-- T6A `192.168.3.2` then became ARP-unreachable and SSH unavailable
+- T6A `T6A-MGMT-IP` then became ARP-unreachable and SSH unavailable
 
 No baseline iperf, telemetry interval, cause classification, first variable
 change, or 1.50 Gbps claim was made. No flash, eFuse, ADB, or persistent
