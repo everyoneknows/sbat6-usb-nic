@@ -12,7 +12,7 @@
 
 ## 実施
 
-正規経路 `agent-101-vm -> raspi2 -> 192.168.3.2` の configured SSH identity
+正規経路 `agent-101-vm -> raspi2 -> T6A-MGMT-IP` の configured SSH identity
 鍵で T6A を識別した後、T6A root 上で指定された操作のみを実行した。
 
 ```text

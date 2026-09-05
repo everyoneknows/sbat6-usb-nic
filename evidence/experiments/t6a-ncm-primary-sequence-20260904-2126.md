@@ -1,6 +1,6 @@
 # T6A CDC-NCM primary sequence continuation — 2026-09-04 21:26 JST
 
-管理経路は `agent-101-vm -> raspi2 -> LAN/SSH -> root@192.168.3.2` のみ。
+管理経路は `agent-101-vm -> raspi2 -> LAN/SSH -> root@T6A-MGMT-IP` のみ。
 ADB、runtime2、role操作、MODE書込み、candidate差替えは使用していない。
 
 ## Preconditions and action

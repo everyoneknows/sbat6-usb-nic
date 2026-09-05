@@ -1,10 +1,10 @@
 # Reproduction record
 
 Kernel source/KDIR:
-`/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179`
+`../vendor-workspace/work/src/linux-5.4.238-ax88179`
 
 Kernel output (isolated copy; original untouched):
-`/home/user/projects/sbat6-usbnet/tmp-kernel-out.vendorcrc-20260905`
+`./tmp-kernel-out.vendorcrc-20260905`
 
 Architecture/toolchain: `ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-`
 

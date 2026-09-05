@@ -1,4 +1,4 @@
-/home/user/projects/butlerx/analysis/t6a-usb_net/usb_net.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV), not stripped
+./analysis/t6a-usb_net/usb_net.ko: ELF 64-bit LSB relocatable, ARM aarch64, version 1 (SYSV), not stripped
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
   Class:                             ELF64

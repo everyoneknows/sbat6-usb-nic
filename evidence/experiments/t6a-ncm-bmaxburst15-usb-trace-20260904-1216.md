@@ -1,7 +1,7 @@
 # T6A CDC-NCM USB trace observation — bMaxBurst=15 condition
 
 日時: 2026-09-04 12:10–12:16 JST
-経路: agent-101-vm → raspi2 → LAN/SSH → T6A `192.168.3.2`
+経路: agent-101-vm → raspi2 → LAN/SSH → T6A `T6A-MGMT-IP`
 対象: T6A MediaTek MTU3 gadget / `ncm0`
 条件: 既存のSuperSpeed・host-visible bMaxBurst=15・`ncm0`設定を維持。変更なし。
 

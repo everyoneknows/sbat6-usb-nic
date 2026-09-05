@@ -1,5 +1,5 @@
 
-/home/user/projects/sbat6-usb-nic/candidate/20260905-netdev-abi-compat/usb_f_ncm-netdev-abi.ko:     file format elf64-littleaarch64
+./candidate/20260905-netdev-abi-compat/usb_f_ncm-netdev-abi.ko:     file format elf64-littleaarch64
 
 
 Disassembly of section .text:

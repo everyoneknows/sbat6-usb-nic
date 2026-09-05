@@ -1,9 +1,9 @@
-make: Entering directory '/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179'
-  CC [M]  /home/user/projects/sbat6-usb-nic/.tmp-netdev-source-rebuild/f_ncm.o
-  CC [M]  /home/user/projects/sbat6-usb-nic/.tmp-netdev-source-rebuild/u_ether.o
-  LD [M]  /home/user/projects/sbat6-usb-nic/.tmp-netdev-source-rebuild/usb_f_ncm.o
+make: Entering directory '../vendor-workspace/work/src/linux-5.4.238-ax88179'
+  CC [M]  ./.tmp-netdev-source-rebuild/f_ncm.o
+  CC [M]  ./.tmp-netdev-source-rebuild/u_ether.o
+  LD [M]  ./.tmp-netdev-source-rebuild/usb_f_ncm.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC [M]  /home/user/projects/sbat6-usb-nic/.tmp-netdev-source-rebuild/usb_f_ncm.mod.o
-  LD [M]  /home/user/projects/sbat6-usb-nic/.tmp-netdev-source-rebuild/usb_f_ncm.ko
-make: Leaving directory '/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179'
+  CC [M]  ./.tmp-netdev-source-rebuild/usb_f_ncm.mod.o
+  LD [M]  ./.tmp-netdev-source-rebuild/usb_f_ncm.ko
+make: Leaving directory '../vendor-workspace/work/src/linux-5.4.238-ax88179'

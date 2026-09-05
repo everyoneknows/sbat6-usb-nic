@@ -2,7 +2,7 @@
 
 ## Scope
 
-The audit used only `agent-101-vm -> raspi2 -> SSH root@192.168.3.2` with
+The audit used only `agent-101-vm -> raspi2 -> SSH root@T6A-MGMT-IP` with
 the configured SSH identity. No ADB, raspi4, USB role change, UDC rebind,
 reboot, persistent setting change, or eFuse/security operation was used.
 
@@ -32,7 +32,7 @@ closed for automatic hooks; proceed with a vendor-source patch.
 
 ## Source-level step completed
 
-The saved vendor source at `/home/user/projects/sbat6-usbnet/source/` was
+The saved vendor source at `./source/` was
 instrumented with the existing counter sink interface:
 
 - `u_ether.c`: exact `eth_start_xmit()` queue return and current TX queue
@@ -60,7 +60,7 @@ make -C .../linux-5.4.238-ax88179 \
 
 The build completed without compiler warnings or errors. Generated candidate:
 
-`/home/user/projects/sbat6-usbnet/source/usb_f_ncm.ko`
+`./source/usb_f_ncm.ko`
 
 Its module metadata records `depends=sbat6_ncm_telemetry`; all five called
 telemetry symbols remain normal imports and match the sink's exported CRC

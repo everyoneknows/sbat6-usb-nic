@@ -119,6 +119,6 @@ bulk IN/OUT候補であることは確定する。しかしNCM bindが渡すSS a
 - `analysis/t6a-usb_net/disasm.txt`
 - `analysis/t6a-usb_net/t6a-usb_net.original.ko.readelf-r.txt`
 - `analysis/t6a-usb_net/t6a-usb_net.original.ko.readelf-S.txt`
-- `/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179/drivers/usb/gadget/config.c`
-- `/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179/drivers/usb/gadget/composite.c`
-- `/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179/drivers/usb/mtu3/mtu3_gadget.c`
+- `../vendor-workspace/work/src/linux-5.4.238-ax88179/drivers/usb/gadget/config.c`
+- `../vendor-workspace/work/src/linux-5.4.238-ax88179/drivers/usb/gadget/composite.c`
+- `../vendor-workspace/work/src/linux-5.4.238-ax88179/drivers/usb/mtu3/mtu3_gadget.c`

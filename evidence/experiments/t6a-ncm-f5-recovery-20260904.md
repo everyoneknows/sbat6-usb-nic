@@ -2,13 +2,13 @@
 
 ## Scope and safety
 
-The target was accessed only through `agent-101-vm -> raspi2 -> SSH root@192.168.3.2`
+The target was accessed only through `agent-101-vm -> raspi2 -> SSH root@T6A-MGMT-IP`
 using the configured SSH identity. ADB, USB role changes, physical power
 cycling, reboot, flash, eFuse, and persistent configuration changes were not used.
 
 ## Evidence before recovery
 
-- LAN/SSH was available and `br-lan` retained `192.168.3.2/24`.
+- LAN/SSH was available and `br-lan` retained `T6A-MGMT-IP/24`.
 - `/config` was the ConfigFS mountpoint.
 - `g1/functions/ncm.gs8` existed, while `configs/b.1/f5` was absent.
 - Existing `f1..f4` were ACM/FFS links.
@@ -39,7 +39,7 @@ and rebound to `11201000.usb`. No other function link was changed.
 - dmesg recorded `ncm_bind`, `gether_register_netdev`, and NCM endpoint creation.
 - `ncm0` appeared with MAC `02:00:00:00:00:06`.
 - `192.168.77.1/24` was restored after netdev creation and `ncm0` was set UP.
-- Management LAN remained `br-lan UP 192.168.3.2/24`.
+- Management LAN remained `br-lan UP T6A-MGMT-IP/24`.
 - T6A-side counters remained zero and showed no NCM errors.
 - At the end, `ncm0` was `UP` administratively but `NO-CARRIER`, carrier `0`,
   and UDC state remained `not attached`. Thus USB host enumeration, Windows

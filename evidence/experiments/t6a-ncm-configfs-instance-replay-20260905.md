@@ -2,7 +2,7 @@
 
 ## Scope and fixed artifacts
 
-Path used: `agent-101-vm -> raspi2 -> root@192.168.3.2`.
+Path used: `agent-101-vm -> raspi2 -> root@T6A-MGMT-IP`.
 
 - exact candidate: `usb_f_ncm.ko`
 - candidate SHA256: `d2257ff360fa82c6f2ea639a9856ebd5db7e018b1e71c1113eb74e48ffe7e783`
@@ -16,7 +16,7 @@ Management path and delayed retry both succeeded before the test. T6A reported:
 
 ```text
 Sat Sep  5 04:30:46 JST 2026
-br-lan UP 192.168.3.2/24 172.16.255.254/24
+br-lan UP T6A-MGMT-IP/24 172.16.255.254/24
 usb_net                77824  6
 UDC=11201000.usb
 state=not attached
@@ -84,8 +84,8 @@ performed.
 The first independent connection after the attribute observation returned:
 
 ```text
-ssh: connect to host 192.168.3.2 port 22: No route to host
-192.168.3.2 dev wlan0 FAILED
+ssh: connect to host T6A-MGMT-IP port 22: No route to host
+T6A-MGMT-IP dev wlan0 FAILED
 ping: 100% packet loss
 ```
 

@@ -72,10 +72,10 @@ host
 3%s: kevent %d may have been dropped
 4using random %s ethernet address
 gadget
-/home/user/projects/sbat6-usbnet/source/f_ncm.c
-/home/user/projects/sbat6-usbnet/source/f_ncm.c
-/home/user/projects/sbat6-usbnet/source/f_ncm.c
-/home/user/projects/sbat6-usbnet/source/u_ether.c
+./source/f_ncm.c
+./source/f_ncm.c
+./source/f_ncm.c
+./source/u_ether.c
 author=Yauheni Kaliuta
 license=GPL
 alias=usbfunc:ncm

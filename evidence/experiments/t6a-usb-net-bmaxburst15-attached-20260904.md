@@ -3,7 +3,7 @@
 ## FACT
 
 - After 旦那さま reconnected the USB A-A cable, T6A was read through the
-  authorized `agent-101-vm -> raspi2 -> 192.168.3.2` path.
+  authorized `agent-101-vm -> raspi2 -> T6A-MGMT-IP` path.
 - At 2026-09-04 10:19:49 JST, UDC `11201000.usb` reported `configured` and
   `current_speed=super-speed`.
 - T6A remained in vendor USB `mode=3`; GPIO322 remained `0`.

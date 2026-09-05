@@ -2,7 +2,7 @@
 
 ## Baseline gate (before candidate)
 
-The authorized path was `agent-101-vm -> raspi2 -> LAN/SSH -> root@192.168.3.2`.
+The authorized path was `agent-101-vm -> raspi2 -> LAN/SSH -> root@T6A-MGMT-IP`.
 ADB, runtime2, USB role/mode changes, flash, reboot, and GPIO writes were not
 used. Before the candidate operation, the live gate was:
 
@@ -45,7 +45,7 @@ changing mode, GPIO, role, or persistent settings.
 
 ## Current state after rollback
 
-- management LAN: alive, `br-lan 192.168.3.2/24`
+- management LAN: alive, `br-lan T6A-MGMT-IP/24`
 - vendor `usb_net`: loaded
 - `f5 -> ncm.gs8`: restored
 - UDC: bound, currently `not attached`

@@ -62,7 +62,7 @@ raspi4側のusbmonまたはUSB traceを読み取り専用で開始し、T6A側�
 だけ実行する。transfer長、完了間隔、同時URB数、NCM NTB/NDPの分布を保存し、異常がなければ
 P1の再測定値と突き合わせる。sysfs値、module、descriptor、IP、role、再bind、再起動は変更しない。
 
-ただし現時点ではT6A (`192.168.3.2`) のSSH認証が通らず、P1を開始する操作ができない。
+ただし現時点ではT6A (`T6A-MGMT-IP`) のSSH認証が通らず、P1を開始する操作ができない。
 raspi4への疎通・IP・descriptor確認は完了しているため、次回T6A操作経路が復旧したらこの
 trace採取を先に行う。認証回復まで、timerやNTB値の変更は行わない。
 

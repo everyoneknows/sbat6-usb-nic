@@ -1,6 +1,6 @@
 # T6A USB実験の再分類（2026-09-03）
 
-一次証拠は `/home/user/projects/sbat6-usbnet/evidence/`、ビルド成果物、ABI監査TSVを参照する。以下の整理は、SHAだけでなく実機状態・物理観測・ABIを分離して扱う。
+一次証拠は `./evidence/`、ビルド成果物、ABI監査TSVを参照する。以下の整理は、SHAだけでなく実機状態・物理観測・ABIを分離して扱う。
 
 ## BEFORE snapshot
 

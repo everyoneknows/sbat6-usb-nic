@@ -3,7 +3,7 @@
 ## Current hardware gate
 
 The only management path used was `agent-101-vm -> raspi2 -> LAN/SSH ->
-root@192.168.3.2`. ADB, runtime2, role changes, flash, reboot, and persistent
+root@T6A-MGMT-IP`. ADB, runtime2, role changes, flash, reboot, and persistent
 configuration changes were not used.
 
 At the observation time the T6A state was:
@@ -21,7 +21,7 @@ is claimed.
 
 ## Static candidate work
 
-The existing source candidate in `/home/user/projects/sbat6-usbnet/source/`
+The existing source candidate in `./source/`
 was rebuilt after adding the missing RX completion call at the exact
 `rx_complete()` entry point. It remains a plain-value, no-allocation telemetry
 call and does not alter request or skb lifetime.

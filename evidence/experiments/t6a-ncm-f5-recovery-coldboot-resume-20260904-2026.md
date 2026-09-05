@@ -2,14 +2,14 @@
 
 ## Scope and access
 
-This resume used only `agent-101-vm -> raspi2 -> LAN/SSH -> root@192.168.3.2`.
+This resume used only `agent-101-vm -> raspi2 -> LAN/SSH -> root@T6A-MGMT-IP`.
 ADB, USB role changes, flash, reboot, and persistent device configuration were
 not used. The procedure was reproduced from
 `t6a-ncm-f5-recovery-20260904.md` and `tools/t6a-ncm-recover-f5.sh`.
 
 ## Pre-recovery live state
 
-- `br-lan`: `UP`, `192.168.3.2/24` (management path healthy).
+- `br-lan`: `UP`, `T6A-MGMT-IP/24` (management path healthy).
 - `g1/UDC`: `11201000.usb`; UDC state: `not attached`.
 - `functions/ncm.gs8`: present; `ifname`: `(unnamed net_device)`.
 - `configs/b.1/f5`: absent; `ncm0`: absent.
@@ -47,7 +47,7 @@ The corrected helper then performed:
 - `ncm0`: `192.168.77.1/24`.
 - carrier: `0`.
 - `rx_errors=0`, `rx_dropped=0`, `tx_errors=0`, `tx_dropped=0`.
-- Management `br-lan` remained UP at `192.168.3.2/24`.
+- Management `br-lan` remained UP at `T6A-MGMT-IP/24`.
 - Ping to `192.168.77.2` sent 2 packets and received 0.
 
 ## Gate and conclusion
