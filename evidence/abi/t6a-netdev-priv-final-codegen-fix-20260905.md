@@ -172,3 +172,5 @@ live test was performed. bbd228 remains live-banned. The new candidate is
 offline-proven static-ready, and `NEXT_LIVE_TEST_READY=yes`. The candidate is
 eligible for the controlled recovery/live procedure, but that procedure was
 not run in this build/audit step.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

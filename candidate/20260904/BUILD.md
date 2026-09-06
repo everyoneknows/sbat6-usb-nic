@@ -18,3 +18,5 @@ telemetry sink `Module.symvers` was used for telemetry symbols. The complete
 per-symbol comparison is retained in `abi-audit.tsv`. It reports no missing
 or mismatched imported CRC for the map used at build time, but this does not
 prove structural equivalence with private vendor source types.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

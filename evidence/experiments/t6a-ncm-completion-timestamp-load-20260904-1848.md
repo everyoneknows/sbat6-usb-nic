@@ -61,3 +61,5 @@ Further SSH or module operations are not possible while T6A is unreachable.
 The next recovery action must use an out-of-band console or a controlled
 physical power-cycle, then restore the original vendor `usb_net` and the
 saved `b.1/f5 -> ncm.gs8` configuration before any performance test.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

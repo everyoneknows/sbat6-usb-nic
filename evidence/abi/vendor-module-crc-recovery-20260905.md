@@ -112,3 +112,5 @@ not used as the result here; direct final-ELF CRC comparison is the gate.
 
 The artifact remains offline-only. It has not been copied to or loaded on
 T6A.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

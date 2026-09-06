@@ -122,3 +122,5 @@ bulk IN/OUT候補であることは確定する。しかしNCM bindが渡すSS a
 - `/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179/drivers/usb/gadget/config.c`
 - `/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179/drivers/usb/gadget/composite.c`
 - `/home/user/projects/sbair6-rce/work/src/linux-5.4.238-ax88179/drivers/usb/mtu3/mtu3_gadget.c`
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

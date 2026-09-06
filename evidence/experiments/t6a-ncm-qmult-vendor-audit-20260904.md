@@ -69,3 +69,5 @@ ConfigFS変更、NTB変更はこの監査の成功条件ではなく、先送り
 今回の監査中、raspi2へのSSHは成功したが、raspi2からT6A
 `root@192.168.3.2` への公開鍵認証は `Permission denied` となった。
 T6Aの設定・module・通信状態は変更していない。
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

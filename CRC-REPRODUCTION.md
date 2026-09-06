@@ -63,3 +63,5 @@ CRC hand-patching and ELF binary patching are not part of this plan.
 No copy to T6A, `insmod`, ConfigFS, UDC, reboot, or other runtime operation was
 performed. Hardware deployment remains prohibited until the complete static
 gate reports `RESULT=PASS`.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

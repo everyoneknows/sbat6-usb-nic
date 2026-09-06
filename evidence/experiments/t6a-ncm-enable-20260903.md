@@ -85,3 +85,5 @@ normal stop path removes all `f*` links.
 - unresolved questions: host VBUS/enumeration and actual NCM traffic.
 - next safest experiment: a separately planned physical host-enumeration test
   with VBUS and host-side USB evidence recorded first; no such test was done.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

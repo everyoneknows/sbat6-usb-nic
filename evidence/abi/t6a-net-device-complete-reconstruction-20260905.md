@@ -154,3 +154,5 @@ SOL_LIVE_TEST_READY=no
 
 No SHA is emitted and no live test is authorized. The next valid action is a
 changed-condition offline reconstruction followed by a full static audit.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

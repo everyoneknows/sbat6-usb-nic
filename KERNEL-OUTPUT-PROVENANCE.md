@@ -68,3 +68,5 @@ BUT KERNEL OUTPUT O= DIFFERENT / OUTPUT MAP NOT VENDOR KIMAGE MAP
 More precisely, the current old O= output carries the upstream-style export
 map, while the successfully loaded candidate carries the vendor-kimage CRC
 map. The source tree path alone is therefore insufficient provenance.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

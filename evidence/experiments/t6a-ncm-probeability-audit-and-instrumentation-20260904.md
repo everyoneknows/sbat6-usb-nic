@@ -79,3 +79,5 @@ values were emitted.
 Next safe step is to add that bounded request timestamp bookkeeping, rebuild,
 then perform an ABI/load smoke test and only afterward consider a controlled
 module replacement and Windows 3-run baseline comparison.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

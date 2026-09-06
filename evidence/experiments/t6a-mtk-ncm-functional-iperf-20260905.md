@@ -109,3 +109,5 @@ VENDOR_RESTORE=PASS
 ```
 
 No throughput comparison is claimed.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.
