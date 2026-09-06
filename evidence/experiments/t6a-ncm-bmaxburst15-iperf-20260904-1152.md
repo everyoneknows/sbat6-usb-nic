@@ -80,3 +80,5 @@ raspi4 `usb0` も `carrier=1` を維持した。raspi4側iperf3 serverは停止�
 測定中に新たなUSB reset/disconnect、stall、timeoutは確認しなかった。
 なお、dmesgには測定以前のUSB再列挙履歴が残っているため、過去履歴を測定中の
 異常とは扱っていない。
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

@@ -55,3 +55,5 @@ NCM function再生成、f5復元、mode=3、GPIO322 LOW、UDC bind、IP設定を
 `ABORTED_BEFORE_CANDIDATE_LOAD`。次に変更すべき1項目は、ACM/FFS/mass-storage等の
 既存functionを削除せず、vendor providerのrefcount 6の所有者を特定して安全に解放する
 専用手順を作ること。32KiB NTB変更やforce rmmodへは進めない。
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

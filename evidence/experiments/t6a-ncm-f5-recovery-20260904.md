@@ -64,3 +64,5 @@ Do not repeat candidate replacement. First attach the intended USB host and
 verify UDC configured, carrier, Windows `UsbNcm Host Device`, `192.168.77.2`,
 bidirectional ping, and the established iperf baseline (about 1.34–1.37 Gbps
 T6A→Windows and 1.01–1.02 Gbps Windows→T6A).
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.
