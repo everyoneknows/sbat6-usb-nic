@@ -60,7 +60,24 @@ GitHubがこのプロジェクトのSystem of Recordです。成功、失敗、N
 
 The single current truth is [STATUS.md](STATUS.md). The project is at
 `RESET_STONE_1_COMPLETE`: vendor lineage reconstruction plus staged minimal
-implementation. No candidate is approved for live testing.
+implementation. The separate corrected v6 baseline below is the first custom
+candidate with a completed live functional test; it remains a baseline only.
+
+## Custom external NCM v6 baseline
+
+The corrected custom external NCM v6 module is preserved in
+`candidate/t6a-usb-ncm-canonical-v6/`. It was live-tested on the stock SBA6D
+kernel after the registration-name collision was corrected. The module loads,
+enumerates on Windows as a `UsbNcm Host Device`, passes bidirectional IPv4
+traffic, and sustains approximately 340–353 Mbit/s in the current baseline.
+
+This is a reproducibility baseline, not a performance claim. Vendor-baseline
+equivalence above 1 Gbit/s, long-duration endurance, reboot-time automatic
+configuration, and production readiness are not achieved.
+
+See [the v6 baseline record](docs/t6a-custom-ncm-v6-baseline.md) for the
+source/build identity, ABI manifest, static gates, live-test procedure, and
+measured results.
 
 ## Current evidence
 
