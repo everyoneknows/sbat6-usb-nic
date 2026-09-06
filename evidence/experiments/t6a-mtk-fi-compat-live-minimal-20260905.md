@@ -122,3 +122,5 @@ This confirms ConfigFS function-instance ABI compatibility only. It is not a
 driver functional network test. The next controlled ConfigFS link / UDC
 functional test remains out of scope.
 
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

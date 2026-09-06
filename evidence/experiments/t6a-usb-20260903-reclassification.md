@@ -43,3 +43,5 @@ MTU3の正規mode経路で `mode=1`、続いて `mode=3`。この記録の目的
 - disproved hypotheses: 0V単独でDEVICE成功、旧NCM SHAだけでknown-good。
 - unresolved questions: host VBUS、cable接続後のenumeration、UDC bind、NCM通信。
 - next safest experiment: ケーブル未接続を確認した上で、成功条件（VBUS、UDC、xHCI、host enumeration、NCM通信）を先に宣言し、物理測定を別系統で採取してから一回だけ接続試験。高リスクなrole/GPIO/register/DT変更は明示承認なしに行わない。
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

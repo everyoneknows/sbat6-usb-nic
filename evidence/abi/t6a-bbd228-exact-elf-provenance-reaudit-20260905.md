@@ -241,3 +241,5 @@ REGISTER_NETDEVICE_DEEP_FAULT_INTERPRETATION=unproven
 NEXT_OFFLINE_ACTION=repair and prove netdev_priv/private codegen for all direct accesses, then rerun exact-ELF audit
 NEXT_LIVE_TEST_READY=no
 ```
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

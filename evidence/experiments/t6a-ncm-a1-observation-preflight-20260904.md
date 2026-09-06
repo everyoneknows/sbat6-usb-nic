@@ -61,3 +61,5 @@ Confidence: HIGH for the static dependency finding; LOW for performance.
 Next gate: connect the intended Windows Pavilion USB host/VBUS, then verify
 UDC `configured`, carrier, Windows `UsbNcm Host Device`, `192.168.77.2/24`,
 bidirectional ping, and the three-run baseline before any candidate load.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

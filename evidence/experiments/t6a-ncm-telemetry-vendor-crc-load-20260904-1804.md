@@ -61,3 +61,5 @@ The standalone telemetry ABI/load/unload path is now target-compatible and
 reversible. It is not yet an end-to-end measurement. The next useful live
 step requires the existing Windows/raspi4 USB cable link, after which the
 source-integrated vendor path must be tested with one change at a time.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

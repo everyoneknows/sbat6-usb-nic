@@ -51,3 +51,5 @@ and the A班 observation-only telemetry candidate was **not** installed or
 loaded. The next action requires resolving why the Pavilion link negotiated
 high-speed (physical port/cable/host path or re-enumeration), then repeating
 the same read-only preflight and three-run baseline.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

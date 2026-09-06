@@ -101,3 +101,5 @@ candidate/20260905-netdev-abi-compat/static/rebuilt-gether-register-netdev.disas
 candidate/20260905-netdev-abi-compat/static/usb_f_ncm-rebuilt.mod.c
 candidate/20260905-netdev-abi-compat/usb_f_ncm-netdev-abi-rebuilt.ko
 ```
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

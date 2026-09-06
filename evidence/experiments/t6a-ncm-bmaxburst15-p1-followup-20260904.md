@@ -71,3 +71,5 @@ trace採取を先に行う。認証回復まで、timerやNTB値の変更は行�
 `bMaxBurst=15` 条件の主方向P1は baseline 改善なし。通信異常は観測されていないが、
 次の実験へ進むためのT6A操作経路が不足している。現状態は維持し、受信NTB/request供給の
 実測を次工程とする。
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

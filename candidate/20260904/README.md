@@ -56,3 +56,5 @@ Run from the repository root:
 
 This checks source lifecycle, ELF symbols, vermagic, dependency and the
 absence of performance tuning. It is intentionally not a live ConfigFS test.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

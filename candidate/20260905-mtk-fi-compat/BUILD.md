@@ -36,3 +36,5 @@ is 7/7; `module_layout` is `0x3a3eb6e9`. The revised gate therefore remains
 `RESULT=FAIL`. The diagnostic ELF is retained under `artifacts/` with SHA256
 `c6f4b2d6fe0cff060be35aa9830c0479509b769b22ba94c23eae71151ed73bf5` for
 audit only. No T6A operation was performed.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

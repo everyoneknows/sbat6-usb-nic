@@ -59,3 +59,5 @@ UDC remains `not attached` and `ncm0` has no carrier. No throughput claim is
 made. The next action requires the intended Windows Pavilion USB host/VBUS
 connection; then verify UDC `configured`, carrier, Windows `192.168.77.2/24`,
 ping, and the established 1.34–1.37 / 1.01–1.02 Gbps baseline.
+
+> Privacy note (2026-09-06): personal paths, management addresses and device MACs in this document are redacted or replaced with examples; they are not original measured identifiers.

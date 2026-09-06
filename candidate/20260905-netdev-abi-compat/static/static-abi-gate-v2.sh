@@ -1,4 +1,5 @@
 #!/bin/sh
+# Published MAC addresses are examples; set them to your local configuration before use.
 set -eu
 
 ROOT=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
